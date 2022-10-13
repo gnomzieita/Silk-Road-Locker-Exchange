@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E115310F28704FC800000B09 /* OfferDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E115310E28704FC800000B09 /* OfferDetailsViewController.swift */; };
+		E1166D1F285666790046A442 /* NewYorkExtraLarge-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CED285666790046A442 /* NewYorkExtraLarge-RegularItalic.otf */; };
+		E1166D20285666790046A442 /* NewYorkExtraLarge-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CEE285666790046A442 /* NewYorkExtraLarge-BlackItalic.otf */; };
+		E1166D21285666790046A442 /* NewYorkMedium-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CEF285666790046A442 /* NewYorkMedium-RegularItalic.otf */; };
+		E1166D22285666790046A442 /* NewYorkSmall-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CF0285666790046A442 /* NewYorkSmall-BoldItalic.otf */; };
+		E1166D23285666790046A442 /* NewYorkExtraLarge-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CF1285666790046A442 /* NewYorkExtraLarge-Medium.otf */; };
+		E1166D24285666790046A442 /* NewYorkSmall-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CF2285666790046A442 /* NewYorkSmall-Bold.otf */; };
+		E1166D25285666790046A442 /* NewYorkExtraLarge-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CF3285666790046A442 /* NewYorkExtraLarge-Bold.otf */; };
+		E1166D26285666790046A442 /* NewYorkSmall-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CF4285666790046A442 /* NewYorkSmall-BlackItalic.otf */; };
+		E1166D27285666790046A442 /* NewYorkMedium-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CF5285666790046A442 /* NewYorkMedium-HeavyItalic.otf */; };
+		E1166D28285666790046A442 /* NewYorkSmall-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CF6285666790046A442 /* NewYorkSmall-Medium.otf */; };
+		E1166D29285666790046A442 /* NewYorkLarge-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CF7285666790046A442 /* NewYorkLarge-BlackItalic.otf */; };
+		E1166D2A285666790046A442 /* NewYorkLarge-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CF8285666790046A442 /* NewYorkLarge-Medium.otf */; };
+		E1166D2B285666790046A442 /* NewYorkLarge-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CF9285666790046A442 /* NewYorkLarge-Black.otf */; };
+		E1166D2C285666790046A442 /* NewYorkMedium-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CFA285666790046A442 /* NewYorkMedium-Medium.otf */; };
+		E1166D2D285666790046A442 /* NewYorkExtraLarge-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CFB285666790046A442 /* NewYorkExtraLarge-Semibold.otf */; };
+		E1166D2E285666790046A442 /* NewYorkMedium-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CFC285666790046A442 /* NewYorkMedium-BlackItalic.otf */; };
+		E1166D2F285666790046A442 /* NewYorkMedium-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CFD285666790046A442 /* NewYorkMedium-Heavy.otf */; };
+		E1166D30285666790046A442 /* NewYorkSmall-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CFE285666790046A442 /* NewYorkSmall-HeavyItalic.otf */; };
+		E1166D31285666790046A442 /* NewYorkLarge-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166CFF285666790046A442 /* NewYorkLarge-HeavyItalic.otf */; };
+		E1166D32285666790046A442 /* NewYorkExtraLarge-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D00285666790046A442 /* NewYorkExtraLarge-Heavy.otf */; };
+		E1166D33285666790046A442 /* NewYorkSmall-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D01285666790046A442 /* NewYorkSmall-Black.otf */; };
+		E1166D34285666790046A442 /* NewYorkLarge-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D02285666790046A442 /* NewYorkLarge-SemiboldItalic.otf */; };
+		E1166D35285666790046A442 /* NewYorkExtraLarge-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D03285666790046A442 /* NewYorkExtraLarge-BoldItalic.otf */; };
+		E1166D36285666790046A442 /* NewYorkExtraLarge-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D04285666790046A442 /* NewYorkExtraLarge-MediumItalic.otf */; };
+		E1166D37285666790046A442 /* NewYork.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D05285666790046A442 /* NewYork.ttf */; };
+		E1166D38285666790046A442 /* NewYorkExtraLarge-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D06285666790046A442 /* NewYorkExtraLarge-HeavyItalic.otf */; };
+		E1166D39285666790046A442 /* NewYorkLarge-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D07285666790046A442 /* NewYorkLarge-MediumItalic.otf */; };
+		E1166D3A285666790046A442 /* NewYorkMedium-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D08285666790046A442 /* NewYorkMedium-SemiboldItalic.otf */; };
+		E1166D3B285666790046A442 /* NewYorkSmall-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D09285666790046A442 /* NewYorkSmall-SemiboldItalic.otf */; };
+		E1166D3C285666790046A442 /* NewYorkMedium-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D0A285666790046A442 /* NewYorkMedium-BoldItalic.otf */; };
+		E1166D3D285666790046A442 /* NewYorkItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D0B285666790046A442 /* NewYorkItalic.ttf */; };
+		E1166D3E285666790046A442 /* NewYorkMedium-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D0C285666790046A442 /* NewYorkMedium-MediumItalic.otf */; };
+		E1166D3F285666790046A442 /* NewYorkLarge-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D0D285666790046A442 /* NewYorkLarge-Bold.otf */; };
+		E1166D40285666790046A442 /* NewYorkMedium-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D0E285666790046A442 /* NewYorkMedium-Bold.otf */; };
+		E1166D41285666790046A442 /* NewYorkLarge-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D0F285666790046A442 /* NewYorkLarge-Heavy.otf */; };
+		E1166D42285666790046A442 /* NewYorkExtraLarge-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D10285666790046A442 /* NewYorkExtraLarge-SemiboldItalic.otf */; };
+		E1166D43285666790046A442 /* NewYorkSmall-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D11285666790046A442 /* NewYorkSmall-Semibold.otf */; };
+		E1166D44285666790046A442 /* NewYorkExtraLarge-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D12285666790046A442 /* NewYorkExtraLarge-Regular.otf */; };
+		E1166D45285666790046A442 /* NewYorkSmall-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D13285666790046A442 /* NewYorkSmall-RegularItalic.otf */; };
+		E1166D46285666790046A442 /* NewYorkMedium-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D14285666790046A442 /* NewYorkMedium-Black.otf */; };
+		E1166D47285666790046A442 /* NewYorkLarge-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D15285666790046A442 /* NewYorkLarge-Regular.otf */; };
+		E1166D48285666790046A442 /* NewYorkSmall-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D16285666790046A442 /* NewYorkSmall-Heavy.otf */; };
+		E1166D49285666790046A442 /* NewYorkLarge-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D17285666790046A442 /* NewYorkLarge-Semibold.otf */; };
+		E1166D4A285666790046A442 /* NewYorkExtraLarge-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D18285666790046A442 /* NewYorkExtraLarge-Black.otf */; };
+		E1166D4B285666790046A442 /* NewYorkLarge-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D19285666790046A442 /* NewYorkLarge-RegularItalic.otf */; };
+		E1166D4C285666790046A442 /* NewYorkMedium-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D1A285666790046A442 /* NewYorkMedium-Regular.otf */; };
+		E1166D4D285666790046A442 /* NewYorkMedium-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D1B285666790046A442 /* NewYorkMedium-Semibold.otf */; };
+		E1166D4E285666790046A442 /* NewYorkLarge-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D1C285666790046A442 /* NewYorkLarge-BoldItalic.otf */; };
+		E1166D4F285666790046A442 /* NewYorkSmall-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D1D285666790046A442 /* NewYorkSmall-Regular.otf */; };
+		E1166D50285666790046A442 /* NewYorkSmall-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D1E285666790046A442 /* NewYorkSmall-MediumItalic.otf */; };
+		E134B86F287727460011FF26 /* PaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B86E287727460011FF26 /* PaymentTableViewCell.swift */; };
+		E134B8712877278C0011FF26 /* PaymenMethodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B8702877278C0011FF26 /* PaymenMethodsViewController.swift */; };
+		E134B87328775E800011FF26 /* AddNewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B87228775E800011FF26 /* AddNewCardViewController.swift */; };
+		E134B87528775ED40011FF26 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B87428775ED40011FF26 /* EditProfileViewController.swift */; };
+		E134B877287760C80011FF26 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B876287760C80011FF26 /* SignInViewController.swift */; };
+		E134B879287761020011FF26 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B878287761020011FF26 /* SignUpViewController.swift */; };
+		E134B87B2877612E0011FF26 /* RecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B87A2877612E0011FF26 /* RecoveryViewController.swift */; };
+		E134B87D2877615D0011FF26 /* VerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B87C2877615D0011FF26 /* VerifyViewController.swift */; };
+		E134B87F287761930011FF26 /* SetupNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B87E287761930011FF26 /* SetupNewPasswordViewController.swift */; };
+		E134B881287765BB0011FF26 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B880287765BB0011FF26 /* PurchaseViewController.swift */; };
+		E134B88328781BE40011FF26 /* PaymentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B88228781BE40011FF26 /* PaymentHistoryViewController.swift */; };
+		E134B885287821D90011FF26 /* PaymentHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B884287821D90011FF26 /* PaymentHistoryTableViewCell.swift */; };
+		E134B887287845350011FF26 /* VerifyPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B886287845350011FF26 /* VerifyPhoneViewController.swift */; };
+		E134B889287845770011FF26 /* VerifySMSCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B888287845770011FF26 /* VerifySMSCodeViewController.swift */; };
+		E14EE46A28EB852400582573 /* CombineNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EE46928EB852400582573 /* CombineNetworkService.swift */; };
+		E14EE46D28EB890300582573 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EE46C28EB890300582573 /* Coordinator.swift */; };
+		E14EE46F28EB89D200582573 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EE46E28EB89D200582573 /* Storyboarded.swift */; };
+		E14EE47128EB8D5900582573 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EE47028EB8D5900582573 /* MainCoordinator.swift */; };
+		E14EE47328EBA15E00582573 /* RecoveryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EE47228EBA15E00582573 /* RecoveryCoordinator.swift */; };
+		E1592EB02876F9C300CB8FA9 /* ChatMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1592EAF2876F9C300CB8FA9 /* ChatMessageTableViewCell.swift */; };
+		E1592EB228770ACE00CB8FA9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1592EB128770ACE00CB8FA9 /* ChatViewController.swift */; };
+		E165216B28F3CFE000662B36 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165216A28F3CFE000662B36 /* MainTabBarCoordinator.swift */; };
+		E165216D28F3DA9F00662B36 /* PurchasedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165216C28F3DA9F00662B36 /* PurchasedCoordinator.swift */; };
+		E165217028F4EA7000662B36 /* SellCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165216F28F4EA7000662B36 /* SellCoordinator.swift */; };
+		E165217428F4EDCD00662B36 /* ChatCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165217328F4EDCD00662B36 /* ChatCoordinator.swift */; };
+		E165217728F4EF5300662B36 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165217628F4EF5300662B36 /* ProfileCoordinator.swift */; };
+		E165217A28F4F02500662B36 /* NotificationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165217928F4F02500662B36 /* NotificationsCoordinator.swift */; };
+		E165217D28F4F14B00662B36 /* BaseCoordenator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165217C28F4F14B00662B36 /* BaseCoordenator.swift */; };
+		E17474B1284E6D2400ACF961 /* DGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17474B0284E6D2400ACF961 /* DGView.swift */; };
+		E19E87B02864ED500025BFAE /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87AF2864ED500025BFAE /* ChatsViewController.swift */; };
+		E19E87B22866104E0025BFAE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87B12866104E0025BFAE /* ProfileViewController.swift */; };
+		E1A2691928F7758A00635B87 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2691828F7758A00635B87 /* SignUpModel.swift */; };
+		E1A2691B28F7BA8900635B87 /* API_GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2691A28F7BA8900635B87 /* API_GetRequest.swift */; };
+		E1AA7A87285263A6000EC649 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AA7A85285263A6000EC649 /* ProductTableViewCell.swift */; };
+		E1AA7A88285263A6000EC649 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1AA7A86285263A6000EC649 /* ProductTableViewCell.xib */; };
+		E1AB0EC728634CC800873FEE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB0EC628634CC800873FEE /* RootViewController.swift */; };
+		E1AB0EC928634CFF00873FEE /* PurchasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB0EC828634CFF00873FEE /* PurchasedViewController.swift */; };
+		E1AB0ECB2863505600873FEE /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB0ECA2863505600873FEE /* RootTabBarController.swift */; };
+		E1AB0ECD28639EC000873FEE /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB0ECC28639EC000873FEE /* SellViewController.swift */; };
+		E1AB1AE02864E15D00873FEE /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB1ADF2864E15D00873FEE /* NotificationTableViewCell.swift */; };
+		E1AB1AE22864E42900873FEE /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB1AE12864E42900873FEE /* NotificationsViewController.swift */; };
+		E1D198B028ED267D00F8C077 /* SignInForgotCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D198AF28ED267D00F8C077 /* SignInForgotCoordinator.swift */; };
+		E1D198D428EE1BEB00F8C077 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D198D328EE1BEB00F8C077 /* UserModel.swift */; };
+		E1D198D728EE226400F8C077 /* SigInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D198D628EE226400F8C077 /* SigInModel.swift */; };
+		E1D198D928EE2BFC00F8C077 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D198D828EE2BFC00F8C077 /* BaseRequest.swift */; };
+		E1D198DC28EE2F0900F8C077 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D198DB28EE2F0900F8C077 /* API.swift */; };
+		E1D198DE28EF749500F8C077 /* API_Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D198DD28EF749500F8C077 /* API_Request.swift */; };
+		E1E041652878689B0080C5D4 /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E041642878689B0080C5D4 /* SelectLocationViewController.swift */; };
+		E1E041672878693E0080C5D4 /* SelectLockerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E041662878693E0080C5D4 /* SelectLockerViewController.swift */; };
+		E1E04169287869610080C5D4 /* SelectLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E04168287869610080C5D4 /* SelectLocationTableViewCell.swift */; };
+		E1E1EB26285A687A0087C39E /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1EB25285A687A0087C39E /* ChatTableViewCell.swift */; };
+		E1E59DE52875E4DF00B08A03 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E59DE42875E4DF00B08A03 /* UserListViewController.swift */; };
+		E1E59DE72875E53600B08A03 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E59DE62875E53600B08A03 /* UserListTableViewCell.swift */; };
+		E1E59DE92875FED100B08A03 /* CreateOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E59DE82875FED100B08A03 /* CreateOfferViewController.swift */; };
+		E1E73B0B284E62E50016FFF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E73B0A284E62E50016FFF2 /* AppDelegate.swift */; };
+		E1E73B0D284E62E50016FFF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E73B0C284E62E50016FFF2 /* SceneDelegate.swift */; };
+		E1E73B0F284E62E50016FFF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E73B0E284E62E50016FFF2 /* ViewController.swift */; };
+		E1E73B12284E62E50016FFF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E73B10284E62E50016FFF2 /* Main.storyboard */; };
+		E1E73B15284E62E50016FFF2 /* Silk_Road_Locker_Exchange.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1E73B13284E62E50016FFF2 /* Silk_Road_Locker_Exchange.xcdatamodeld */; };
+		E1E73B17284E62EC0016FFF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E73B16284E62EC0016FFF2 /* Assets.xcassets */; };
+		E1E73B1A284E62EC0016FFF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E73B18284E62EC0016FFF2 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E115310E28704FC800000B09 /* OfferDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsViewController.swift; sourceTree = "<group>"; };
+		E1166CED285666790046A442 /* NewYorkExtraLarge-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-RegularItalic.otf"; sourceTree = "<group>"; };
+		E1166CEE285666790046A442 /* NewYorkExtraLarge-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-BlackItalic.otf"; sourceTree = "<group>"; };
+		E1166CEF285666790046A442 /* NewYorkMedium-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-RegularItalic.otf"; sourceTree = "<group>"; };
+		E1166CF0285666790046A442 /* NewYorkSmall-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-BoldItalic.otf"; sourceTree = "<group>"; };
+		E1166CF1285666790046A442 /* NewYorkExtraLarge-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-Medium.otf"; sourceTree = "<group>"; };
+		E1166CF2285666790046A442 /* NewYorkSmall-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Bold.otf"; sourceTree = "<group>"; };
+		E1166CF3285666790046A442 /* NewYorkExtraLarge-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-Bold.otf"; sourceTree = "<group>"; };
+		E1166CF4285666790046A442 /* NewYorkSmall-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-BlackItalic.otf"; sourceTree = "<group>"; };
+		E1166CF5285666790046A442 /* NewYorkMedium-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-HeavyItalic.otf"; sourceTree = "<group>"; };
+		E1166CF6285666790046A442 /* NewYorkSmall-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Medium.otf"; sourceTree = "<group>"; };
+		E1166CF7285666790046A442 /* NewYorkLarge-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-BlackItalic.otf"; sourceTree = "<group>"; };
+		E1166CF8285666790046A442 /* NewYorkLarge-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-Medium.otf"; sourceTree = "<group>"; };
+		E1166CF9285666790046A442 /* NewYorkLarge-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-Black.otf"; sourceTree = "<group>"; };
+		E1166CFA285666790046A442 /* NewYorkMedium-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-Medium.otf"; sourceTree = "<group>"; };
+		E1166CFB285666790046A442 /* NewYorkExtraLarge-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-Semibold.otf"; sourceTree = "<group>"; };
+		E1166CFC285666790046A442 /* NewYorkMedium-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-BlackItalic.otf"; sourceTree = "<group>"; };
+		E1166CFD285666790046A442 /* NewYorkMedium-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-Heavy.otf"; sourceTree = "<group>"; };
+		E1166CFE285666790046A442 /* NewYorkSmall-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-HeavyItalic.otf"; sourceTree = "<group>"; };
+		E1166CFF285666790046A442 /* NewYorkLarge-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-HeavyItalic.otf"; sourceTree = "<group>"; };
+		E1166D00285666790046A442 /* NewYorkExtraLarge-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-Heavy.otf"; sourceTree = "<group>"; };
+		E1166D01285666790046A442 /* NewYorkSmall-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Black.otf"; sourceTree = "<group>"; };
+		E1166D02285666790046A442 /* NewYorkLarge-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		E1166D03285666790046A442 /* NewYorkExtraLarge-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-BoldItalic.otf"; sourceTree = "<group>"; };
+		E1166D04285666790046A442 /* NewYorkExtraLarge-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-MediumItalic.otf"; sourceTree = "<group>"; };
+		E1166D05285666790046A442 /* NewYork.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NewYork.ttf; sourceTree = "<group>"; };
+		E1166D06285666790046A442 /* NewYorkExtraLarge-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-HeavyItalic.otf"; sourceTree = "<group>"; };
+		E1166D07285666790046A442 /* NewYorkLarge-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-MediumItalic.otf"; sourceTree = "<group>"; };
+		E1166D08285666790046A442 /* NewYorkMedium-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		E1166D09285666790046A442 /* NewYorkSmall-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		E1166D0A285666790046A442 /* NewYorkMedium-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-BoldItalic.otf"; sourceTree = "<group>"; };
+		E1166D0B285666790046A442 /* NewYorkItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NewYorkItalic.ttf; sourceTree = "<group>"; };
+		E1166D0C285666790046A442 /* NewYorkMedium-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-MediumItalic.otf"; sourceTree = "<group>"; };
+		E1166D0D285666790046A442 /* NewYorkLarge-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-Bold.otf"; sourceTree = "<group>"; };
+		E1166D0E285666790046A442 /* NewYorkMedium-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-Bold.otf"; sourceTree = "<group>"; };
+		E1166D0F285666790046A442 /* NewYorkLarge-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-Heavy.otf"; sourceTree = "<group>"; };
+		E1166D10285666790046A442 /* NewYorkExtraLarge-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		E1166D11285666790046A442 /* NewYorkSmall-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Semibold.otf"; sourceTree = "<group>"; };
+		E1166D12285666790046A442 /* NewYorkExtraLarge-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-Regular.otf"; sourceTree = "<group>"; };
+		E1166D13285666790046A442 /* NewYorkSmall-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-RegularItalic.otf"; sourceTree = "<group>"; };
+		E1166D14285666790046A442 /* NewYorkMedium-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-Black.otf"; sourceTree = "<group>"; };
+		E1166D15285666790046A442 /* NewYorkLarge-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-Regular.otf"; sourceTree = "<group>"; };
+		E1166D16285666790046A442 /* NewYorkSmall-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Heavy.otf"; sourceTree = "<group>"; };
+		E1166D17285666790046A442 /* NewYorkLarge-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-Semibold.otf"; sourceTree = "<group>"; };
+		E1166D18285666790046A442 /* NewYorkExtraLarge-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkExtraLarge-Black.otf"; sourceTree = "<group>"; };
+		E1166D19285666790046A442 /* NewYorkLarge-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-RegularItalic.otf"; sourceTree = "<group>"; };
+		E1166D1A285666790046A442 /* NewYorkMedium-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-Regular.otf"; sourceTree = "<group>"; };
+		E1166D1B285666790046A442 /* NewYorkMedium-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-Semibold.otf"; sourceTree = "<group>"; };
+		E1166D1C285666790046A442 /* NewYorkLarge-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-BoldItalic.otf"; sourceTree = "<group>"; };
+		E1166D1D285666790046A442 /* NewYorkSmall-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Regular.otf"; sourceTree = "<group>"; };
+		E1166D1E285666790046A442 /* NewYorkSmall-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-MediumItalic.otf"; sourceTree = "<group>"; };
+		E134B86E287727460011FF26 /* PaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewCell.swift; sourceTree = "<group>"; };
+		E134B8702877278C0011FF26 /* PaymenMethodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymenMethodsViewController.swift; sourceTree = "<group>"; };
+		E134B87228775E800011FF26 /* AddNewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCardViewController.swift; sourceTree = "<group>"; };
+		E134B87428775ED40011FF26 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		E134B876287760C80011FF26 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E134B878287761020011FF26 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E134B87A2877612E0011FF26 /* RecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryViewController.swift; sourceTree = "<group>"; };
+		E134B87C2877615D0011FF26 /* VerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyViewController.swift; sourceTree = "<group>"; };
+		E134B87E287761930011FF26 /* SetupNewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupNewPasswordViewController.swift; sourceTree = "<group>"; };
+		E134B880287765BB0011FF26 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		E134B88228781BE40011FF26 /* PaymentHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryViewController.swift; sourceTree = "<group>"; };
+		E134B884287821D90011FF26 /* PaymentHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		E134B886287845350011FF26 /* VerifyPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneViewController.swift; sourceTree = "<group>"; };
+		E134B888287845770011FF26 /* VerifySMSCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifySMSCodeViewController.swift; sourceTree = "<group>"; };
+		E14EE46928EB852400582573 /* CombineNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineNetworkService.swift; sourceTree = "<group>"; };
+		E14EE46C28EB890300582573 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E14EE46E28EB89D200582573 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		E14EE47028EB8D5900582573 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		E14EE47228EBA15E00582573 /* RecoveryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryCoordinator.swift; sourceTree = "<group>"; };
+		E1592EAF2876F9C300CB8FA9 /* ChatMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageTableViewCell.swift; sourceTree = "<group>"; };
+		E1592EB128770ACE00CB8FA9 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		E165216A28F3CFE000662B36 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
+		E165216C28F3DA9F00662B36 /* PurchasedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedCoordinator.swift; sourceTree = "<group>"; };
+		E165216F28F4EA7000662B36 /* SellCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellCoordinator.swift; sourceTree = "<group>"; };
+		E165217328F4EDCD00662B36 /* ChatCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCoordinator.swift; sourceTree = "<group>"; };
+		E165217628F4EF5300662B36 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		E165217928F4F02500662B36 /* NotificationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCoordinator.swift; sourceTree = "<group>"; };
+		E165217C28F4F14B00662B36 /* BaseCoordenator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordenator.swift; sourceTree = "<group>"; };
+		E17474B0284E6D2400ACF961 /* DGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGView.swift; sourceTree = "<group>"; };
+		E19E87AF2864ED500025BFAE /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		E19E87B12866104E0025BFAE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E1A2691828F7758A00635B87 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		E1A2691A28F7BA8900635B87 /* API_GetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_GetRequest.swift; sourceTree = "<group>"; };
+		E1AA7A85285263A6000EC649 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		E1AA7A86285263A6000EC649 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		E1AB0EC628634CC800873FEE /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		E1AB0EC828634CFF00873FEE /* PurchasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedViewController.swift; sourceTree = "<group>"; };
+		E1AB0ECA2863505600873FEE /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		E1AB0ECC28639EC000873FEE /* SellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
+		E1AB1ADF2864E15D00873FEE /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		E1AB1AE12864E42900873FEE /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		E1D198AF28ED267D00F8C077 /* SignInForgotCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInForgotCoordinator.swift; sourceTree = "<group>"; };
+		E1D198D328EE1BEB00F8C077 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E1D198D628EE226400F8C077 /* SigInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigInModel.swift; sourceTree = "<group>"; };
+		E1D198D828EE2BFC00F8C077 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		E1D198DB28EE2F0900F8C077 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		E1D198DD28EF749500F8C077 /* API_Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Request.swift; sourceTree = "<group>"; };
+		E1E041642878689B0080C5D4 /* SelectLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationViewController.swift; sourceTree = "<group>"; };
+		E1E041662878693E0080C5D4 /* SelectLockerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLockerViewController.swift; sourceTree = "<group>"; };
+		E1E04168287869610080C5D4 /* SelectLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationTableViewCell.swift; sourceTree = "<group>"; };
+		E1E1EB25285A687A0087C39E /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		E1E59DE42875E4DF00B08A03 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		E1E59DE62875E53600B08A03 /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
+		E1E59DE82875FED100B08A03 /* CreateOfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOfferViewController.swift; sourceTree = "<group>"; };
+		E1E73B07284E62E50016FFF2 /* Silk Road Locker Exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Silk Road Locker Exchange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E73B0A284E62E50016FFF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1E73B0C284E62E50016FFF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E1E73B0E284E62E50016FFF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1E73B11284E62E50016FFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1E73B14284E62E50016FFF2 /* Silk_Road_Locker_Exchange.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Silk_Road_Locker_Exchange.xcdatamodel; sourceTree = "<group>"; };
+		E1E73B16284E62EC0016FFF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1E73B19284E62EC0016FFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1E73B1B284E62EC0016FFF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1E73B04284E62E50016FFF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1166CEC285666790046A442 /* New York */ = {
+			isa = PBXGroup;
+			children = (
+				E1166CED285666790046A442 /* NewYorkExtraLarge-RegularItalic.otf */,
+				E1166CEE285666790046A442 /* NewYorkExtraLarge-BlackItalic.otf */,
+				E1166CEF285666790046A442 /* NewYorkMedium-RegularItalic.otf */,
+				E1166CF0285666790046A442 /* NewYorkSmall-BoldItalic.otf */,
+				E1166CF1285666790046A442 /* NewYorkExtraLarge-Medium.otf */,
+				E1166CF2285666790046A442 /* NewYorkSmall-Bold.otf */,
+				E1166CF3285666790046A442 /* NewYorkExtraLarge-Bold.otf */,
+				E1166CF4285666790046A442 /* NewYorkSmall-BlackItalic.otf */,
+				E1166CF5285666790046A442 /* NewYorkMedium-HeavyItalic.otf */,
+				E1166CF6285666790046A442 /* NewYorkSmall-Medium.otf */,
+				E1166CF7285666790046A442 /* NewYorkLarge-BlackItalic.otf */,
+				E1166CF8285666790046A442 /* NewYorkLarge-Medium.otf */,
+				E1166CF9285666790046A442 /* NewYorkLarge-Black.otf */,
+				E1166CFA285666790046A442 /* NewYorkMedium-Medium.otf */,
+				E1166CFB285666790046A442 /* NewYorkExtraLarge-Semibold.otf */,
+				E1166CFC285666790046A442 /* NewYorkMedium-BlackItalic.otf */,
+				E1166CFD285666790046A442 /* NewYorkMedium-Heavy.otf */,
+				E1166CFE285666790046A442 /* NewYorkSmall-HeavyItalic.otf */,
+				E1166CFF285666790046A442 /* NewYorkLarge-HeavyItalic.otf */,
+				E1166D00285666790046A442 /* NewYorkExtraLarge-Heavy.otf */,
+				E1166D01285666790046A442 /* NewYorkSmall-Black.otf */,
+				E1166D02285666790046A442 /* NewYorkLarge-SemiboldItalic.otf */,
+				E1166D03285666790046A442 /* NewYorkExtraLarge-BoldItalic.otf */,
+				E1166D04285666790046A442 /* NewYorkExtraLarge-MediumItalic.otf */,
+				E1166D05285666790046A442 /* NewYork.ttf */,
+				E1166D06285666790046A442 /* NewYorkExtraLarge-HeavyItalic.otf */,
+				E1166D07285666790046A442 /* NewYorkLarge-MediumItalic.otf */,
+				E1166D08285666790046A442 /* NewYorkMedium-SemiboldItalic.otf */,
+				E1166D09285666790046A442 /* NewYorkSmall-SemiboldItalic.otf */,
+				E1166D0A285666790046A442 /* NewYorkMedium-BoldItalic.otf */,
+				E1166D0B285666790046A442 /* NewYorkItalic.ttf */,
+				E1166D0C285666790046A442 /* NewYorkMedium-MediumItalic.otf */,
+				E1166D0D285666790046A442 /* NewYorkLarge-Bold.otf */,
+				E1166D0E285666790046A442 /* NewYorkMedium-Bold.otf */,
+				E1166D0F285666790046A442 /* NewYorkLarge-Heavy.otf */,
+				E1166D10285666790046A442 /* NewYorkExtraLarge-SemiboldItalic.otf */,
+				E1166D11285666790046A442 /* NewYorkSmall-Semibold.otf */,
+				E1166D12285666790046A442 /* NewYorkExtraLarge-Regular.otf */,
+				E1166D13285666790046A442 /* NewYorkSmall-RegularItalic.otf */,
+				E1166D14285666790046A442 /* NewYorkMedium-Black.otf */,
+				E1166D15285666790046A442 /* NewYorkLarge-Regular.otf */,
+				E1166D16285666790046A442 /* NewYorkSmall-Heavy.otf */,
+				E1166D17285666790046A442 /* NewYorkLarge-Semibold.otf */,
+				E1166D18285666790046A442 /* NewYorkExtraLarge-Black.otf */,
+				E1166D19285666790046A442 /* NewYorkLarge-RegularItalic.otf */,
+				E1166D1A285666790046A442 /* NewYorkMedium-Regular.otf */,
+				E1166D1B285666790046A442 /* NewYorkMedium-Semibold.otf */,
+				E1166D1C285666790046A442 /* NewYorkLarge-BoldItalic.otf */,
+				E1166D1D285666790046A442 /* NewYorkSmall-Regular.otf */,
+				E1166D1E285666790046A442 /* NewYorkSmall-MediumItalic.otf */,
+			);
+			path = "New York";
+			sourceTree = "<group>";
+		};
+		E14EE46B28EB871300582573 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E1AB0EC628634CC800873FEE /* RootViewController.swift */,
+				E1E73B10284E62E50016FFF2 /* Main.storyboard */,
+				E1AA7A89285263AF000EC649 /* ProductCell */,
+				E165217228F4EB5F00662B36 /* TabBar */,
+				E1E04168287869610080C5D4 /* SelectLocationTableViewCell.swift */,
+				E1E041662878693E0080C5D4 /* SelectLockerViewController.swift */,
+				E1E041642878689B0080C5D4 /* SelectLocationViewController.swift */,
+				E134B888287845770011FF26 /* VerifySMSCodeViewController.swift */,
+				E134B886287845350011FF26 /* VerifyPhoneViewController.swift */,
+				E134B884287821D90011FF26 /* PaymentHistoryTableViewCell.swift */,
+				E134B88228781BE40011FF26 /* PaymentHistoryViewController.swift */,
+				E134B880287765BB0011FF26 /* PurchaseViewController.swift */,
+				E134B87228775E800011FF26 /* AddNewCardViewController.swift */,
+				E14EE47428EBA8C700582573 /* SignUp */,
+				E1D198B128ED26A800F8C077 /* SignInForgot */,
+				E134B87428775ED40011FF26 /* EditProfileViewController.swift */,
+				E134B8702877278C0011FF26 /* PaymenMethodsViewController.swift */,
+				E134B86E287727460011FF26 /* PaymentTableViewCell.swift */,
+				E1E59DE62875E53600B08A03 /* UserListTableViewCell.swift */,
+				E1E59DE42875E4DF00B08A03 /* UserListViewController.swift */,
+				E115310E28704FC800000B09 /* OfferDetailsViewController.swift */,
+				E1E59DE82875FED100B08A03 /* CreateOfferViewController.swift */,
+				E1E1EB25285A687A0087C39E /* ChatTableViewCell.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		E14EE47428EBA8C700582573 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				E134B878287761020011FF26 /* SignUpViewController.swift */,
+				E14EE47228EBA15E00582573 /* RecoveryCoordinator.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		E165216E28F4EA2100662B36 /* Purchased */ = {
+			isa = PBXGroup;
+			children = (
+				E165216C28F3DA9F00662B36 /* PurchasedCoordinator.swift */,
+				E1AB0EC828634CFF00873FEE /* PurchasedViewController.swift */,
+			);
+			path = Purchased;
+			sourceTree = "<group>";
+		};
+		E165217128F4EA7700662B36 /* Sell */ = {
+			isa = PBXGroup;
+			children = (
+				E165216F28F4EA7000662B36 /* SellCoordinator.swift */,
+				E1AB0ECC28639EC000873FEE /* SellViewController.swift */,
+			);
+			path = Sell;
+			sourceTree = "<group>";
+		};
+		E165217228F4EB5F00662B36 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E165216A28F3CFE000662B36 /* MainTabBarCoordinator.swift */,
+				E1AB0ECA2863505600873FEE /* RootTabBarController.swift */,
+				E165217128F4EA7700662B36 /* Sell */,
+				E165216E28F4EA2100662B36 /* Purchased */,
+				E165217528F4EDD800662B36 /* Chat */,
+				E165217828F4EF5800662B36 /* Profile */,
+				E165217B28F4F02B00662B36 /* Notifications */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E165217528F4EDD800662B36 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E165217328F4EDCD00662B36 /* ChatCoordinator.swift */,
+				E19E87AF2864ED500025BFAE /* ChatsViewController.swift */,
+				E1592EB128770ACE00CB8FA9 /* ChatViewController.swift */,
+				E1592EAF2876F9C300CB8FA9 /* ChatMessageTableViewCell.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		E165217828F4EF5800662B36 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E165217628F4EF5300662B36 /* ProfileCoordinator.swift */,
+				E19E87B12866104E0025BFAE /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E165217B28F4F02B00662B36 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				E165217928F4F02500662B36 /* NotificationsCoordinator.swift */,
+				E1AB1AE12864E42900873FEE /* NotificationsViewController.swift */,
+				E1AB1ADF2864E15D00873FEE /* NotificationTableViewCell.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		E1AA7A89285263AF000EC649 /* ProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				E1AA7A85285263A6000EC649 /* ProductTableViewCell.swift */,
+				E1AA7A86285263A6000EC649 /* ProductTableViewCell.xib */,
+			);
+			path = ProductCell;
+			sourceTree = "<group>";
+		};
+		E1D198B128ED26A800F8C077 /* SignInForgot */ = {
+			isa = PBXGroup;
+			children = (
+				E1D198AF28ED267D00F8C077 /* SignInForgotCoordinator.swift */,
+				E134B876287760C80011FF26 /* SignInViewController.swift */,
+				E1D198B228ED296E00F8C077 /* Forgot */,
+			);
+			path = SignInForgot;
+			sourceTree = "<group>";
+		};
+		E1D198B228ED296E00F8C077 /* Forgot */ = {
+			isa = PBXGroup;
+			children = (
+				E134B87A2877612E0011FF26 /* RecoveryViewController.swift */,
+				E134B87C2877615D0011FF26 /* VerifyViewController.swift */,
+				E134B87E287761930011FF26 /* SetupNewPasswordViewController.swift */,
+			);
+			path = Forgot;
+			sourceTree = "<group>";
+		};
+		E1D198D528EE1BF100F8C077 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1D198D328EE1BEB00F8C077 /* UserModel.swift */,
+				E1D198D628EE226400F8C077 /* SigInModel.swift */,
+				E1A2691828F7758A00635B87 /* SignUpModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E1D198DA28EE2CA600F8C077 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E1D198D528EE1BF100F8C077 /* Models */,
+				E1D198DB28EE2F0900F8C077 /* API.swift */,
+				E1D198DD28EF749500F8C077 /* API_Request.swift */,
+				E1A2691A28F7BA8900635B87 /* API_GetRequest.swift */,
+				E14EE46928EB852400582573 /* CombineNetworkService.swift */,
+				E1D198D828EE2BFC00F8C077 /* BaseRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E1E73AFE284E62E50016FFF2 = {
+			isa = PBXGroup;
+			children = (
+				E1E73B09284E62E50016FFF2 /* Silk Road Locker Exchange */,
+				E1E73B08284E62E50016FFF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1E73B08284E62E50016FFF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1E73B07284E62E50016FFF2 /* Silk Road Locker Exchange.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1E73B09284E62E50016FFF2 /* Silk Road Locker Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				E1E73B0A284E62E50016FFF2 /* AppDelegate.swift */,
+				E1E73B0C284E62E50016FFF2 /* SceneDelegate.swift */,
+				E1E73B0E284E62E50016FFF2 /* ViewController.swift */,
+				E1D198DA28EE2CA600F8C077 /* API */,
+				E14EE46C28EB890300582573 /* Coordinator.swift */,
+				E14EE46E28EB89D200582573 /* Storyboarded.swift */,
+				E14EE47028EB8D5900582573 /* MainCoordinator.swift */,
+				E165217C28F4F14B00662B36 /* BaseCoordenator.swift */,
+				E14EE46B28EB871300582573 /* VC */,
+				E17474B0284E6D2400ACF961 /* DGView.swift */,
+				E1E73B16284E62EC0016FFF2 /* Assets.xcassets */,
+				E1E73B18284E62EC0016FFF2 /* LaunchScreen.storyboard */,
+				E1E73B1B284E62EC0016FFF2 /* Info.plist */,
+				E1166CEC285666790046A442 /* New York */,
+				E1E73B13284E62E50016FFF2 /* Silk_Road_Locker_Exchange.xcdatamodeld */,
+			);
+			path = "Silk Road Locker Exchange";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1E73B06284E62E50016FFF2 /* Silk Road Locker Exchange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E73B1E284E62EC0016FFF2 /* Build configuration list for PBXNativeTarget "Silk Road Locker Exchange" */;
+			buildPhases = (
+				E1E73B03284E62E50016FFF2 /* Sources */,
+				E1E73B04284E62E50016FFF2 /* Frameworks */,
+				E1E73B05284E62E50016FFF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Silk Road Locker Exchange";
+			productName = "Silk Road Locker Exchange";
+			productReference = E1E73B07284E62E50016FFF2 /* Silk Road Locker Exchange.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1E73AFF284E62E50016FFF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E1E73B06284E62E50016FFF2 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = E1E73B02284E62E50016FFF2 /* Build configuration list for PBXProject "Silk Road Locker Exchange" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1E73AFE284E62E50016FFF2;
+			productRefGroup = E1E73B08284E62E50016FFF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1E73B06284E62E50016FFF2 /* Silk Road Locker Exchange */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1E73B05284E62E50016FFF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1166D4E285666790046A442 /* NewYorkLarge-BoldItalic.otf in Resources */,
+				E1166D21285666790046A442 /* NewYorkMedium-RegularItalic.otf in Resources */,
+				E1E73B1A284E62EC0016FFF2 /* LaunchScreen.storyboard in Resources */,
+				E1AA7A88285263A6000EC649 /* ProductTableViewCell.xib in Resources */,
+				E1166D36285666790046A442 /* NewYorkExtraLarge-MediumItalic.otf in Resources */,
+				E1166D2F285666790046A442 /* NewYorkMedium-Heavy.otf in Resources */,
+				E1166D29285666790046A442 /* NewYorkLarge-BlackItalic.otf in Resources */,
+				E1166D33285666790046A442 /* NewYorkSmall-Black.otf in Resources */,
+				E1166D20285666790046A442 /* NewYorkExtraLarge-BlackItalic.otf in Resources */,
+				E1166D28285666790046A442 /* NewYorkSmall-Medium.otf in Resources */,
+				E1166D2A285666790046A442 /* NewYorkLarge-Medium.otf in Resources */,
+				E1166D23285666790046A442 /* NewYorkExtraLarge-Medium.otf in Resources */,
+				E1166D3B285666790046A442 /* NewYorkSmall-SemiboldItalic.otf in Resources */,
+				E1166D2E285666790046A442 /* NewYorkMedium-BlackItalic.otf in Resources */,
+				E1166D3E285666790046A442 /* NewYorkMedium-MediumItalic.otf in Resources */,
+				E1166D4F285666790046A442 /* NewYorkSmall-Regular.otf in Resources */,
+				E1E73B17284E62EC0016FFF2 /* Assets.xcassets in Resources */,
+				E1166D43285666790046A442 /* NewYorkSmall-Semibold.otf in Resources */,
+				E1166D46285666790046A442 /* NewYorkMedium-Black.otf in Resources */,
+				E1166D49285666790046A442 /* NewYorkLarge-Semibold.otf in Resources */,
+				E1166D4B285666790046A442 /* NewYorkLarge-RegularItalic.otf in Resources */,
+				E1166D30285666790046A442 /* NewYorkSmall-HeavyItalic.otf in Resources */,
+				E1166D24285666790046A442 /* NewYorkSmall-Bold.otf in Resources */,
+				E1E73B12284E62E50016FFF2 /* Main.storyboard in Resources */,
+				E1166D2B285666790046A442 /* NewYorkLarge-Black.otf in Resources */,
+				E1166D42285666790046A442 /* NewYorkExtraLarge-SemiboldItalic.otf in Resources */,
+				E1166D3F285666790046A442 /* NewYorkLarge-Bold.otf in Resources */,
+				E1166D34285666790046A442 /* NewYorkLarge-SemiboldItalic.otf in Resources */,
+				E1166D3A285666790046A442 /* NewYorkMedium-SemiboldItalic.otf in Resources */,
+				E1166D47285666790046A442 /* NewYorkLarge-Regular.otf in Resources */,
+				E1166D50285666790046A442 /* NewYorkSmall-MediumItalic.otf in Resources */,
+				E1166D35285666790046A442 /* NewYorkExtraLarge-BoldItalic.otf in Resources */,
+				E1166D3C285666790046A442 /* NewYorkMedium-BoldItalic.otf in Resources */,
+				E1166D25285666790046A442 /* NewYorkExtraLarge-Bold.otf in Resources */,
+				E1166D48285666790046A442 /* NewYorkSmall-Heavy.otf in Resources */,
+				E1166D4D285666790046A442 /* NewYorkMedium-Semibold.otf in Resources */,
+				E1166D38285666790046A442 /* NewYorkExtraLarge-HeavyItalic.otf in Resources */,
+				E1166D22285666790046A442 /* NewYorkSmall-BoldItalic.otf in Resources */,
+				E1166D27285666790046A442 /* NewYorkMedium-HeavyItalic.otf in Resources */,
+				E1166D32285666790046A442 /* NewYorkExtraLarge-Heavy.otf in Resources */,
+				E1166D44285666790046A442 /* NewYorkExtraLarge-Regular.otf in Resources */,
+				E1166D2C285666790046A442 /* NewYorkMedium-Medium.otf in Resources */,
+				E1166D39285666790046A442 /* NewYorkLarge-MediumItalic.otf in Resources */,
+				E1166D31285666790046A442 /* NewYorkLarge-HeavyItalic.otf in Resources */,
+				E1166D2D285666790046A442 /* NewYorkExtraLarge-Semibold.otf in Resources */,
+				E1166D1F285666790046A442 /* NewYorkExtraLarge-RegularItalic.otf in Resources */,
+				E1166D3D285666790046A442 /* NewYorkItalic.ttf in Resources */,
+				E1166D4A285666790046A442 /* NewYorkExtraLarge-Black.otf in Resources */,
+				E1166D41285666790046A442 /* NewYorkLarge-Heavy.otf in Resources */,
+				E1166D4C285666790046A442 /* NewYorkMedium-Regular.otf in Resources */,
+				E1166D26285666790046A442 /* NewYorkSmall-BlackItalic.otf in Resources */,
+				E1166D45285666790046A442 /* NewYorkSmall-RegularItalic.otf in Resources */,
+				E1166D37285666790046A442 /* NewYork.ttf in Resources */,
+				E1166D40285666790046A442 /* NewYorkMedium-Bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1E73B03284E62E50016FFF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E134B889287845770011FF26 /* VerifySMSCodeViewController.swift in Sources */,
+				E14EE47128EB8D5900582573 /* MainCoordinator.swift in Sources */,
+				E1AB1AE02864E15D00873FEE /* NotificationTableViewCell.swift in Sources */,
+				E1D198D928EE2BFC00F8C077 /* BaseRequest.swift in Sources */,
+				E1E73B0F284E62E50016FFF2 /* ViewController.swift in Sources */,
+				E1AB0ECB2863505600873FEE /* RootTabBarController.swift in Sources */,
+				E134B885287821D90011FF26 /* PaymentHistoryTableViewCell.swift in Sources */,
+				E1E041652878689B0080C5D4 /* SelectLocationViewController.swift in Sources */,
+				E14EE46A28EB852400582573 /* CombineNetworkService.swift in Sources */,
+				E134B8712877278C0011FF26 /* PaymenMethodsViewController.swift in Sources */,
+				E1D198B028ED267D00F8C077 /* SignInForgotCoordinator.swift in Sources */,
+				E134B87F287761930011FF26 /* SetupNewPasswordViewController.swift in Sources */,
+				E1A2691928F7758A00635B87 /* SignUpModel.swift in Sources */,
+				E134B887287845350011FF26 /* VerifyPhoneViewController.swift in Sources */,
+				E1AB1AE22864E42900873FEE /* NotificationsViewController.swift in Sources */,
+				E134B87328775E800011FF26 /* AddNewCardViewController.swift in Sources */,
+				E134B879287761020011FF26 /* SignUpViewController.swift in Sources */,
+				E165217728F4EF5300662B36 /* ProfileCoordinator.swift in Sources */,
+				E115310F28704FC800000B09 /* OfferDetailsViewController.swift in Sources */,
+				E134B881287765BB0011FF26 /* PurchaseViewController.swift in Sources */,
+				E1D198DE28EF749500F8C077 /* API_Request.swift in Sources */,
+				E1E59DE52875E4DF00B08A03 /* UserListViewController.swift in Sources */,
+				E165217A28F4F02500662B36 /* NotificationsCoordinator.swift in Sources */,
+				E14EE47328EBA15E00582573 /* RecoveryCoordinator.swift in Sources */,
+				E19E87B02864ED500025BFAE /* ChatsViewController.swift in Sources */,
+				E165217428F4EDCD00662B36 /* ChatCoordinator.swift in Sources */,
+				E17474B1284E6D2400ACF961 /* DGView.swift in Sources */,
+				E1E73B0B284E62E50016FFF2 /* AppDelegate.swift in Sources */,
+				E165217028F4EA7000662B36 /* SellCoordinator.swift in Sources */,
+				E1A2691B28F7BA8900635B87 /* API_GetRequest.swift in Sources */,
+				E165216D28F3DA9F00662B36 /* PurchasedCoordinator.swift in Sources */,
+				E1592EB02876F9C300CB8FA9 /* ChatMessageTableViewCell.swift in Sources */,
+				E134B87B2877612E0011FF26 /* RecoveryViewController.swift in Sources */,
+				E1592EB228770ACE00CB8FA9 /* ChatViewController.swift in Sources */,
+				E1E59DE92875FED100B08A03 /* CreateOfferViewController.swift in Sources */,
+				E134B87D2877615D0011FF26 /* VerifyViewController.swift in Sources */,
+				E134B86F287727460011FF26 /* PaymentTableViewCell.swift in Sources */,
+				E14EE46F28EB89D200582573 /* Storyboarded.swift in Sources */,
+				E1E73B0D284E62E50016FFF2 /* SceneDelegate.swift in Sources */,
+				E1E59DE72875E53600B08A03 /* UserListTableViewCell.swift in Sources */,
+				E1AB0ECD28639EC000873FEE /* SellViewController.swift in Sources */,
+				E134B877287760C80011FF26 /* SignInViewController.swift in Sources */,
+				E165216B28F3CFE000662B36 /* MainTabBarCoordinator.swift in Sources */,
+				E1E041672878693E0080C5D4 /* SelectLockerViewController.swift in Sources */,
+				E1E1EB26285A687A0087C39E /* ChatTableViewCell.swift in Sources */,
+				E1E73B15284E62E50016FFF2 /* Silk_Road_Locker_Exchange.xcdatamodeld in Sources */,
+				E14EE46D28EB890300582573 /* Coordinator.swift in Sources */,
+				E1AB0EC728634CC800873FEE /* RootViewController.swift in Sources */,
+				E1E04169287869610080C5D4 /* SelectLocationTableViewCell.swift in Sources */,
+				E19E87B22866104E0025BFAE /* ProfileViewController.swift in Sources */,
+				E134B88328781BE40011FF26 /* PaymentHistoryViewController.swift in Sources */,
+				E1AA7A87285263A6000EC649 /* ProductTableViewCell.swift in Sources */,
+				E134B87528775ED40011FF26 /* EditProfileViewController.swift in Sources */,
+				E165217D28F4F14B00662B36 /* BaseCoordenator.swift in Sources */,
+				E1D198D428EE1BEB00F8C077 /* UserModel.swift in Sources */,
+				E1D198D728EE226400F8C077 /* SigInModel.swift in Sources */,
+				E1D198DC28EE2F0900F8C077 /* API.swift in Sources */,
+				E1AB0EC928634CFF00873FEE /* PurchasedViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E1E73B10284E62E50016FFF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1E73B11284E62E50016FFF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1E73B18284E62EC0016FFF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1E73B19284E62EC0016FFF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1E73B1C284E62EC0016FFF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1E73B1D284E62EC0016FFF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1E73B1F284E62EC0016FFF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LVF92Q9KF6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Silk Road Locker Exchange/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosDev.Silk-Road-Locker-Exchange";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E1E73B20284E62EC0016FFF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LVF92Q9KF6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Silk Road Locker Exchange/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosDev.Silk-Road-Locker-Exchange";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1E73B02284E62E50016FFF2 /* Build configuration list for PBXProject "Silk Road Locker Exchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E73B1C284E62EC0016FFF2 /* Debug */,
+				E1E73B1D284E62EC0016FFF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E73B1E284E62EC0016FFF2 /* Build configuration list for PBXNativeTarget "Silk Road Locker Exchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E73B1F284E62EC0016FFF2 /* Debug */,
+				E1E73B20284E62EC0016FFF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E1E73B13284E62E50016FFF2 /* Silk_Road_Locker_Exchange.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E1E73B14284E62E50016FFF2 /* Silk_Road_Locker_Exchange.xcdatamodel */,
+			);
+			currentVersion = E1E73B14284E62E50016FFF2 /* Silk_Road_Locker_Exchange.xcdatamodel */;
+			path = Silk_Road_Locker_Exchange.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E1E73AFF284E62E50016FFF2 /* Project object */;
+}
