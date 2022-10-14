@@ -9,8 +9,13 @@ import Foundation
 import UIKit
 import Combine
 
+protocol UserInfoDelegat {
+    func setUserInfo(_ model:UserModel)
+}
+
 class ProfileCoordinator: BaseCoordenator {
     var errorDelegat: ErrorProtocol?
+    let profileDelegat:UserInfoDelegat?
     
     var anyCancellables = Set<AnyCancellable>()
     

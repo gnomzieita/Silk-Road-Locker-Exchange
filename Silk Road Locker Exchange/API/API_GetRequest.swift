@@ -24,7 +24,7 @@ struct GetSigInBaseRequest: BaseRequest {
     }
 }
 
-//TODO: reset_password
+//TODO: /users/reset_password
 struct RequestCodeRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/users/reset_password")
     var httpMethod: HTTPMethod = .POST
@@ -103,6 +103,20 @@ struct GetSigUpBaseRequest: BaseRequest {
     init(_ model:SignUpModel) {
         self.httpBody = ["user":model.dictionary as Any]
     }
+}
+
+//TODO: /orders
+struct CreateOrderBaseRequest: BaseRequest {
+    var url: URL = API.server.getURLwithPath(path: "/order")
+    var httpMethod: HTTPMethod = .POST
+    var queryItems: [String : String]?
+    var headers: [String : String]?
     
+    typealias ReturnType = SignUpModel
     
+    var httpBody: [String: Any]?
+
+    init(_ offer_id:String) {
+        self.httpBody = ["offer_id":offer_id]
+    }
 }

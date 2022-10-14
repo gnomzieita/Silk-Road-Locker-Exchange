@@ -792,7 +792,7 @@ NY 10011</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgE-0l-tdP">
-                                <rect key="frame" x="20" y="190" width="374" height="496"/>
+                                <rect key="frame" x="20" y="190" width="374" height="500"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcy-04-d7E">
                                         <rect key="frame" x="6" y="6" width="90" height="100"/>
@@ -1031,7 +1031,7 @@ NY 10011</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrG-BP-3eb">
-                                        <rect key="frame" x="6" y="320" width="90" height="170"/>
+                                        <rect key="frame" x="6" y="320" width="90" height="174"/>
                                         <color key="backgroundColor" name="Lime Green"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
@@ -1045,7 +1045,7 @@ NY 10011</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iN-fx-fJa">
-                                        <rect key="frame" x="97" y="320" width="89.5" height="170"/>
+                                        <rect key="frame" x="97" y="320" width="89.5" height="174"/>
                                         <color key="backgroundColor" name="Lime Green"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
@@ -1059,7 +1059,7 @@ NY 10011</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9X-Pl-icT">
-                                        <rect key="frame" x="187.5" y="320" width="90" height="170"/>
+                                        <rect key="frame" x="187.5" y="320" width="90" height="174"/>
                                         <color key="backgroundColor" name="Lime Green"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
@@ -1073,7 +1073,7 @@ NY 10011</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75b-5g-1vA">
-                                        <rect key="frame" x="278.5" y="320" width="89.5" height="170"/>
+                                        <rect key="frame" x="278.5" y="320" width="89.5" height="174"/>
                                         <color key="backgroundColor" name="Lime Green"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
@@ -1214,7 +1214,7 @@ NY 10011</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MON-eR-fb0">
-                                <rect key="frame" x="112" y="722" width="90" height="80"/>
+                                <rect key="frame" x="112" y="726" width="90" height="80"/>
                                 <color key="backgroundColor" name="Lime Green"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MON-eR-fb0" secondAttribute="height" multiplier="9:8" id="9z9-tj-IU6"/>
@@ -1233,7 +1233,7 @@ NY 10011</string>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4f-cP-bdf">
-                                <rect key="frame" x="212" y="722" width="90" height="140"/>
+                                <rect key="frame" x="212" y="726" width="90" height="140"/>
                                 <color key="backgroundColor" name="Lime Green"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="U4f-cP-bdf" secondAttribute="height" multiplier="9:14" id="9Y5-g7-7tZ"/>
@@ -1250,7 +1250,7 @@ NY 10011</string>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37o-o0-0oL">
-                                <rect key="frame" x="218.5" y="694" width="77" height="20"/>
+                                <rect key="frame" x="218.5" y="698" width="77" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="8jO-jb-0lP"/>
                                 </constraints>
@@ -1259,7 +1259,7 @@ NY 10011</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RV-d1-uWH">
-                                <rect key="frame" x="124" y="694" width="66" height="20"/>
+                                <rect key="frame" x="124" y="698" width="66" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="FuO-sL-Oys"/>
                                 </constraints>
@@ -2420,6 +2420,7 @@ Transaction complete</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
+                                    <action selector="emailVerificationTap:" destination="clw-hc-sAu" eventType="touchUpInside" id="Chz-VL-eP5"/>
                                     <segue destination="3dn-9n-WCl" kind="show" id="mSO-0S-1xB"/>
                                 </connections>
                             </button>
@@ -2429,6 +2430,7 @@ Transaction complete</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
+                                    <action selector="phoneVerificationTap:" destination="clw-hc-sAu" eventType="touchUpInside" id="LeV-MI-cg6"/>
                                     <segue destination="mE6-UK-eI7" kind="show" id="w1S-O2-t6J"/>
                                 </connections>
                             </button>
@@ -2504,8 +2506,15 @@ Transaction complete</string>
                                     <segue destination="SL8-gC-5TK" kind="show" id="ujs-0Q-3YT"/>
                                 </connections>
                             </button>
+                            <connections>
+                                <action selector="settingsTap:" destination="clw-hc-sAu" id="3Rf-dy-VQX"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="avatarImage" destination="XGb-BK-eZX" id="LhK-xC-Cx4"/>
+                        <outlet property="userName" destination="MAY-jk-kIY" id="lFd-G0-Ktg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4t-of-3do" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
