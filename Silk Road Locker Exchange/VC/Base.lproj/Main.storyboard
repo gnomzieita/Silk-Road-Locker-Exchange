@@ -1542,7 +1542,7 @@ NY 10011</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification complete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNn-6b-Mzq">
-                                <rect key="frame" x="78" y="320" width="258" height="29"/>
+                                <rect key="frame" x="94.5" y="320" width="225" height="28"/>
                                 <fontDescription key="fontDescription" name="NewYork-Bold" family="New York" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1589,7 +1589,7 @@ NY 10011</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eX-Db-mo6">
-                                <rect key="frame" x="-16241.5" y="320" width="32897" height="119.5"/>
+                                <rect key="frame" x="-16239" y="320" width="32892" height="116.5"/>
                                 <string key="text">QR Code sent via text.
 
 Proceed to locker location 
@@ -2175,7 +2175,7 @@ Transaction complete</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tony" translatesAutoresizingMaskIntoConstraints="NO" id="3Xe-tU-tK0" customClass="DesignableImageView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
-                                        <rect key="frame" x="28" y="-1.5" width="36" height="36"/>
+                                        <rect key="frame" x="28" y="-1.6666666666666679" width="36" height="36.333333333333343"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="P8k-L2-ucH"/>
                                             <constraint firstAttribute="width" constant="36" id="vGb-VC-s9T"/>
@@ -2718,17 +2718,17 @@ Transaction complete</string>
                                 <color key="onTintColor" red="0.5450980392" green="0.74509803919999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="click to insert" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkw-Ks-RUX">
-                                <rect key="frame" x="213.5" y="582" width="188.5" height="18.5"/>
+                                <rect key="frame" x="213.5" y="581.5" width="188.5" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="click to insert" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32j-3S-F1U">
-                                <rect key="frame" x="213.5" y="628" width="188.5" height="18.5"/>
+                                <rect key="frame" x="213.5" y="627.5" width="188.5" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="click to insert" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Flu-ZQ-1t9">
-                                <rect key="frame" x="213.5" y="674" width="188.5" height="18.5"/>
+                                <rect key="frame" x="213.5" y="673.5" width="188.5" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -2808,7 +2808,7 @@ Transaction complete</string>
                     <navigationItem key="navigationItem" title="Edit profile" id="bKU-8k-ZnE">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="JsL-ci-Wkx">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="W66-jc-mna">
-                                <rect key="frame" x="302" y="5.5" width="92" height="33.5"/>
+                                <rect key="frame" x="302" y="5.5" width="92" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save">
@@ -4951,7 +4951,7 @@ to pick up the item.</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwB-Bg-PbL">
-                                <rect key="frame" x="68" y="320" width="278" height="48"/>
+                                <rect key="frame" x="76.5" y="320" width="261.5" height="47"/>
                                 <string key="text">Please return all parts of item
 to locker</string>
                                 <fontDescription key="fontDescription" name="NewYork-Medium" family="New York" pointSize="20"/>

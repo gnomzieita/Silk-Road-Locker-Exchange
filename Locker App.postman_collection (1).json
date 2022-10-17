@@ -1,0 +1,6118 @@
+{
+	"info": {
+		"_postman_id": "8f065a5e-466b-42f7-8c5c-bd5200d86a0f",
+		"name": "Locker App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sign_up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n        \"first_name\": \"Test\",\n        \"last_name\": \"Test\",\n        \"email\": \"admin2@gmail.com\",\n        \"password\": \"password\",\n        \"password_confirmation\": \"password\",\n        \"phone\": \"+12012987481\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sign_up",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": {\n        \"first_name\": \"Test\",\n        \"last_name\": \"Test\",\n        \"email\": \"admin2@gmail.com\",\n        \"password\": \"password\",\n        \"password_confirmation\": \"password\",\n        \"phone\": \"+12012987481\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"signup"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f9aca8ff4fd242166d271b24e40a8cd8\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "c3c0fb90-dac0-4b78-85c3-82089c41b951"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.616384"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.16943359375, sql.active_record;dur=13.95849609375, !compile_template.action_view;dur=0.77197265625, !render_template.action_view;dur=0.87939453125, render_template.action_view;dur=1.81396484375, process.action_mailer;dur=11.61669921875, deliver.action_mailer;dur=326.7587890625, process_action.action_controller;dur=610.373291015625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User created successfully\",\n    \"user\": {\n        \"id\": 3,\n        \"first_name\": \"Test\",\n        \"last_name\": \"Test\",\n        \"email\": \"admin2@gmail.com\",\n        \"phone\": \"+12012987481\",\n        \"name\": \"Test Test\"\n    },\n    \"auth_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTk3MDUyNTIsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjN9.5ygd05D5aNZMYBoMqA9Sl6UA2wvlVsWL57J-vzEel8w\"\n}"
+				},
+				{
+					"name": "sign_up - Failed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": {\n        \"first_name\": \"Test\",\n        \"last_name\": \"Test\",\n        \"email\": \"\",\n        \"password\": \"password\",\n        \"password_confirmation\": \"password\",\n        \"phone\": \"03008651520\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"signup"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "9777b00a-6c79-447f-8681-2bf54bb259bb"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.227371"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.158203125, sql.active_record;dur=3.04443359375, process_action.action_controller;dur=222.08203125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errors\": [\n        \"Email can't be blank\",\n        \"Email is invalid\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "confirm email ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "55d620f8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users/email_confirm",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"email_confirm"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "confirm email -success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "token",
+									"value": "44759aa8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/email_confirm",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"email_confirm"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a463f9acbcfd70f31c799db6b3a4aae1\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "1c4d2061-a05b-4388-b522-f5806eee1d3f"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.181074"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.1357421875, sql.active_record;dur=25.4111328125, instantiation.active_record;dur=5.90283203125, process_action.action_controller;dur=51.2158203125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User confirmed successfully\"\n}"
+				},
+				{
+					"name": "confirm email - failure",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "token",
+									"value": "44759aa8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/email_confirm",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"email_confirm"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "1a5dff8b-bfb8-40b8-9f8c-0fd813c6723b"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.006677"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.139892578125, sql.active_record;dur=0.803955078125, instantiation.active_record;dur=0.016845703125, process_action.action_controller;dur=2.020751953125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Invalid token\"\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login - success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"user8@example.com\",\n  \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bd3f22d4318b9436ea41358af9716636\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "94226210-1883-4b9a-8187-4d8c26761eec"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.203894"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.122802734375, unpermitted_parameters.action_controller;dur=0.174072265625, sql.active_record;dur=0.523193359375, instantiation.active_record;dur=0.036865234375, process_action.action_controller;dur=199.9501953125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Logged in successfully\",\n    \"user\": {\n        \"id\": 8,\n        \"first_name\": \"Test\",\n        \"last_name\": \"Test\",\n        \"email\": \"user8@example.com\",\n        \"name\": \"Test Test\"\n    },\n    \"auth_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTkyNzQ5OTUsImlzcyI6Imlzc3Vlcl9uYW1lIiwiYXVkIjoiY2xpZW50IiwidXNlcl9pZCI6OH0.4ppEIYIsW9zC5mCR5ViQBBoE7SNQElH5-VbL8_erikA\"\n}"
+				},
+				{
+					"name": "login - failure",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"user1@example.com\",\n  \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "4a55be45-aea1-4791-8300-3d2dc0184e8e"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.136048"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "sql.active_record;dur=8.825927734375, start_processing.action_controller;dur=0.150146484375, unpermitted_parameters.action_controller;dur=0.09619140625, instantiation.active_record;dur=0.015869140625, process_action.action_controller;dur=1.93798828125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Invalid username / password\"\n}"
+				}
+			]
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTkyODAyMjksImlzcyI6Imlzc3Vlcl9uYW1lIiwiYXVkIjoiY2xpZW50IiwidXNlcl9pZCI6MTB9.hNfrIPTXhkTyKa2dvkQPncXhYjRDxr-vBugk6z401nA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"logout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "logout - success",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/logout",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "27c51ceb-2098-4008-9a41-8afceb429456"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.039041"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.18115234375, sql.active_record;dur=16.19482421875, instantiation.active_record;dur=13.3662109375, process_action.action_controller;dur=32.840087890625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				},
+				{
+					"name": "logout - failure",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/logout",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"logout"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "d23b65ae-f736-4fc8-873e-e3b41ec09dda"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.004167"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.09619140625, halted_callback.action_controller;dur=0.064208984375, process_action.action_controller;dur=0.557861328125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Invalid Request\"\n}"
+				}
+			]
+		},
+		{
+			"name": "forget_password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "user12@example.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users/forget_password",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"forget_password"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "forget_password - success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "user10@example.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/forget_password",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"forget_password"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a681aae2a37f3c4de86cf0fecca3abcd\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "f288f266-4edc-4f68-b868-158cda692f27"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.278504"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.2001953125, sql.active_record;dur=43.022705078125, instantiation.active_record;dur=25.996337890625, !compile_template.action_view;dur=0.72705078125, !render_template.action_view;dur=0.77197265625, render_template.action_view;dur=0.871337890625, process.action_mailer;dur=3.498779296875, deliver.action_mailer;dur=48.544189453125, process_action.action_controller;dur=125.502197265625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Password reset token has been sent\"\n}"
+				},
+				{
+					"name": "forget_password - failure",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "user12@example.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/forget_password",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"forget_password"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "b0fd5537-5bc5-482b-952c-989b13f2beef"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.010326"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.751953125, sql.active_record;dur=0.8857421875, instantiation.active_record;dur=0.02099609375, process_action.action_controller;dur=2.734619140625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Password reset call failed\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Reset_password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user[code]",
+							"value": "685072",
+							"type": "text"
+						},
+						{
+							"key": "user[password]",
+							"value": "password123",
+							"type": "text"
+						},
+						{
+							"key": "user[confirm_password]",
+							"value": "password123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users/reset_password",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"reset_password"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Reset_password - success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user[code]",
+									"value": "685071",
+									"type": "text"
+								},
+								{
+									"key": "user[password]",
+									"value": "password123",
+									"type": "text"
+								},
+								{
+									"key": "user[confirm_password]",
+									"value": "password123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/reset_password",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"reset_password"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6ccdefc7e598b5bded391bc843c28b75\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "1268983a-1ef1-47d5-97e0-045d70ef756f"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.376080"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.153076171875, sql.active_record;dur=39.541015625, instantiation.active_record;dur=6.20263671875, process_action.action_controller;dur=325.951171875"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"ok\",\n    \"message\": \"Password updated successfully\"\n}"
+				},
+				{
+					"name": "Reset_password - failure",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user[code]",
+									"value": "685072",
+									"type": "text"
+								},
+								{
+									"key": "user[password]",
+									"value": "password123",
+									"type": "text"
+								},
+								{
+									"key": "user[confirm_password]",
+									"value": "password123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/reset_password",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"reset_password"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "1d27da3a-c679-4217-a54f-aaa874fa7e89"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.009801"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.152099609375, sql.active_record;dur=1.44482421875, instantiation.active_record;dur=0.02197265625, process_action.action_controller;dur=2.470947265625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": [\n        \"Link not valid or expired. Try generating a new link.\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "profile_show",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTkyODEwMDMsImlzcyI6Imlzc3Vlcl9uYW1lIiwiYXVkIjoiY2xpZW50IiwidXNlcl9pZCI6MTB9.12KFxVhN0EuFyU21NIwsnQNCZN5bpIdEPsWLfW-Mg_I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/users/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "profile_show - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/users/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"profile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ae6dc03d3cc763429d717d5f7d34159f\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "ffd9a02d-3866-4a1a-b586-b5053317b087"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.007284"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.142333984375, sql.active_record;dur=1.38330078125, instantiation.active_record;dur=0.04345703125, process_action.action_controller;dur=4.203125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 3,\n        \"first_name\": \"Test\",\n        \"last_name\": \"Test\",\n        \"email\": \"admin2@gmail.com\",\n        \"phone\": \"+12012987481\",\n        \"name\": \"Test Test\"\n    }\n}"
+				},
+				{
+					"name": "profile_show - failure",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/users/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"profile"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "e9c364a6-e8af-4d50-9ae6-b63bc77e0b44"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.004313"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.094970703125, halted_callback.action_controller;dur=0.05419921875, process_action.action_controller;dur=0.40234375"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Invalid Request\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update_profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTkyODEwMDMsImlzcyI6Imlzc3Vlcl9uYW1lIiwiYXVkIjoiY2xpZW50IiwidXNlcl9pZCI6MTB9.12KFxVhN0EuFyU21NIwsnQNCZN5bpIdEPsWLfW-Mg_I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n    \"phone\": \"03008651520\",\n    \"password\": \"password\",\n    \"password_confirmation\": \"password\",\n    \"current_password\": \"password123\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users/update_profile",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"update_profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update_profile - failure",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": {\n    \"phone\": \"03008651520\",\n    \"password\": \"password\",\n    \"password_confirmation\": \"password\",\n    \"current_password\": \"password123\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/update_profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"update_profile"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "608db6b1-8ace-45a5-a328-65cdc0c34dbc"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.215529"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.1572265625, sql.active_record;dur=1.60693359375, instantiation.active_record;dur=0.052734375, process_action.action_controller;dur=209.275146484375"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errors\": \"Current password is incorrect\"\n}"
+				},
+				{
+					"name": "update_profile - success",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": {\n    \"phone\": \"+13324558954\",\n    \"password\": \"password\",\n    \"password_confirmation\": \"password\",\n    \"current_password\": \"password\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/update_profile",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"update_profile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b06536c907235bf79eaa4c695c39472\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "15dde36c-7c21-4676-8248-7693fff605f3"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.442244"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.142578125, sql.active_record;dur=10.89599609375, instantiation.active_record;dur=0.04443359375, process_action.action_controller;dur=440.04296875"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User has been updated successfully\",\n    \"user\": {\n        \"phone\": \"+13324558954\",\n        \"id\": 3,\n        \"email\": \"admin2@gmail.com\",\n        \"first_name\": \"Test\",\n        \"last_name\": \"Test\",\n        \"name\": \"Test Test\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "phone_verify_token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/users/phone_verify_token",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"phone_verify_token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "phone_verify_token -success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/users/phone_verify_token",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"phone_verify_token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"44c073eb355056c7825e19196a790331\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "5e78729a-72ab-4ef0-aabe-137fe9d43471"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.124512"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.09521484375, sql.active_record;dur=14.38037109375, instantiation.active_record;dur=6.275146484375, process_action.action_controller;dur=31.962158203125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Phone varification code has been sent to your phone\"\n}"
+				},
+				{
+					"name": "phone_verify_token",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/users/phone_verify_token",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"phone_verify_token"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "ece8f3a6-1ee6-4c61-9dd1-f4223dc0534f"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.015711"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.10107421875, halted_callback.action_controller;dur=0.1015625, process_action.action_controller;dur=5.12744140625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Invalid Request\"\n}"
+				}
+			]
+		},
+		{
+			"name": "phone_verify",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTkyODY1MDAsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjEwfQ.PmufVxX5a71KqfiRmqHrs14zdAWjEl5wI28oiDNKA0A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code",
+							"value": "460415",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users/phone_verify",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"phone_verify"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "phone_verify - success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "521290",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/phone_verify",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"phone_verify"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"be18351c1913722bbbd1133ac9ebf074\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "d3210824-868d-460c-b6b5-824a917b449f"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.077071"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.90576171875, sql.active_record;dur=28.216064453125, instantiation.active_record;dur=0.203369140625, process_action.action_controller;dur=56.7744140625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"521290\",\n    \"message\": \"Phone has been successfully verified\"\n}"
+				},
+				{
+					"name": "phone_verify - failure",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "521290",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/phone_verify",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"phone_verify"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "6c013b92-6a70-422c-a630-49347ad8f224"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.017106"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.115478515625, halted_callback.action_controller;dur=0.0947265625, process_action.action_controller;dur=5.615478515625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Invalid Request\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create new offers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA1NTc1MjMsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjF9.VJmfDZwJfghVSyQCe4mOGjASILZQ9Sknf9UYm41i9as",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "offer[image]",
+							"type": "file",
+							"src": "/home/zunair/Downloads/Qrcode.png"
+						},
+						{
+							"key": "offer[name]",
+							"value": "one offer - 2k22",
+							"type": "text"
+						},
+						{
+							"key": "offer[price]",
+							"value": "320",
+							"type": "text"
+						},
+						{
+							"key": "offer[buyer_id]",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "offer[width]",
+							"value": "10.0",
+							"type": "text"
+						},
+						{
+							"key": "offer[height]",
+							"value": "8.0",
+							"type": "text"
+						},
+						{
+							"key": "offer[size_unit]",
+							"value": "m",
+							"type": "text"
+						},
+						{
+							"key": "offer[weight]",
+							"value": "3.4",
+							"type": "text"
+						},
+						{
+							"key": "offer[weighing_unit]",
+							"value": "kg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/offers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"offers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create new offer - failure",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "offer[image]",
+									"type": "file",
+									"src": "/Users/tauqeerahmad/Downloads/ing_33594_19778.jpg"
+								},
+								{
+									"key": "offer[name]",
+									"value": "test offer",
+									"type": "text"
+								},
+								{
+									"key": "offer[price]",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "offer[buyer_id]",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/offers",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"offers"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "d9cd832a-f336-408b-994f-fbc0b9301e28"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.091121"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.179931640625, sql.active_record;dur=10.488037109375, instantiation.active_record;dur=5.68896484375, process_action.action_controller;dur=60.870849609375"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errors\": [\n        \"Seller and buyer should not be identical\"\n    ]\n}"
+				},
+				{
+					"name": "create new offers - success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "offer[image]",
+									"type": "file",
+									"src": "/home/muneeb/Pictures/Screenshot from 2022-08-01 16-16-37.png"
+								},
+								{
+									"key": "offer[name]",
+									"value": "test offer - 2k22",
+									"type": "text"
+								},
+								{
+									"key": "offer[price]",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "offer[buyer_id]",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "offer[width]",
+									"value": "10.0",
+									"type": "text"
+								},
+								{
+									"key": "offer[height]",
+									"value": "8.0",
+									"type": "text"
+								},
+								{
+									"key": "offer[size_unit]",
+									"value": "m",
+									"type": "text"
+								},
+								{
+									"key": "offer[weight]",
+									"value": "3.4",
+									"type": "text"
+								},
+								{
+									"key": "offer[weighing_unit]",
+									"value": "kg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/offers",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"offers"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7ef92f366220dbc4e97b670105a708b3\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "9e659985-0076-476e-a454-6678347a9e69"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.127998"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.13232421875, sql.active_record;dur=25.536376953125, instantiation.active_record;dur=0.155029296875, service_upload.active_storage;dur=3.402587890625, enqueue.active_job;dur=11.006103515625, process_action.action_controller;dur=125.20166015625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Offer has been created successfully\",\n    \"offer\": {\n        \"id\": 2,\n        \"name\": \"test offer - 2k22\",\n        \"price\": {\n            \"cents\": 100,\n            \"currency_iso\": \"USD\"\n        },\n        \"status\": \"sent\",\n        \"buyer_id\": 2,\n        \"seller_id\": 3,\n        \"weight\": 3.4,\n        \"weighing_unit\": \"kg\",\n        \"size\": {\n            \"width\": \"10.0\",\n            \"height\": \"8.0\",\n            \"size_unit\": \"m\"\n        },\n        \"price_usd\": \"$1.00\",\n        \"buyer_details\": {\n            \"id\": 2,\n            \"first_name\": \"Test\",\n            \"last_name\": \"Test\",\n            \"email\": \"admin1@gmail.com\",\n            \"phone\": \"+12012987481\",\n            \"name\": \"Test Test\"\n        },\n        \"seller_details\": {\n            \"id\": 3,\n            \"first_name\": \"Test\",\n            \"last_name\": \"Test\",\n            \"email\": \"admin2@gmail.com\",\n            \"phone\": \"+12012987481\",\n            \"name\": \"Test Test\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "received offers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA1NTc1MjMsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjF9.VJmfDZwJfghVSyQCe4mOGjASILZQ9Sknf9UYm41i9as",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/offers/received_offers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"offers",
+						"received_offers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "received offers - failure",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/offers/received_offers",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"offers",
+								"received_offers"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "d51d48d8-16fc-45bf-83b3-c2ece3f9109a"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.003465"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.242431640625, halted_callback.action_controller;dur=0.149169921875, process_action.action_controller;dur=0.79052734375"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Invalid Request\"\n}"
+				},
+				{
+					"name": "received offers - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/offers/received_offers",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"offers",
+								"received_offers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"496dde3d0dc5803466b8c475685af04d\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "9153c97d-e90e-471b-9d6f-1df189ec0bfe"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.044494"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.10986328125, sql.active_record;dur=21.015380859375, instantiation.active_record;dur=0.442626953125, process_action.action_controller;dur=41.54638671875"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"offers\": [\n        {\n            \"id\": 1,\n            \"name\": \"test offer - 2k22\",\n            \"price\": {\n                \"cents\": 100,\n                \"currency_iso\": \"USD\"\n            },\n            \"status\": \"rejected\",\n            \"buyer_id\": 2,\n            \"seller_id\": 1,\n            \"weight\": 3.4,\n            \"weighing_unit\": \"kg\",\n            \"size\": {\n                \"width\": \"10.0\",\n                \"height\": \"8.0\",\n                \"size_unit\": \"m\"\n            },\n            \"price_usd\": \"$1.00\",\n            \"buyer_details\": {\n                \"id\": 2,\n                \"first_name\": \"Test\",\n                \"last_name\": \"Test\",\n                \"email\": \"admin1@gmail.com\",\n                \"phone\": \"+12012987481\",\n                \"name\": \"Test Test\"\n            },\n            \"seller_details\": {\n                \"id\": 1,\n                \"first_name\": \"Test\",\n                \"last_name\": \"Test\",\n                \"email\": \"admin@gmail.com\",\n                \"phone\": \"+12012987484\",\n                \"name\": \"Test Test\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"name\": \"test offer - 2k22\",\n            \"price\": {\n                \"cents\": 100,\n                \"currency_iso\": \"USD\"\n            },\n            \"status\": \"sent\",\n            \"buyer_id\": 2,\n            \"seller_id\": 3,\n            \"weight\": 3.4,\n            \"weighing_unit\": \"kg\",\n            \"size\": {\n                \"width\": \"10.0\",\n                \"height\": \"8.0\",\n                \"size_unit\": \"m\"\n            },\n            \"price_usd\": \"$1.00\",\n            \"buyer_details\": {\n                \"id\": 2,\n                \"first_name\": \"Test\",\n                \"last_name\": \"Test\",\n                \"email\": \"admin1@gmail.com\",\n                \"phone\": \"+12012987481\",\n                \"name\": \"Test Test\"\n            },\n            \"seller_details\": {\n                \"id\": 3,\n                \"first_name\": \"Test\",\n                \"last_name\": \"Test\",\n                \"email\": \"admin2@gmail.com\",\n                \"phone\": \"+13324558954\",\n                \"name\": \"Test Test\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "sent offers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA1NTc1MjMsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjF9.VJmfDZwJfghVSyQCe4mOGjASILZQ9Sknf9UYm41i9as",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/offers/sent_offers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"offers",
+						"sent_offers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sent offers - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/offers/sent_offers",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"offers",
+								"sent_offers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5687e28043037dcaba694ab430d93810\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "0360b0eb-0527-44d5-8895-b62884689bee"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.007663"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.05859375, sql.active_record;dur=2.165283203125, instantiation.active_record;dur=0.1943359375, process_action.action_controller;dur=5.9912109375"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"offers\": [\n        {\n            \"id\": 2,\n            \"name\": \"test offer - 2k22\",\n            \"price\": {\n                \"cents\": 100,\n                \"currency_iso\": \"USD\"\n            },\n            \"status\": \"sent\",\n            \"buyer_id\": 2,\n            \"seller_id\": 3,\n            \"weight\": 3.4,\n            \"weighing_unit\": \"kg\",\n            \"size\": {\n                \"width\": \"10.0\",\n                \"height\": \"8.0\",\n                \"size_unit\": \"m\"\n            },\n            \"price_usd\": \"$1.00\",\n            \"buyer_details\": {\n                \"id\": 2,\n                \"first_name\": \"Test\",\n                \"last_name\": \"Test\",\n                \"email\": \"admin1@gmail.com\",\n                \"phone\": \"+12012987481\",\n                \"name\": \"Test Test\"\n            },\n            \"seller_details\": {\n                \"id\": 3,\n                \"first_name\": \"Test\",\n                \"last_name\": \"Test\",\n                \"email\": \"admin2@gmail.com\",\n                \"phone\": \"+13324558954\",\n                \"name\": \"Test Test\"\n            }\n        }\n    ]\n}"
+				},
+				{
+					"name": "sent offers -  failure",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/offers/sent_offers",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"offers",
+								"sent_offers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8acca811dd3b09305760bae81d90cc79\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "95182f1b-3958-4613-b832-f520aaad9218"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.011887"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.125732421875, sql.active_record;dur=3.764892578125, instantiation.active_record;dur=0.223388671875, process_action.action_controller;dur=8.13427734375"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"offers\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "cancel offer by seller",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA1NTc3OTgsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjJ9._YYe3ksIZB3ZcQ0i77d9FrnnYnSKGdR93-zVXlgmyVo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/offers/1/cancel_sell_offer",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"offers",
+						"1",
+						"cancel_sell_offer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "cancel offer by seller - failure",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/offers/1/cancel_sell_offer",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"offers",
+								"1",
+								"cancel_sell_offer"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "a38e65af-6c45-4e61-be23-90737745e696"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.011655"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.734375, sql.active_record;dur=2.42724609375, instantiation.active_record;dur=0.070556640625, halted_callback.action_controller;dur=0.064208984375, process_action.action_controller;dur=7.57666015625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"No offer found\"\n}"
+				},
+				{
+					"name": "cancel offer by seller - success",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/offers/1/cancel_sell_offer",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"offers",
+								"1",
+								"cancel_sell_offer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2bf95658ea8ba1d493f0eae0186a940b\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "da29cfb6-b14e-41c9-9027-ad78a1d8bd54"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.027399"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.2490234375, sql.active_record;dur=10.537841796875, instantiation.active_record;dur=0.452392578125, process_action.action_controller;dur=20.543212890625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Offer has been canceled successfully\",\n    \"offer\": {\n        \"seller_id\": 1,\n        \"status\": \"canceled\",\n        \"id\": 1,\n        \"name\": \"one offer - 2k22\",\n        \"price\": {\n            \"cents\": 320,\n            \"currency_iso\": \"USD\"\n        },\n        \"buyer_id\": 2,\n        \"weight\": 3.4,\n        \"weighing_unit\": \"kg\",\n        \"size\": {\n            \"width\": \"10.0\",\n            \"height\": \"8.0\",\n            \"size_unit\": \"m\"\n        },\n        \"price_usd\": \"$3.20\",\n        \"buyer_details\": {\n            \"id\": 2,\n            \"first_name\": \"Test\",\n            \"last_name\": \"Test\",\n            \"email\": \"admin1@gmail.com\",\n            \"phone\": \"+12012987481\",\n            \"name\": \"Test Test\"\n        },\n        \"seller_details\": {\n            \"id\": 1,\n            \"first_name\": \"Test\",\n            \"last_name\": \"Test\",\n            \"email\": \"admin@gmail.com\",\n            \"phone\": \"+12012987481\",\n            \"name\": \"Test Test\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "reject offer by buyer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA1NTc3OTgsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjJ9._YYe3ksIZB3ZcQ0i77d9FrnnYnSKGdR93-zVXlgmyVo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/offers/1/reject_buy_offer",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"offers",
+						"1",
+						"reject_buy_offer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "reject offer by buyer - offer not found",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/offers/1/reject_buy_offer",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"offers",
+								"1",
+								"reject_buy_offer"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "f82672fe-223e-4f57-b21e-aa3cac652f32"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.025082"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.25048828125, sql.active_record;dur=2.498779296875, instantiation.active_record;dur=0.08154296875, halted_callback.action_controller;dur=0.10302734375, process_action.action_controller;dur=8.81982421875"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"No offer found\"\n}"
+				},
+				{
+					"name": "reject offer by buyer - success",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/offers/1/reject_buy_offer",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"offers",
+								"1",
+								"reject_buy_offer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6659c0b8284d19b303e13bdab0f53c91\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "269c3e2f-b17a-4f57-9616-709647e90b33"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.057429"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.3017578125, sql.active_record;dur=22.189697265625, instantiation.active_record;dur=8.7197265625, process_action.action_controller;dur=54.2275390625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Offer has been rejected successfully\",\n    \"offer\": {\n        \"buyer_id\": 2,\n        \"status\": \"rejected\",\n        \"seller_id\": 1,\n        \"id\": 1,\n        \"name\": \"test offer - 2k22\",\n        \"price\": {\n            \"cents\": 100,\n            \"currency_iso\": \"USD\"\n        },\n        \"weight\": 3.4,\n        \"weighing_unit\": \"kg\",\n        \"size\": {\n            \"width\": \"10.0\",\n            \"height\": \"8.0\",\n            \"size_unit\": \"m\"\n        },\n        \"price_usd\": \"$1.00\",\n        \"buyer_details\": {\n            \"id\": 2,\n            \"first_name\": \"Test\",\n            \"last_name\": \"Test\",\n            \"email\": \"admin1@gmail.com\",\n            \"phone\": \"+12012987481\",\n            \"name\": \"Test Test\"\n        },\n        \"seller_details\": {\n            \"id\": 1,\n            \"first_name\": \"Test\",\n            \"last_name\": \"Test\",\n            \"email\": \"admin@gmail.com\",\n            \"phone\": \"+12012987484\",\n            \"name\": \"Test Test\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get offer details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA1NjA2NTUsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjF9.7rybKrEs7t9hsaIG-TA6GgSZ8-pb4ze_SJvWKJOH_L0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/offers/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"offers",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get offer details - failure",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/offers/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"offers",
+								"2"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "de6377f3-af21-4b40-a1ac-255d3cbb96c0"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.021108"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.218505859375, sql.active_record;dur=3.953369140625, instantiation.active_record;dur=0.03955078125, halted_callback.action_controller;dur=0.071044921875, process_action.action_controller;dur=16.39697265625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"No offer found\"\n}"
+				},
+				{
+					"name": "get offer details - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/offers/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"offers",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"39f0362df0340c8428af32dc53460f3d\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "1051e78d-05ae-4695-8f8f-2e037e5ddf1d"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.018717"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.38916015625, sql.active_record;dur=4.123779296875, instantiation.active_record;dur=3.191650390625, process_action.action_controller;dur=15.645751953125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"offer\": {\n        \"id\": 1,\n        \"name\": \"test offer - 2k22\",\n        \"price\": {\n            \"cents\": 100,\n            \"currency_iso\": \"USD\"\n        },\n        \"status\": \"rejected\",\n        \"buyer_id\": 2,\n        \"seller_id\": 1,\n        \"weight\": 3.4,\n        \"weighing_unit\": \"kg\",\n        \"size\": {\n            \"width\": \"10.0\",\n            \"height\": \"8.0\",\n            \"size_unit\": \"m\"\n        },\n        \"price_usd\": \"$1.00\",\n        \"buyer_details\": {\n            \"id\": 2,\n            \"first_name\": \"Test\",\n            \"last_name\": \"Test\",\n            \"email\": \"admin1@gmail.com\",\n            \"phone\": \"+12012987481\",\n            \"name\": \"Test Test\"\n        },\n        \"seller_details\": {\n            \"id\": 1,\n            \"first_name\": \"Test\",\n            \"last_name\": \"Test\",\n            \"email\": \"admin@gmail.com\",\n            \"phone\": \"+12012987484\",\n            \"name\": \"Test Test\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "buyers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA1NTc3OTgsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjJ9._YYe3ksIZB3ZcQ0i77d9FrnnYnSKGdR93-zVXlgmyVo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/users/buyers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"buyers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "buyers - Failure",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/users/buyers",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"buyers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7e49c5bd4195562e038611b212dcebad\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "ad482bca-4866-4838-9fe8-b76d5463eb94"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.043507"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.1005859375, sql.active_record;dur=21.228271484375, instantiation.active_record;dur=0.0986328125, process_action.action_controller;dur=33.1015625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"buyers\": []\n}"
+				},
+				{
+					"name": "buyers - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/users/buyers",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"buyers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a0681832e596196a1a88ccb85abaa5e3\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "c83003dd-15fb-416d-b37b-8baad870bca2"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.007032"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.111328125, sql.active_record;dur=1.62255859375, instantiation.active_record;dur=0.115478515625, process_action.action_controller;dur=4.2158203125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"buyers\": [\n        {\n            \"id\": 2,\n            \"first_name\": \"Test\",\n            \"last_name\": \"Test\",\n            \"email\": \"admin1@gmail.com\",\n            \"phone\": \"+12012987481\",\n            \"name\": \"Test Test\"\n        },\n        {\n            \"id\": 3,\n            \"first_name\": \"Test\",\n            \"last_name\": \"Test\",\n            \"email\": \"admin2@gmail.com\",\n            \"phone\": \"+13324558954\",\n            \"name\": \"Test Test\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "create order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTk0NTg2ODYsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjJ9.oelQawLthpnWpGVnVZE7s5RWUtBgTQ4mAC-C2TmZM2g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order[offer_id]",
+							"value": "13",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"orders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create order - Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order[offer_id]",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/orders",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"874720a765c2c23e5b19f023c8654473\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "fb0effda-8968-491e-a137-5f43d0bbe063"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.063466"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.12451171875, sql.active_record;dur=20.867919921875, instantiation.active_record;dur=4.495849609375, process_action.action_controller;dur=61.4150390625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Order has been created Successfuly\",\n    \"order\": {\n        \"id\": 26,\n        \"placed_at\": \"2022-08-05T12:42:45.158Z\",\n        \"expected_delivery_date\": \"2022-08-08T12:42:45.158Z\",\n        \"delivered_at\": null,\n        \"status\": \"pending\",\n        \"offer_details\": {\n            \"status\": \"accepted\",\n            \"seller_id\": 1,\n            \"id\": 1,\n            \"name\": \"test offer - 2k22\",\n            \"price\": {\n                \"cents\": 100,\n                \"currency_iso\": \"USD\"\n            },\n            \"buyer_id\": 2,\n            \"weight\": 3.4,\n            \"weighing_unit\": \"kg\",\n            \"size\": {\n                \"width\": \"10.0\",\n                \"height\": \"8.0\",\n                \"size_unit\": \"m\"\n            },\n            \"price_usd\": \"$1.00\",\n            \"buyer_details\": {\n                \"id\": 2,\n                \"first_name\": \"Test\",\n                \"last_name\": \"Test\",\n                \"email\": \"admin1@gmail.com\",\n                \"phone\": \"+12012987481\",\n                \"name\": \"Test Test\"\n            },\n            \"seller_details\": {\n                \"id\": 1,\n                \"first_name\": \"Test\",\n                \"last_name\": \"Test\",\n                \"email\": \"admin@gmail.com\",\n                \"phone\": \"+12012987484\",\n                \"name\": \"Test Test\"\n            }\n        }\n    }\n}"
+				},
+				{
+					"name": "create order - Failure (error)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order[offer_id]",
+									"value": "13",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/orders",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "d6b4b0d5-c66a-4d59-815c-4d229619aefb"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.175693"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.1435546875, sql.active_record;dur=27.476806640625, instantiation.active_record;dur=21.071533203125, process_action.action_controller;dur=93.27099609375"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errors\": {\n        \"seller\": [\n            \"must exist\"\n        ],\n        \"offer\": [\n            \"must exist\"\n        ]\n    }\n}"
+				},
+				{
+					"name": "create order - Failure (offer is already accepted)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order[offer_id]",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/orders",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "9c15c70c-4e76-4ba5-b218-26199e3582c4"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.011387"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.155517578125, sql.active_record;dur=3.8701171875, instantiation.active_record;dur=0.34716796875, process_action.action_controller;dur=8.976318359375"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Order is already created.\",\n    \"order\": {\n        \"id\": 16,\n        \"placed_at\": \"2022-08-05T10:37:06.210Z\",\n        \"expected_delivery_date\": \"2022-08-08T10:37:06.210Z\",\n        \"delivered_at\": null,\n        \"status\": \"confirmed\",\n        \"offer_details\": {\n            \"id\": 1,\n            \"name\": \"test offer - 2k22\",\n            \"price\": {\n                \"cents\": 100,\n                \"currency_iso\": \"USD\"\n            },\n            \"status\": \"accepted\",\n            \"buyer_id\": 2,\n            \"seller_id\": 1,\n            \"weight\": 3.4,\n            \"weighing_unit\": \"kg\",\n            \"size\": {\n                \"width\": \"10.0\",\n                \"height\": \"8.0\",\n                \"size_unit\": \"m\"\n            },\n            \"price_usd\": \"$1.00\",\n            \"buyer_details\": {\n                \"id\": 2,\n                \"first_name\": \"Test\",\n                \"last_name\": \"Test\",\n                \"email\": \"admin1@gmail.com\",\n                \"phone\": \"+12012987481\",\n                \"name\": \"Test Test\"\n            },\n            \"seller_details\": {\n                \"id\": 1,\n                \"first_name\": \"Test\",\n                \"last_name\": \"Test\",\n                \"email\": \"admin@gmail.com\",\n                \"phone\": \"+12012987484\",\n                \"name\": \"Test Test\"\n            }\n        }\n    }\n}"
+				},
+				{
+					"name": "create order - failure (un authorized)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order[offer_id]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "order[locker_id]",
+									"value": "9",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/orders",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "919a78b9-0825-4d6e-8ae9-57a43bf9da62"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.015782"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.1455078125, sql.active_record;dur=6.2412109375, instantiation.active_record;dur=0.583740234375, halted_callback.action_controller;dur=0.159423828125, process_action.action_controller;dur=11.852294921875"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"You're not authorized for this action.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "order show",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTk0NDA3NzMsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjR9.9ozAZrMMuEOGLBcfgfESAIqDV4GlI44uQqv98K84xuI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/orders/20",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"20"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "order show - Failure",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/orders/201",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"201"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "5f6931cb-4280-4e53-92e0-d6fd58ca74d1"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.155893"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.33154296875, sql.active_record;dur=15.949951171875, instantiation.active_record;dur=18.216064453125, halted_callback.action_controller;dur=0.378662109375, process_action.action_controller;dur=53.043212890625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"No order found\"\n}"
+				},
+				{
+					"name": "order show - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/orders/26",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"26"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"37ffbc1ccf8bb58394245c7557b07be5\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "40bc832d-9e9e-4395-a217-b1728af5027a"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.008782"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.115234375, sql.active_record;dur=2.945068359375, instantiation.active_record;dur=0.207275390625, process_action.action_controller;dur=6.98388671875"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"order\": {\n        \"id\": 26,\n        \"placed_at\": \"2022-08-05T12:42:45.158Z\",\n        \"expected_delivery_date\": \"2022-08-08T12:42:45.158Z\",\n        \"delivered_at\": null,\n        \"status\": \"pending\",\n        \"offer_details\": {\n            \"id\": 1,\n            \"name\": \"test offer - 2k22\",\n            \"price\": {\n                \"cents\": 100,\n                \"currency_iso\": \"USD\"\n            },\n            \"status\": \"accepted\",\n            \"buyer_id\": 2,\n            \"seller_id\": 1,\n            \"weight\": 3.4,\n            \"weighing_unit\": \"kg\",\n            \"size\": {\n                \"width\": \"10.0\",\n                \"height\": \"8.0\",\n                \"size_unit\": \"m\"\n            },\n            \"price_usd\": \"$1.00\",\n            \"buyer_details\": {\n                \"id\": 2,\n                \"first_name\": \"Test\",\n                \"last_name\": \"Test\",\n                \"email\": \"admin1@gmail.com\",\n                \"phone\": \"+12012987481\",\n                \"name\": \"Test Test\"\n            },\n            \"seller_details\": {\n                \"id\": 1,\n                \"first_name\": \"Test\",\n                \"last_name\": \"Test\",\n                \"email\": \"admin@gmail.com\",\n                \"phone\": \"+12012987484\",\n                \"name\": \"Test Test\"\n            }\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "purchased orders",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTk0NDA3NzMsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjR9.9ozAZrMMuEOGLBcfgfESAIqDV4GlI44uQqv98K84xuI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/orders/purchased",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"purchased"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "purchased orders - Failure",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/orders/purchased",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"purchased"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e031acd7d2a0a13081112896146071e8\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "23f032e1-a03d-446c-9772-29bac3776c20"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.020182"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.115478515625, sql.active_record;dur=7.5771484375, instantiation.active_record;dur=0.13232421875, process_action.action_controller;dur=17.775390625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orders\": []\n}"
+				},
+				{
+					"name": "purchased orders - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/orders/purchased",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"purchased"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c0d3aa25c1533c7af19533023b62798a\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "be3aa1a9-5e96-43c0-8708-52b5302597a3"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.483132"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.098876953125, sql.active_record;dur=18.730224609375, instantiation.active_record;dur=10.740234375, process_action.action_controller;dur=343.06396484375"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orders\": [\n        {\n            \"id\": 16,\n            \"placed_at\": \"2022-08-05T10:37:06.210Z\",\n            \"expected_delivery_date\": \"2022-08-08T10:37:06.210Z\",\n            \"delivered_at\": null,\n            \"status\": \"confirmed\",\n            \"offer_details\": {\n                \"id\": 1,\n                \"name\": \"test offer - 2k22\",\n                \"price\": {\n                    \"cents\": 100,\n                    \"currency_iso\": \"USD\"\n                },\n                \"status\": \"accepted\",\n                \"buyer_id\": 2,\n                \"seller_id\": 1,\n                \"weight\": 3.4,\n                \"weighing_unit\": \"kg\",\n                \"size\": {\n                    \"width\": \"10.0\",\n                    \"height\": \"8.0\",\n                    \"size_unit\": \"m\"\n                },\n                \"price_usd\": \"$1.00\",\n                \"buyer_details\": {\n                    \"id\": 2,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin1@gmail.com\",\n                    \"phone\": \"+12012987481\",\n                    \"name\": \"Test Test\"\n                },\n                \"seller_details\": {\n                    \"id\": 1,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin@gmail.com\",\n                    \"phone\": \"+12012987484\",\n                    \"name\": \"Test Test\"\n                }\n            }\n        },\n        {\n            \"id\": 17,\n            \"placed_at\": \"2022-08-05T10:53:03.963Z\",\n            \"expected_delivery_date\": \"2022-08-08T10:53:03.963Z\",\n            \"delivered_at\": null,\n            \"status\": \"confirmed\",\n            \"offer_details\": {\n                \"id\": 1,\n                \"name\": \"test offer - 2k22\",\n                \"price\": {\n                    \"cents\": 100,\n                    \"currency_iso\": \"USD\"\n                },\n                \"status\": \"accepted\",\n                \"buyer_id\": 2,\n                \"seller_id\": 1,\n                \"weight\": 3.4,\n                \"weighing_unit\": \"kg\",\n                \"size\": {\n                    \"width\": \"10.0\",\n                    \"height\": \"8.0\",\n                    \"size_unit\": \"m\"\n                },\n                \"price_usd\": \"$1.00\",\n                \"buyer_details\": {\n                    \"id\": 2,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin1@gmail.com\",\n                    \"phone\": \"+12012987481\",\n                    \"name\": \"Test Test\"\n                },\n                \"seller_details\": {\n                    \"id\": 1,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin@gmail.com\",\n                    \"phone\": \"+12012987484\",\n                    \"name\": \"Test Test\"\n                }\n            }\n        },\n        {\n            \"id\": 18,\n            \"placed_at\": \"2022-08-05T10:55:10.364Z\",\n            \"expected_delivery_date\": \"2022-08-08T10:55:10.364Z\",\n            \"delivered_at\": null,\n            \"status\": \"confirmed\",\n            \"offer_details\": {\n                \"id\": 1,\n                \"name\": \"test offer - 2k22\",\n                \"price\": {\n                    \"cents\": 100,\n                    \"currency_iso\": \"USD\"\n                },\n                \"status\": \"accepted\",\n                \"buyer_id\": 2,\n                \"seller_id\": 1,\n                \"weight\": 3.4,\n                \"weighing_unit\": \"kg\",\n                \"size\": {\n                    \"width\": \"10.0\",\n                    \"height\": \"8.0\",\n                    \"size_unit\": \"m\"\n                },\n                \"price_usd\": \"$1.00\",\n                \"buyer_details\": {\n                    \"id\": 2,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin1@gmail.com\",\n                    \"phone\": \"+12012987481\",\n                    \"name\": \"Test Test\"\n                },\n                \"seller_details\": {\n                    \"id\": 1,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin@gmail.com\",\n                    \"phone\": \"+12012987484\",\n                    \"name\": \"Test Test\"\n                }\n            }\n        },\n        {\n            \"id\": 26,\n            \"placed_at\": \"2022-08-05T12:42:45.158Z\",\n            \"expected_delivery_date\": \"2022-08-08T12:42:45.158Z\",\n            \"delivered_at\": null,\n            \"status\": \"pending\",\n            \"offer_details\": {\n                \"id\": 1,\n                \"name\": \"test offer - 2k22\",\n                \"price\": {\n                    \"cents\": 100,\n                    \"currency_iso\": \"USD\"\n                },\n                \"status\": \"accepted\",\n                \"buyer_id\": 2,\n                \"seller_id\": 1,\n                \"weight\": 3.4,\n                \"weighing_unit\": \"kg\",\n                \"size\": {\n                    \"width\": \"10.0\",\n                    \"height\": \"8.0\",\n                    \"size_unit\": \"m\"\n                },\n                \"price_usd\": \"$1.00\",\n                \"buyer_details\": {\n                    \"id\": 2,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin1@gmail.com\",\n                    \"phone\": \"+12012987481\",\n                    \"name\": \"Test Test\"\n                },\n                \"seller_details\": {\n                    \"id\": 1,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin@gmail.com\",\n                    \"phone\": \"+12012987484\",\n                    \"name\": \"Test Test\"\n                }\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "sold order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTk1OTk2MTYsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjF9.NrNm2dQSf9Kta1oVsPqQSTbkrjo-7ckmyrZiVweK2o4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/orders/sold",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"sold"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sold order - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/orders/sold",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"sold"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c0d3aa25c1533c7af19533023b62798a\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "c26e85f9-1d9a-4cbf-bdf2-16a2ec5c33d5"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.049658"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.068115234375, sql.active_record;dur=10.915283203125, instantiation.active_record;dur=12.988525390625, process_action.action_controller;dur=47.91748046875"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orders\": [\n        {\n            \"id\": 16,\n            \"placed_at\": \"2022-08-05T10:37:06.210Z\",\n            \"expected_delivery_date\": \"2022-08-08T10:37:06.210Z\",\n            \"delivered_at\": null,\n            \"status\": \"confirmed\",\n            \"offer_details\": {\n                \"id\": 1,\n                \"name\": \"test offer - 2k22\",\n                \"price\": {\n                    \"cents\": 100,\n                    \"currency_iso\": \"USD\"\n                },\n                \"status\": \"accepted\",\n                \"buyer_id\": 2,\n                \"seller_id\": 1,\n                \"weight\": 3.4,\n                \"weighing_unit\": \"kg\",\n                \"size\": {\n                    \"width\": \"10.0\",\n                    \"height\": \"8.0\",\n                    \"size_unit\": \"m\"\n                },\n                \"price_usd\": \"$1.00\",\n                \"buyer_details\": {\n                    \"id\": 2,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin1@gmail.com\",\n                    \"phone\": \"+12012987481\",\n                    \"name\": \"Test Test\"\n                },\n                \"seller_details\": {\n                    \"id\": 1,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin@gmail.com\",\n                    \"phone\": \"+12012987484\",\n                    \"name\": \"Test Test\"\n                }\n            }\n        },\n        {\n            \"id\": 17,\n            \"placed_at\": \"2022-08-05T10:53:03.963Z\",\n            \"expected_delivery_date\": \"2022-08-08T10:53:03.963Z\",\n            \"delivered_at\": null,\n            \"status\": \"confirmed\",\n            \"offer_details\": {\n                \"id\": 1,\n                \"name\": \"test offer - 2k22\",\n                \"price\": {\n                    \"cents\": 100,\n                    \"currency_iso\": \"USD\"\n                },\n                \"status\": \"accepted\",\n                \"buyer_id\": 2,\n                \"seller_id\": 1,\n                \"weight\": 3.4,\n                \"weighing_unit\": \"kg\",\n                \"size\": {\n                    \"width\": \"10.0\",\n                    \"height\": \"8.0\",\n                    \"size_unit\": \"m\"\n                },\n                \"price_usd\": \"$1.00\",\n                \"buyer_details\": {\n                    \"id\": 2,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin1@gmail.com\",\n                    \"phone\": \"+12012987481\",\n                    \"name\": \"Test Test\"\n                },\n                \"seller_details\": {\n                    \"id\": 1,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin@gmail.com\",\n                    \"phone\": \"+12012987484\",\n                    \"name\": \"Test Test\"\n                }\n            }\n        },\n        {\n            \"id\": 18,\n            \"placed_at\": \"2022-08-05T10:55:10.364Z\",\n            \"expected_delivery_date\": \"2022-08-08T10:55:10.364Z\",\n            \"delivered_at\": null,\n            \"status\": \"confirmed\",\n            \"offer_details\": {\n                \"id\": 1,\n                \"name\": \"test offer - 2k22\",\n                \"price\": {\n                    \"cents\": 100,\n                    \"currency_iso\": \"USD\"\n                },\n                \"status\": \"accepted\",\n                \"buyer_id\": 2,\n                \"seller_id\": 1,\n                \"weight\": 3.4,\n                \"weighing_unit\": \"kg\",\n                \"size\": {\n                    \"width\": \"10.0\",\n                    \"height\": \"8.0\",\n                    \"size_unit\": \"m\"\n                },\n                \"price_usd\": \"$1.00\",\n                \"buyer_details\": {\n                    \"id\": 2,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin1@gmail.com\",\n                    \"phone\": \"+12012987481\",\n                    \"name\": \"Test Test\"\n                },\n                \"seller_details\": {\n                    \"id\": 1,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin@gmail.com\",\n                    \"phone\": \"+12012987484\",\n                    \"name\": \"Test Test\"\n                }\n            }\n        },\n        {\n            \"id\": 26,\n            \"placed_at\": \"2022-08-05T12:42:45.158Z\",\n            \"expected_delivery_date\": \"2022-08-08T12:42:45.158Z\",\n            \"delivered_at\": null,\n            \"status\": \"pending\",\n            \"offer_details\": {\n                \"id\": 1,\n                \"name\": \"test offer - 2k22\",\n                \"price\": {\n                    \"cents\": 100,\n                    \"currency_iso\": \"USD\"\n                },\n                \"status\": \"accepted\",\n                \"buyer_id\": 2,\n                \"seller_id\": 1,\n                \"weight\": 3.4,\n                \"weighing_unit\": \"kg\",\n                \"size\": {\n                    \"width\": \"10.0\",\n                    \"height\": \"8.0\",\n                    \"size_unit\": \"m\"\n                },\n                \"price_usd\": \"$1.00\",\n                \"buyer_details\": {\n                    \"id\": 2,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin1@gmail.com\",\n                    \"phone\": \"+12012987481\",\n                    \"name\": \"Test Test\"\n                },\n                \"seller_details\": {\n                    \"id\": 1,\n                    \"first_name\": \"Test\",\n                    \"last_name\": \"Test\",\n                    \"email\": \"admin@gmail.com\",\n                    \"phone\": \"+12012987484\",\n                    \"name\": \"Test Test\"\n                }\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "view qr_code for an order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA2NTk0ODIsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjJ9.-S95TGStlTkbVWv34yi2UkUKPTZMYaeepSO1R-eYnM8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/orders/1/qr_code",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"1",
+						"qr_code"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "view qr_code for an order - failure",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/api/v1/orders/1/qr_code",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"1",
+								"qr_code"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "7b8a9151-50d7-40ed-a9e8-9cc4d349d9ec"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.005110"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.128662109375, sql.active_record;dur=1.2470703125, instantiation.active_record;dur=0.058349609375, halted_callback.action_controller;dur=0.083740234375, process_action.action_controller;dur=2.743408203125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"No order found\"\n}"
+				},
+				{
+					"name": "view qr_code for an order - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/orders/1/qr_code",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"1",
+								"qr_code"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"776ca4977867e887cfedd2b9e009fe94\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "25b77319-1a6e-4b9a-b244-dc142da86208"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.070977"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.157470703125, sql.active_record;dur=19.6064453125, instantiation.active_record;dur=9.201904296875, process_action.action_controller;dur=55.039306640625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"qr_code\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBJdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--36e52cc0b311411117e9f651fdca4df782104a86/qrcode31.png?disposition=attachment\"\n}"
+				}
+			]
+		},
+		{
+			"name": "fetch_original_url",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA5MTkyNDksImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjJ9.v3YtncaWJORTAtIgC_rOrHteS-8fHeyj9kI0nKqJ0T8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "shortened_url[short_url]",
+							"value": "nt34fcdmvqcon1he",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/shortened_urls/fetch_original_url",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"shortened_urls",
+						"fetch_original_url"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "fetch_original_url - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "shortened_url[short_url]",
+									"value": "4m4u7wcvaa1v",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/shortened_urls/fetch_original_url",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"shortened_urls",
+								"fetch_original_url"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"db24a8c7386992dc72a72cfd2bb4a023\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "1afab7e3-6545-4410-b74e-bb7ad1b6ad0a"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.178292"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "active_admin.application.before_load;dur=0.4853515625, active_admin.resource.register;dur=0.02685546875, active_admin.application.after_load;dur=2.012939453125, start_processing.action_controller;dur=0.1376953125, sql.active_record;dur=9.872314453125, instantiation.active_record;dur=14.559326171875, process_action.action_controller;dur=31.8232421875"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"qr_code\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d814724fd12cfc97a018ddcd70d47f5d951cb785/qrcode9.png?disposition=attachment\"\n}"
+				},
+				{
+					"name": "fetch_original_url - failure",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "shortened_url[short_url]",
+									"value": "4m4u7wcvaa1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/shortened_urls/fetch_original_url",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"shortened_urls",
+								"fetch_original_url"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "49a85a5c-e97c-4f4c-92b2-49c45d535f74"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.057550"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.310302734375, sql.active_record;dur=8.97119140625, instantiation.active_record;dur=3.288330078125, halted_callback.action_controller;dur=0.153564453125, process_action.action_controller;dur=51.515869140625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"No qr code found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "scan_qr_code",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA2NTUyMzcsImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjJ9.NN00WMy1Wem9e9bdA4a-yy2uEO3ooIeymV8-YZHBrAs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "locker[qr_code]",
+							"value": "FNw7kha3nRYorHXnMRE0Rjmhaoge4vHgbTY=--wYXBX4PZwjzHheDs--syEyBlFok2aFaONSC2T8AA==",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/digital_lockers/scan_qr_code",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"digital_lockers",
+						"scan_qr_code"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "scan_qr_code - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "locker[qr_code]",
+									"value": "FNw7kha3nRYorHXnMRE0Rjmhaoge4vHgbTY=--wYXBX4PZwjzHheDs--syEyBlFok2aFaONSC2T8AA==",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/digital_lockers/scan_qr_code",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"digital_lockers",
+								"scan_qr_code"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1101a74b52ebe6d4c536c3aee1495734\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "360607f3-a4cd-4dde-aeb6-ccaca9921408"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.015776"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.24658203125, sql.active_record;dur=3.757080078125, instantiation.active_record;dur=0.23095703125, process_action.action_controller;dur=8.59912109375"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"locker\": {\n        \"name\": \"locker #6\",\n        \"price\": {\n            \"cents\": 300,\n            \"currency_iso\": \"USD\"\n        },\n        \"status\": \"available\",\n        \"price_usd\": \"$3.00\",\n        \"address_details\": {\n            \"address\": {\n                \"city\": \"city three\",\n                \"state\": \"state three\",\n                \"street\": \"street three\",\n                \"zip_code\": \"1012\"\n            }\n        },\n        \"order_details\": {\n            \"id\": 1,\n            \"placed_at\": \"2022-08-15T09:20:23.994Z\",\n            \"expected_delivery_date\": \"2022-08-18T09:20:23.994Z\",\n            \"delivered_at\": null,\n            \"status\": \"pending\"\n        }\n    }\n}"
+				},
+				{
+					"name": "scan_qr_code - failure",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "locker[qr_code]",
+									"value": "FNw7kha3nRYorHXnMRE0Rjmhaoge4vHgbTY=--wYXBX4PZwjzHheDs--syEyBlFok2aFaONSC2T8AA=",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/digital_lockers/scan_qr_code",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"digital_lockers",
+								"scan_qr_code"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "857a5c94-f390-4c4c-a909-6d6249ca8147"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.004432"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.17578125, halted_callback.action_controller;dur=0.07861328125, process_action.action_controller;dur=0.75439453125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"locker\": null,\n    \"errors\": \"Please scan correct qr code.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "select_locker",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA5MTkyNDksImlzcyI6IkxvY2tlckFQUCIsImF1ZCI6ImNsaWVudCIsInVzZXJfaWQiOjJ9.v3YtncaWJORTAtIgC_rOrHteS-8fHeyj9kI0nKqJ0T8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "locker[id]",
+							"value": "30",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/digital_lockers/select_locker",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"digital_lockers",
+						"select_locker"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "select_locker - failure",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "locker[id]",
+									"value": "31",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/digital_lockers/select_locker",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"digital_lockers",
+								"select_locker"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "08b709ec-2da3-4848-a8a6-b494bfa8b3d4"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.010165"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.196533203125, sql.active_record;dur=2.5703125, instantiation.active_record;dur=0.107177734375, halted_callback.action_controller;dur=0.05224609375, process_action.action_controller;dur=4.997314453125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errors\": \"Locker not available.\"\n}"
+				},
+				{
+					"name": "select_locker - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "locker[id]",
+									"value": "31",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/digital_lockers/select_locker",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"digital_lockers",
+								"select_locker"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f6fc9c41db24125a1d76f350a126c1b4\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "5e95a1ae-f468-444e-80ce-a663b791bd62"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.589093"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "active_admin.application.before_load;dur=0.485595703125, active_admin.resource.register;dur=0.024658203125, active_admin.application.after_load;dur=2.771240234375, start_processing.action_controller;dur=0.869384765625, sql.active_record;dur=49.083984375, instantiation.active_record;dur=22.453857421875, process_action.action_controller;dur=120.84423828125"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Locker selected successfully\",\n    \"locker\": {\n        \"status\": \"selected\",\n        \"name\": \"locker #6\",\n        \"price\": {\n            \"cents\": 300,\n            \"currency_iso\": \"USD\"\n        },\n        \"price_usd\": \"$3.00\",\n        \"address_details\": {\n            \"address\": {\n                \"city\": \"city three\",\n                \"state\": \"state three\",\n                \"street\": \"street three\",\n                \"zip_code\": \"1012\"\n            }\n        }\n    },\n    \"user\": {\n        \"id\": 2,\n        \"first_name\": \"Test\",\n        \"last_name\": \"Test\",\n        \"email\": \"admin1@gmail.com\",\n        \"phone\": \"+12012987481\",\n        \"name\": \"Test Test\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get locations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "Search locations - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/locations?zip_code=1010",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"locations"
+							],
+							"query": [
+								{
+									"key": "zip_code",
+									"value": "1010"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"dda13c1f24757ed3ca1388d918241801\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "c69b4a69-332d-4d85-aab3-990607c9fd55"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.013917"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.109130859375, sql.active_record;dur=5.39892578125, instantiation.active_record;dur=0.307861328125, process_action.action_controller;dur=10.931884765625"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"locations\": [\n        {\n            \"address\": {\n                \"city\": \"city one\",\n                \"state\": \"state one\",\n                \"street\": \"street one\",\n                \"zip_code\": \"1010\"\n            },\n            \"available_lockers\": 2,\n            \"digital_lockers\": [\n                {\n                    \"name\": \"locker #3\",\n                    \"price\": {\n                        \"cents\": 0,\n                        \"currency_iso\": \"USD\"\n                    },\n                    \"status\": \"available\",\n                    \"price_usd\": \"$0.00\",\n                    \"address_details\": {\n                        \"address\": {\n                            \"city\": \"city one\",\n                            \"state\": \"state one\",\n                            \"street\": \"street one\",\n                            \"zip_code\": \"1010\"\n                        }\n                    }\n                },\n                {\n                    \"name\": \"locker #2\",\n                    \"price\": {\n                        \"cents\": 1,\n                        \"currency_iso\": \"USD\"\n                    },\n                    \"status\": \"occupied\",\n                    \"price_usd\": \"$0.01\",\n                    \"address_details\": {\n                        \"address\": {\n                            \"city\": \"city one\",\n                            \"state\": \"state one\",\n                            \"street\": \"street one\",\n                            \"zip_code\": \"1010\"\n                        }\n                    }\n                },\n                {\n                    \"name\": \"new locker #1\",\n                    \"price\": {\n                        \"cents\": 0,\n                        \"currency_iso\": \"USD\"\n                    },\n                    \"status\": \"available\",\n                    \"price_usd\": \"$0.00\",\n                    \"address_details\": {\n                        \"address\": {\n                            \"city\": \"city one\",\n                            \"state\": \"state one\",\n                            \"street\": \"street one\",\n                            \"zip_code\": \"1010\"\n                        }\n                    }\n                }\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get locations -success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/locations",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"locations"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d7b45c12a73b7ea2c2c8c091f251eaf7\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "3548eddb-d970-4680-9795-415fccb907a1"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.028237"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.14599609375, sql.active_record;dur=11.181640625, instantiation.active_record;dur=0.538330078125, process_action.action_controller;dur=21.44091796875"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"locations\": [\n        {\n            \"address\": {\n                \"city\": \"city one\",\n                \"state\": \"state one\",\n                \"street\": \"street one\",\n                \"zip_code\": \"1010\"\n            },\n            \"available_lockers\": 3,\n            \"digital_lockers\": [\n                {\n                    \"name\": \"locker #1\",\n                    \"price\": {\n                        \"cents\": 100,\n                        \"currency_iso\": \"USD\"\n                    },\n                    \"status\": \"available\",\n                    \"price_usd\": \"$1.00\",\n                    \"address_details\": {\n                        \"address\": {\n                            \"city\": \"city one\",\n                            \"state\": \"state one\",\n                            \"street\": \"street one\",\n                            \"zip_code\": \"1010\"\n                        }\n                    }\n                },\n                {\n                    \"name\": \"locker #2\",\n                    \"price\": {\n                        \"cents\": 110,\n                        \"currency_iso\": \"USD\"\n                    },\n                    \"status\": \"available\",\n                    \"price_usd\": \"$1.10\",\n                    \"address_details\": {\n                        \"address\": {\n                            \"city\": \"city one\",\n                            \"state\": \"state one\",\n                            \"street\": \"street one\",\n                            \"zip_code\": \"1010\"\n                        }\n                    }\n                },\n                {\n                    \"name\": \"locker #3\",\n                    \"price\": {\n                        \"cents\": 200,\n                        \"currency_iso\": \"USD\"\n                    },\n                    \"status\": \"available\",\n                    \"price_usd\": \"$2.00\",\n                    \"address_details\": {\n                        \"address\": {\n                            \"city\": \"city one\",\n                            \"state\": \"state one\",\n                            \"street\": \"street one\",\n                            \"zip_code\": \"1010\"\n                        }\n                    }\n                }\n            ]\n        },\n        {\n            \"address\": {\n                \"city\": \"city two\",\n                \"state\": \"state two\",\n                \"street\": \"street two\",\n                \"zip_code\": \"1011\"\n            },\n            \"available_lockers\": 0,\n            \"digital_lockers\": []\n        },\n        {\n            \"address\": {\n                \"city\": \"city three\",\n                \"state\": \"state three\",\n                \"street\": \"street three\",\n                \"zip_code\": \"1012\"\n            },\n            \"available_lockers\": 3,\n            \"digital_lockers\": [\n                {\n                    \"name\": \"locker #4\",\n                    \"price\": {\n                        \"cents\": 220,\n                        \"currency_iso\": \"USD\"\n                    },\n                    \"status\": \"available\",\n                    \"price_usd\": \"$2.20\",\n                    \"address_details\": {\n                        \"address\": {\n                            \"city\": \"city three\",\n                            \"state\": \"state three\",\n                            \"street\": \"street three\",\n                            \"zip_code\": \"1012\"\n                        }\n                    }\n                },\n                {\n                    \"name\": \"locker #5\",\n                    \"price\": {\n                        \"cents\": 330,\n                        \"currency_iso\": \"USD\"\n                    },\n                    \"status\": \"available\",\n                    \"price_usd\": \"$3.30\",\n                    \"address_details\": {\n                        \"address\": {\n                            \"city\": \"city three\",\n                            \"state\": \"state three\",\n                            \"street\": \"street three\",\n                            \"zip_code\": \"1012\"\n                        }\n                    }\n                },\n                {\n                    \"name\": \"locker #6\",\n                    \"price\": {\n                        \"cents\": 300,\n                        \"currency_iso\": \"USD\"\n                    },\n                    \"status\": \"available\",\n                    \"price_usd\": \"$3.00\",\n                    \"address_details\": {\n                        \"address\": {\n                            \"city\": \"city three\",\n                            \"state\": \"state three\",\n                            \"street\": \"street three\",\n                            \"zip_code\": \"1012\"\n                        }\n                    }\n                }\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get locations - Failure",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/locations?zip_code=10009",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"locations"
+							],
+							"query": [
+								{
+									"key": "zip_code",
+									"value": "10009"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9323a534e10832cb73b8719230859768\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "707c23e4-5e62-44b1-b73d-7b8fa66d7d20"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.007030"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "start_processing.action_controller;dur=0.34912109375, sql.active_record;dur=1.960693359375, instantiation.active_record;dur=0.045654296875, process_action.action_controller;dur=3.978271484375"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"locations\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "sign_up - live",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n    \"email\": \"admin1@gmail.com\",\n    \"password\": \"password\",\n    \"password_confirmation\": \"password\",\n    \"phone\": \"0410002223\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://lit-refuge-48000.herokuapp.com/api/v1/users/signup",
+					"protocol": "https",
+					"host": [
+						"lit-refuge-48000",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sign_up - heroku - Failure",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": {\n    \"email\": \"admin1@gmail.com\",\n    \"password\": \"password\",\n    \"password_confirmation\": \"password\",\n    \"phone\": \"0410002223\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://lit-refuge-48000.herokuapp.com/api/v1/users/signup",
+							"protocol": "https",
+							"host": [
+								"lit-refuge-48000",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"signup"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Aug 2022 13:02:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "9e59b053-4042-473b-8c26-915589c1309e"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.244129"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errors\": [\n        \"Email has already been taken\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "login - heroku",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://lit-refuge-48000.herokuapp.com/api/v1/users/login?\"email\"=admin@gmail.com&\"password\"=password",
+					"protocol": "https",
+					"host": [
+						"lit-refuge-48000",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"login"
+					],
+					"query": [
+						{
+							"key": "\"email\"",
+							"value": "admin@gmail.com"
+						},
+						{
+							"key": "\"password\"",
+							"value": "password"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login - heroku - Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://lit-refuge-48000.herokuapp.com/api/v1/users/login?\"email\"=admin@gmail.com&\"password\"=password",
+							"protocol": "https",
+							"host": [
+								"lit-refuge-48000",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login"
+							],
+							"query": [
+								{
+									"key": "\"email\"",
+									"value": "admin@gmail.com"
+								},
+								{
+									"key": "\"password\"",
+									"value": "password"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 02 Aug 2022 08:36:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"c48a4e8d5336af90c850ba2590981be2\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "a0cb0385-5cc5-4bed-b149-63953c885da0"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.359702"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Logged in successfully\",\n    \"auth_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTk0Mjk2NzEsImlzcyI6Imlzc3Vlcl9uYW1lIiwiYXVkIjoiY2xpZW50IiwidXNlcl9pZCI6MX0.dcKViwnTLgR-UPiYI_mg_Z1_Gv8mZS8HxhmtOfB9KoU\"\n}"
+				},
+				{
+					"name": "login - heroku - Failure",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"admin@gmal.com\",\n  \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://lit-refuge-48000.herokuapp.com/api/v1/users/login?\"email\"=admin@gmail.com&\"password\"=password",
+							"protocol": "https",
+							"host": [
+								"lit-refuge-48000",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login"
+							],
+							"query": [
+								{
+									"key": "\"email\"",
+									"value": "admin@gmail.com"
+								},
+								{
+									"key": "\"password\"",
+									"value": "password"
+								}
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 02 Aug 2022 08:39:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "7e42af5c-1c21-46ad-b0bd-6a258500dbd3"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.003531"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Invalid username / password\"\n}"
+				}
+			]
+		}
+	]
+}
