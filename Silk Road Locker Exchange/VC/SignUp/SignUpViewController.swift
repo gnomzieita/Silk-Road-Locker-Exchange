@@ -27,12 +27,15 @@ class SignUpViewController: RootViewController {
 
     
     @IBAction func showHidePass(_ sender: Any) {
+        passwordField.isSecureTextEntry = !passwordField.isSecureTextEntry
     }
     
     @IBAction func privacyButton(_ sender: Any) {
     }
     
     @IBAction func signUp(_ sender: Any) {
+        let model = SignUpModel(first_name: firstName.getText(), last_name: lastName.getText(), email: emailField.getText(), password: passwordField.getText())
+        coordinator?.SignUP(model: model)
     }
     
     /*

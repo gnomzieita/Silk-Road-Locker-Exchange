@@ -15,7 +15,7 @@ protocol UserInfoDelegat {
 
 class ProfileCoordinator: BaseCoordenator {
     var errorDelegat: ErrorProtocol?
-    let profileDelegat:UserInfoDelegat?
+    //let profileDelegat:UserInfoDelegat?
     
     var anyCancellables = Set<AnyCancellable>()
     

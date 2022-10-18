@@ -24,6 +24,7 @@ class SellCoordinator: BaseCoordenator {
     override func start() {
         let vc = SellViewController.instantiate()
         vc.coordinator = self
+        errorDelegat = vc
         navigationController.pushViewController(vc, animated: true)
         perentCoordinator?.MainTabBarViews.append(navigationController)
     }
