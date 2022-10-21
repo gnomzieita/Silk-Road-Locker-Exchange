@@ -24,8 +24,7 @@ struct GetSigInBaseRequest: BaseRequest {
     }
 }
 
-//TODO: /users/reset_password
-struct RequestCodeRequest: BaseRequest {
+struct ResetPasswordRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/users/reset_password")
     var httpMethod: HTTPMethod = .POST
     var queryItems: [String : String]?
@@ -35,9 +34,10 @@ struct RequestCodeRequest: BaseRequest {
     
     var httpBody: [String: Any]?
 
-    init(email:String, passwd:String) {
-        self.httpBody = ["email": email,
-                         "password":passwd]
+    init(code:String, password:String, confirm_password:String) {
+        self.httpBody = ["user":["code":code,
+                                 "password": password,
+                                 "confirm_password": confirm_password]]
     }
 }
 
@@ -102,6 +102,22 @@ struct GetSigUpBaseRequest: BaseRequest {
 
     init(_ model:SignUpModel) {
         self.httpBody = ["user":model.dictionary as Any]
+    }
+}
+
+// /users/email_confirm
+struct EmailConfirmBaseRequest: BaseRequest {
+    var url: URL = API.server.getURLwithPath(path: "/users/email_confirm")
+    var httpMethod: HTTPMethod = .POST
+    var queryItems: [String : String]?
+    var headers: [String : String]?
+    
+    typealias ReturnType = SignUpModel
+    
+    var httpBody: [String: Any]?
+
+    init(_ token:String) {
+        self.httpBody = ["user":["token":token]]
     }
 }
 

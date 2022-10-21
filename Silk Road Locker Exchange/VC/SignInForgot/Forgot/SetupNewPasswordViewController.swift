@@ -10,6 +10,7 @@ import UIKit
 class SetupNewPasswordViewController: RootViewController {
 
     weak var coordinator: SignInForgotCoordinator?
+    var coode: String = ""
     
     @IBOutlet weak var newPassword: UITextField!
     @IBOutlet weak var confirmNewPassword: UITextField!
@@ -28,7 +29,7 @@ class SetupNewPasswordViewController: RootViewController {
     }
     
     @IBAction func apply(_ sender: Any) {
-        coordinator?.setupNewPassword(newPass: newPassword.getText(), reNewPass: confirmNewPassword.getText())
+        coordinator?.setupNewPassword(code: coode, password: newPassword.getText(), confirm_password: confirmNewPassword.getText())
     }
     /*
     // MARK: - Navigation

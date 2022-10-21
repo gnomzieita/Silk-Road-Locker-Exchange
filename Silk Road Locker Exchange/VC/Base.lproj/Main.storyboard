@@ -1542,7 +1542,7 @@ NY 10011</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification complete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNn-6b-Mzq">
-                                <rect key="frame" x="94.5" y="320" width="225" height="28"/>
+                                <rect key="frame" x="78" y="320" width="258" height="29"/>
                                 <fontDescription key="fontDescription" name="NewYork-Bold" family="New York" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1589,7 +1589,7 @@ NY 10011</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eX-Db-mo6">
-                                <rect key="frame" x="-16239" y="320" width="32892" height="116.5"/>
+                                <rect key="frame" x="0.0" y="320" width="414" height="119.5"/>
                                 <string key="text">QR Code sent via text.
 
 Proceed to locker location 
@@ -1605,8 +1605,10 @@ compartment</string>
                         <constraints>
                             <constraint firstItem="5eX-Db-mo6" firstAttribute="top" secondItem="8Ga-4L-Whb" secondAttribute="bottom" constant="28" id="1n2-YH-Ahs"/>
                             <constraint firstItem="8Ga-4L-Whb" firstAttribute="top" secondItem="BTs-CF-JLs" secondAttribute="top" constant="100" id="IIH-4T-2d9"/>
+                            <constraint firstItem="5eX-Db-mo6" firstAttribute="leading" secondItem="ved-yG-JrI" secondAttribute="leading" id="lHs-WO-4ac"/>
                             <constraint firstItem="5eX-Db-mo6" firstAttribute="centerX" secondItem="ved-yG-JrI" secondAttribute="centerX" id="mYP-4l-b76"/>
                             <constraint firstItem="8Ga-4L-Whb" firstAttribute="centerX" secondItem="ved-yG-JrI" secondAttribute="centerX" id="o0o-bk-4h3"/>
+                            <constraint firstAttribute="trailing" secondItem="5eX-Db-mo6" secondAttribute="trailing" id="ugR-SC-Odl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Confirmation" id="CoS-5h-D2R"/>
@@ -2175,7 +2177,7 @@ Transaction complete</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tony" translatesAutoresizingMaskIntoConstraints="NO" id="3Xe-tU-tK0" customClass="DesignableImageView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
-                                        <rect key="frame" x="28" y="-1.6666666666666679" width="36" height="36.333333333333343"/>
+                                        <rect key="frame" x="28" y="-1.5" width="36" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="P8k-L2-ucH"/>
                                             <constraint firstAttribute="width" constant="36" id="vGb-VC-s9T"/>
@@ -2414,16 +2416,6 @@ Transaction complete</string>
                                     <segue destination="4MB-KY-JzH" kind="show" id="EMV-Ii-eam"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHH-oO-KSb">
-                                <rect key="frame" x="20" y="326" width="177" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="emailVerificationTap:" destination="clw-hc-sAu" eventType="touchUpInside" id="Chz-VL-eP5"/>
-                                    <segue destination="3dn-9n-WCl" kind="show" id="mSO-0S-1xB"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTd-L1-eEf">
                                 <rect key="frame" x="20" y="396" width="224" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2443,6 +2435,12 @@ Transaction complete</string>
                                     <segue destination="MGn-NE-TWy" kind="show" id="TvN-5g-mXI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrk-Ox-Zgv">
+                                <rect key="frame" x="333" y="351" width="65" height="17"/>
+                                <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="14"/>
+                                <color key="textColor" name="Lime Green"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EUe-4e-dQz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -2450,6 +2448,7 @@ Transaction complete</string>
                             <constraint firstItem="dxf-4J-aaR" firstAttribute="leading" secondItem="2AN-OX-sBa" secondAttribute="leading" id="7hM-dO-vCg"/>
                             <constraint firstItem="JA5-cX-ekn" firstAttribute="leading" secondItem="hoE-V6-AaS" secondAttribute="trailing" constant="18" id="89t-63-9Go"/>
                             <constraint firstItem="0UU-hs-yRf" firstAttribute="top" secondItem="2AN-OX-sBa" secondAttribute="bottom" constant="14" id="Fje-PV-7FN"/>
+                            <constraint firstItem="EUe-4e-dQz" firstAttribute="trailing" secondItem="rrk-Ox-Zgv" secondAttribute="trailing" constant="16" id="FvD-yd-c7x"/>
                             <constraint firstItem="lc7-aM-rZa" firstAttribute="top" secondItem="xrQ-fI-ZX8" secondAttribute="bottom" id="GG3-AO-WEP"/>
                             <constraint firstItem="oHZ-Zm-giE" firstAttribute="top" secondItem="4ZJ-gf-IZB" secondAttribute="top" id="GlT-J8-TSo"/>
                             <constraint firstItem="oHZ-Zm-giE" firstAttribute="leading" secondItem="EUe-4e-dQz" secondAttribute="leading" id="Jj1-Cg-Nfu"/>
@@ -2457,6 +2456,7 @@ Transaction complete</string>
                             <constraint firstItem="JAx-2N-8JG" firstAttribute="leading" secondItem="0UU-hs-yRf" secondAttribute="trailing" constant="18" id="RlH-7D-5xV"/>
                             <constraint firstItem="gDQ-6P-gQH" firstAttribute="centerY" secondItem="5zH-Ak-nER" secondAttribute="centerY" id="UX8-7P-Kyl"/>
                             <constraint firstItem="xrQ-fI-ZX8" firstAttribute="leading" secondItem="EUe-4e-dQz" secondAttribute="leading" constant="16" id="aeK-BE-jPp"/>
+                            <constraint firstItem="2AN-OX-sBa" firstAttribute="top" secondItem="rrk-Ox-Zgv" secondAttribute="bottom" constant="18" id="b1P-Em-jrg"/>
                             <constraint firstItem="dxf-4J-aaR" firstAttribute="top" secondItem="0UU-hs-yRf" secondAttribute="bottom" constant="24" id="bhH-iG-Hts"/>
                             <constraint firstItem="0UU-hs-yRf" firstAttribute="leading" secondItem="2AN-OX-sBa" secondAttribute="leading" id="cPr-1z-Wl2"/>
                             <constraint firstItem="JA5-cX-ekn" firstAttribute="centerY" secondItem="hoE-V6-AaS" secondAttribute="centerY" id="cYf-ON-FPe"/>
@@ -2502,9 +2502,6 @@ Transaction complete</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="setting-2" title=""/>
-                                <connections>
-                                    <segue destination="SL8-gC-5TK" kind="show" id="ujs-0Q-3YT"/>
-                                </connections>
                             </button>
                             <connections>
                                 <action selector="settingsTap:" destination="clw-hc-sAu" id="3Rf-dy-VQX"/>
@@ -2529,27 +2526,27 @@ Transaction complete</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mQ-zA-Uh8">
-                                <rect key="frame" x="12" y="92" width="390" height="2"/>
+                                <rect key="frame" x="12" y="48" width="390" height="2"/>
                                 <color key="backgroundColor" name="fields stroke"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="t5Q-ks-OcK"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5dM-yC-OVa">
-                                <rect key="frame" x="12" y="354" width="390" height="2"/>
+                                <rect key="frame" x="12" y="310" width="390" height="2"/>
                                 <color key="backgroundColor" name="fields stroke"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="fjL-Yt-1Ov"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERSONAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzD-11-ozZ">
-                                <rect key="frame" x="12" y="108" width="71" height="16"/>
+                                <rect key="frame" x="12" y="64" width="71" height="16"/>
                                 <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="13"/>
                                 <color key="textColor" name="Lime Green"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWG-rm-qQo">
-                                <rect key="frame" x="12" y="148" width="88" height="22"/>
+                                <rect key="frame" x="12" y="104" width="88" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="88" id="SIr-ek-e9b"/>
                                     <constraint firstAttribute="height" constant="22" id="kbf-BA-MJo"/>
@@ -2559,7 +2556,7 @@ Transaction complete</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpg-Ah-jtU">
-                                <rect key="frame" x="12" y="194" width="85" height="22"/>
+                                <rect key="frame" x="12" y="150" width="85" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="BsM-aV-uw6"/>
                                     <constraint firstAttribute="height" constant="22" id="YDS-5g-Qdc"/>
@@ -2569,13 +2566,13 @@ Transaction complete</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VF-x8-mRp">
-                                <rect key="frame" x="12" y="370" width="126.5" height="16"/>
+                                <rect key="frame" x="12" y="326" width="126.5" height="16"/>
                                 <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="13"/>
                                 <color key="textColor" name="Lime Green"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajz-EL-bJ1">
-                                <rect key="frame" x="12" y="410" width="151" height="22"/>
+                                <rect key="frame" x="12" y="366" width="151" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="CUf-vh-Smw"/>
                                 </constraints>
@@ -2584,7 +2581,7 @@ Transaction complete</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgs-tY-Rh2">
-                                <rect key="frame" x="12" y="456" width="147.5" height="22"/>
+                                <rect key="frame" x="12" y="412" width="147.5" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="LN5-xW-5XI"/>
                                 </constraints>
@@ -2593,7 +2590,7 @@ Transaction complete</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLt-vU-QTE">
-                                <rect key="frame" x="12" y="240" width="46" height="22"/>
+                                <rect key="frame" x="12" y="196" width="46" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="Q4w-L8-XyV"/>
                                     <constraint firstAttribute="height" constant="22" id="Yzb-B0-urM"/>
@@ -2603,20 +2600,20 @@ Transaction complete</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFQ-9h-A9B">
-                                <rect key="frame" x="12" y="524" width="390" height="2"/>
+                                <rect key="frame" x="12" y="480" width="390" height="2"/>
                                 <color key="backgroundColor" name="fields stroke"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="Y2t-Cd-ZDy"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIO-N0-miB">
-                                <rect key="frame" x="12" y="540" width="109.5" height="16"/>
+                                <rect key="frame" x="12" y="496" width="109.5" height="16"/>
                                 <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="13"/>
                                 <color key="textColor" name="Lime Green"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXV-pB-eW1">
-                                <rect key="frame" x="12" y="580" width="142" height="22"/>
+                                <rect key="frame" x="12" y="536" width="142" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="fjD-ra-meS"/>
                                 </constraints>
@@ -2625,7 +2622,7 @@ Transaction complete</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyu-He-3l3">
-                                <rect key="frame" x="12" y="626" width="115.5" height="22"/>
+                                <rect key="frame" x="12" y="582" width="115.5" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="rPe-9m-tMJ"/>
                                 </constraints>
@@ -2634,7 +2631,7 @@ Transaction complete</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm new passwordx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pe7-eQ-R67">
-                                <rect key="frame" x="12" y="672" width="193.5" height="22"/>
+                                <rect key="frame" x="12" y="628" width="193.5" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="8" id="89B-dg-jEy"/>
                                     <constraint firstAttribute="height" constant="22" id="IQY-dM-muZ"/>
@@ -2644,7 +2641,7 @@ Transaction complete</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVe-fY-0cp">
-                                <rect key="frame" x="12" y="286" width="66" height="22"/>
+                                <rect key="frame" x="12" y="242" width="66" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="8lE-v5-TeY"/>
                                     <constraint firstAttribute="width" constant="66" id="d2D-Lg-pDl"/>
@@ -2654,7 +2651,7 @@ Transaction complete</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxR-CY-syS">
-                                <rect key="frame" x="310.5" y="148" width="87.5" height="22"/>
+                                <rect key="frame" x="310.5" y="104" width="87.5" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="zhf-rC-eCU"/>
                                 </constraints>
@@ -2663,7 +2660,7 @@ Transaction complete</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFr-jq-fGs">
-                                <rect key="frame" x="313" y="194" width="85" height="22"/>
+                                <rect key="frame" x="313" y="150" width="85" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="0Wv-Wi-laF"/>
                                 </constraints>
@@ -2672,7 +2669,7 @@ Transaction complete</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2l-Fv-LNq">
-                                <rect key="frame" x="352" y="240" width="46" height="22"/>
+                                <rect key="frame" x="352" y="196" width="46" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="Nee-kt-khh"/>
                                 </constraints>
@@ -2681,7 +2678,7 @@ Transaction complete</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone #" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SP1-SA-1HO">
-                                <rect key="frame" x="332.5" y="286" width="65.5" height="22"/>
+                                <rect key="frame" x="332.5" y="242" width="65.5" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="r4G-RN-qIr"/>
                                 </constraints>
@@ -2690,7 +2687,7 @@ Transaction complete</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idb-Bk-3X7" customClass="DesignableButton" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
-                                <rect key="frame" x="16" y="726" width="382" height="50"/>
+                                <rect key="frame" x="16" y="682" width="382" height="50"/>
                                 <color key="backgroundColor" name="Lime Green"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="geT-dz-zNG"/>
@@ -2710,25 +2707,25 @@ Transaction complete</string>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N2v-gI-JNT">
-                                <rect key="frame" x="353" y="405.5" width="51" height="31"/>
+                                <rect key="frame" x="353" y="361.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.5450980392" green="0.74509803919999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ztG-N4-ght">
-                                <rect key="frame" x="353" y="451.5" width="51" height="31"/>
+                                <rect key="frame" x="353" y="407.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.5450980392" green="0.74509803919999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="click to insert" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkw-Ks-RUX">
-                                <rect key="frame" x="213.5" y="581.5" width="188.5" height="19"/>
+                                <rect key="frame" x="213.5" y="537.5" width="188.5" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="click to insert" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32j-3S-F1U">
-                                <rect key="frame" x="213.5" y="627.5" width="188.5" height="19"/>
+                                <rect key="frame" x="213.5" y="583.5" width="188.5" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="click to insert" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Flu-ZQ-1t9">
-                                <rect key="frame" x="213.5" y="673.5" width="188.5" height="19"/>
+                                <rect key="frame" x="213.5" y="629.5" width="188.5" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -2808,7 +2805,7 @@ Transaction complete</string>
                     <navigationItem key="navigationItem" title="Edit profile" id="bKU-8k-ZnE">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="JsL-ci-Wkx">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="W66-jc-mna">
-                                <rect key="frame" x="302" y="5.5" width="92" height="33"/>
+                                <rect key="frame" x="302" y="5.5" width="92" height="33.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save">
@@ -2919,22 +2916,6 @@ Transaction complete</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qMc-e8-jYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5479.7101449275369" y="4797.9910714285716"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="XyI-qR-s9l">
-            <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="3dn-9n-WCl" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1L9-a1-oTp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="eKY-DA-7c6"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ZOc-LI-GOh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SOO-zV-D6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5480" y="2770"/>
         </scene>
         <!--Payment History-->
         <scene sceneID="UZ1-mU-jhj">
@@ -3360,7 +3341,7 @@ Transaction complete</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z1e-jN-AP8" customClass="DesignableView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
                                 <rect key="frame" x="16" y="87" width="382" height="50"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="admin@gmail.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P0O-kx-0Wy">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P0O-kx-0Wy">
                                         <rect key="frame" x="8" y="1" width="373" height="48"/>
                                         <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -3394,7 +3375,7 @@ Transaction complete</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLv-8Z-SZT" customClass="DesignableView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
                                 <rect key="frame" x="16" y="153" width="382" height="50"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jue-Ik-EFM">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jue-Ik-EFM">
                                         <rect key="frame" x="8" y="1" width="274" height="48"/>
                                         <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -3610,8 +3591,42 @@ Transaction complete</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5v-U3-32r" customClass="DesignableView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQ9-nI-bEV" customClass="DesignableView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
                                 <rect key="frame" x="16" y="285" width="382" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MCO-1r-nZM">
+                                        <rect key="frame" x="8" y="1" width="373" height="48"/>
+                                        <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" name="Dark"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5Dr-vN-XYM"/>
+                                    <constraint firstAttribute="bottom" secondItem="MCO-1r-nZM" secondAttribute="bottom" constant="1" id="Lof-4P-3cm"/>
+                                    <constraint firstAttribute="trailing" secondItem="MCO-1r-nZM" secondAttribute="trailing" constant="1" id="Lxk-tx-KOY"/>
+                                    <constraint firstItem="MCO-1r-nZM" firstAttribute="leading" secondItem="zQ9-nI-bEV" secondAttribute="leading" constant="8" id="TW1-OA-X2O"/>
+                                    <constraint firstItem="MCO-1r-nZM" firstAttribute="top" secondItem="zQ9-nI-bEV" secondAttribute="top" constant="1" id="sHa-eF-Ood"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5v-U3-32r" customClass="DesignableView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
+                                <rect key="frame" x="16" y="351" width="382" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o8v-Ht-Yi1">
                                         <rect key="frame" x="8" y="1" width="274" height="48"/>
@@ -3659,7 +3674,7 @@ Transaction complete</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onq-zQ-EWo" customClass="DesignableButton" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
-                                <rect key="frame" x="16" y="655" width="382" height="50"/>
+                                <rect key="frame" x="16" y="721" width="382" height="50"/>
                                 <color key="backgroundColor" name="Lime Green"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2eO-Pn-Xbh"/>
@@ -3682,13 +3697,13 @@ Transaction complete</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By creating the account I agree to Terms and Conditions and Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gm-QQ-i2f">
-                                <rect key="frame" x="40" y="366" width="359" height="38.5"/>
+                                <rect key="frame" x="40" y="432" width="359" height="38.5"/>
                                 <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" name="Dark"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLp-Ib-XSR">
-                                <rect key="frame" x="16" y="367" width="16" height="16"/>
+                                <rect key="frame" x="16" y="433" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="3hF-m5-t1f"/>
                                     <constraint firstAttribute="width" constant="16" id="zHG-fP-klB"/>
@@ -3706,6 +3721,8 @@ Transaction complete</string>
                             <constraint firstItem="pmZ-dE-xhq" firstAttribute="top" secondItem="9pl-oQ-HNo" secondAttribute="bottom" constant="16" id="1MB-2l-bea"/>
                             <constraint firstItem="pmZ-dE-xhq" firstAttribute="trailing" secondItem="9pl-oQ-HNo" secondAttribute="trailing" id="1gI-yN-PbH"/>
                             <constraint firstItem="lzV-y9-dXE" firstAttribute="trailing" secondItem="9pl-oQ-HNo" secondAttribute="trailing" id="2YI-ys-s4P"/>
+                            <constraint firstItem="zQ9-nI-bEV" firstAttribute="trailing" secondItem="lzV-y9-dXE" secondAttribute="trailing" id="8mM-8Q-Ace"/>
+                            <constraint firstItem="J5v-U3-32r" firstAttribute="top" secondItem="zQ9-nI-bEV" secondAttribute="bottom" constant="16" id="9IV-0v-NmY"/>
                             <constraint firstItem="9pl-oQ-HNo" firstAttribute="leading" secondItem="1aE-mF-Xle" secondAttribute="leading" constant="16" id="9eA-Pf-Iac"/>
                             <constraint firstItem="J5v-U3-32r" firstAttribute="trailing" secondItem="9pl-oQ-HNo" secondAttribute="trailing" id="F0W-DG-Eee"/>
                             <constraint firstItem="1aE-mF-Xle" firstAttribute="trailing" secondItem="9pl-oQ-HNo" secondAttribute="trailing" constant="16" id="F6F-im-Gnc"/>
@@ -3713,15 +3730,17 @@ Transaction complete</string>
                             <constraint firstItem="onq-zQ-EWo" firstAttribute="top" secondItem="J5v-U3-32r" secondAttribute="bottom" constant="320" id="JMc-zb-AZt"/>
                             <constraint firstItem="lzV-y9-dXE" firstAttribute="leading" secondItem="9pl-oQ-HNo" secondAttribute="leading" id="S1e-Gh-cOT"/>
                             <constraint firstItem="LLp-Ib-XSR" firstAttribute="top" secondItem="J5v-U3-32r" secondAttribute="bottom" constant="32" id="SkA-Gn-W6y"/>
-                            <constraint firstItem="J5v-U3-32r" firstAttribute="top" secondItem="lzV-y9-dXE" secondAttribute="bottom" constant="16" id="VWc-RL-zyY"/>
+                            <constraint firstItem="J5v-U3-32r" firstAttribute="top" secondItem="lzV-y9-dXE" secondAttribute="bottom" constant="82" id="VWc-RL-zyY"/>
                             <constraint firstItem="9pl-oQ-HNo" firstAttribute="top" secondItem="1aE-mF-Xle" secondAttribute="top" constant="39" id="a02-Qb-6AC"/>
                             <constraint firstItem="onq-zQ-EWo" firstAttribute="trailing" secondItem="J5v-U3-32r" secondAttribute="trailing" id="dvf-Lz-lgR"/>
                             <constraint firstItem="1aE-mF-Xle" firstAttribute="trailing" secondItem="1Gm-QQ-i2f" secondAttribute="trailing" constant="15" id="dxP-d2-dZ8"/>
                             <constraint firstItem="1Gm-QQ-i2f" firstAttribute="top" secondItem="J5v-U3-32r" secondAttribute="bottom" constant="31" id="eeO-jc-5Xh"/>
+                            <constraint firstItem="zQ9-nI-bEV" firstAttribute="leading" secondItem="lzV-y9-dXE" secondAttribute="leading" id="hTv-T5-TP1"/>
                             <constraint firstItem="J5v-U3-32r" firstAttribute="leading" secondItem="9pl-oQ-HNo" secondAttribute="leading" id="jB3-Ll-zo4"/>
                             <constraint firstItem="pmZ-dE-xhq" firstAttribute="leading" secondItem="9pl-oQ-HNo" secondAttribute="leading" id="nrd-zS-34g"/>
                             <constraint firstItem="LLp-Ib-XSR" firstAttribute="leading" secondItem="JVi-PB-WDG" secondAttribute="leading" constant="16" id="pnc-0v-19i"/>
                             <constraint firstItem="lzV-y9-dXE" firstAttribute="top" secondItem="pmZ-dE-xhq" secondAttribute="bottom" constant="16" id="r7h-X3-mHM"/>
+                            <constraint firstItem="zQ9-nI-bEV" firstAttribute="top" secondItem="lzV-y9-dXE" secondAttribute="bottom" constant="16" id="xkk-uL-16A"/>
                             <constraint firstItem="1Gm-QQ-i2f" firstAttribute="leading" secondItem="LLp-Ib-XSR" secondAttribute="trailing" constant="8" id="ykC-Q7-um4"/>
                         </constraints>
                     </view>
@@ -3731,6 +3750,7 @@ Transaction complete</string>
                         <outlet property="firstName" destination="EkA-Xe-PrL" id="nXm-0B-1GZ"/>
                         <outlet property="lastName" destination="EkA-Xe-PrL" id="Mpn-Y5-uOc"/>
                         <outlet property="passwordField" destination="o8v-Ht-Yi1" id="YEy-dP-9jp"/>
+                        <outlet property="phoneField" destination="MCO-1r-nZM" id="iD2-hS-mIK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCn-EP-WY4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -4826,7 +4846,7 @@ and retrieve the item.</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSF-c8-c2A">
-                                <rect key="frame" x="-16241" y="320" width="32896" height="119.5"/>
+                                <rect key="frame" x="0.0" y="320" width="414" height="119.5"/>
                                 <string key="text">Item Placed.
 QR Code sent via text.
 
@@ -4840,9 +4860,11 @@ to pick up the item.</string>
                         <viewLayoutGuide key="safeArea" id="4Ve-eG-Uj5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="uSF-c8-c2A" firstAttribute="leading" secondItem="0OU-cI-msi" secondAttribute="leading" id="A0u-Br-6FN"/>
                             <constraint firstItem="uSF-c8-c2A" firstAttribute="centerX" secondItem="0OU-cI-msi" secondAttribute="centerX" id="K7n-jZ-Gqw"/>
                             <constraint firstItem="uSF-c8-c2A" firstAttribute="top" secondItem="G5b-rN-zc3" secondAttribute="bottom" constant="28" id="Luu-PV-68M"/>
                             <constraint firstItem="G5b-rN-zc3" firstAttribute="centerX" secondItem="0OU-cI-msi" secondAttribute="centerX" id="WLX-bk-qCR"/>
+                            <constraint firstAttribute="trailing" secondItem="uSF-c8-c2A" secondAttribute="trailing" id="dhq-lL-dQy"/>
                             <constraint firstItem="G5b-rN-zc3" firstAttribute="top" secondItem="4Ve-eG-Uj5" secondAttribute="top" constant="100" id="uii-fS-Eud"/>
                         </constraints>
                     </view>
@@ -4951,7 +4973,7 @@ to pick up the item.</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwB-Bg-PbL">
-                                <rect key="frame" x="76.5" y="320" width="261.5" height="47"/>
+                                <rect key="frame" x="68" y="320" width="278" height="48"/>
                                 <string key="text">Please return all parts of item
 to locker</string>
                                 <fontDescription key="fontDescription" name="NewYork-Medium" family="New York" pointSize="20"/>
@@ -5036,6 +5058,106 @@ Refund being issued.</string>
             </objects>
             <point key="canvasLocation" x="9948" y="810"/>
         </scene>
+        <!--Confirm-->
+        <scene sceneID="a74-R1-ltJ">
+            <objects>
+                <viewController storyboardIdentifier="EmailVerificationViewController" id="2vl-ts-13b" customClass="EmailVerificationViewController" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hzg-km-5au">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0J-xK-CrC" customClass="DesignableView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
+                                <rect key="frame" x="16" y="145" width="382" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WcX-di-GPT">
+                                        <rect key="frame" x="8" y="1" width="373" height="48"/>
+                                        <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" name="Dark"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="2vl-ts-13b" id="aks-de-yvF"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MRt-DN-EhA"/>
+                                    <constraint firstItem="WcX-di-GPT" firstAttribute="leading" secondItem="C0J-xK-CrC" secondAttribute="leading" constant="8" id="ohs-fT-jGN"/>
+                                    <constraint firstItem="WcX-di-GPT" firstAttribute="top" secondItem="C0J-xK-CrC" secondAttribute="top" constant="1" id="osS-e7-42f"/>
+                                    <constraint firstAttribute="trailing" secondItem="WcX-di-GPT" secondAttribute="trailing" constant="1" id="xV6-Aw-fhj"/>
+                                    <constraint firstAttribute="bottom" secondItem="WcX-di-GPT" secondAttribute="bottom" constant="1" id="yy6-ci-uEf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRf-yD-2r1" customClass="DesignableButton" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
+                                <rect key="frame" x="16" y="228" width="382" height="50"/>
+                                <color key="backgroundColor" name="Lime Green"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ceA-Z2-48J"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Confirm">
+                                    <fontDescription key="titleFontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="19"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="RequestCode:" destination="2vl-ts-13b" eventType="touchUpInside" id="GCC-vc-jyX"/>
+                                    <action selector="confirmTap:" destination="2vl-ts-13b" eventType="touchUpInside" id="igd-N2-ogd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We’ve sent you a verification code on your email Please insert the code below to proceed:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wP9-ZM-Z0N">
+                                <rect key="frame" x="28" y="80" width="358" height="41"/>
+                                <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="17"/>
+                                <color key="textColor" name="Dark"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A71-Vc-wIf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wP9-ZM-Z0N" firstAttribute="leading" secondItem="A71-Vc-wIf" secondAttribute="leading" constant="28" id="BpB-LH-JvK"/>
+                            <constraint firstItem="LRf-yD-2r1" firstAttribute="trailing" secondItem="C0J-xK-CrC" secondAttribute="trailing" id="F89-HQ-190"/>
+                            <constraint firstItem="A71-Vc-wIf" firstAttribute="trailing" secondItem="C0J-xK-CrC" secondAttribute="trailing" constant="16" id="FJv-TA-nTg"/>
+                            <constraint firstItem="LRf-yD-2r1" firstAttribute="leading" secondItem="C0J-xK-CrC" secondAttribute="leading" id="FeW-Yj-tI5"/>
+                            <constraint firstItem="C0J-xK-CrC" firstAttribute="leading" secondItem="A71-Vc-wIf" secondAttribute="leading" constant="16" id="G7Q-YW-Wrd"/>
+                            <constraint firstItem="LRf-yD-2r1" firstAttribute="top" secondItem="C0J-xK-CrC" secondAttribute="bottom" constant="33" id="Q19-cK-PCB"/>
+                            <constraint firstItem="C0J-xK-CrC" firstAttribute="top" secondItem="wP9-ZM-Z0N" secondAttribute="bottom" constant="24" id="WB1-OP-tJg"/>
+                            <constraint firstItem="A71-Vc-wIf" firstAttribute="trailing" secondItem="wP9-ZM-Z0N" secondAttribute="trailing" constant="28" id="WQd-F9-7TN"/>
+                            <constraint firstItem="wP9-ZM-Z0N" firstAttribute="top" secondItem="A71-Vc-wIf" secondAttribute="top" constant="32" id="xZW-CC-Are"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Confirm" id="b5z-xV-N88"/>
+                    <connections>
+                        <outlet property="codeField" destination="WcX-di-GPT" id="3Xm-cr-ogh"/>
+                        <outlet property="emailField" destination="WcX-di-GPT" id="8np-ac-4zb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9N-Lg-9bd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1583" y="-573"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="1Jx-E7-dfS">
@@ -5061,6 +5183,9 @@ Refund being issued.</string>
         </designable>
         <designable name="JCl-gJ-LqA">
             <size key="intrinsicContentSize" width="800" height="800"/>
+        </designable>
+        <designable name="LRf-yD-2r1">
+            <size key="intrinsicContentSize" width="97" height="37"/>
         </designable>
         <designable name="M01-qH-bdZ">
             <size key="intrinsicContentSize" width="97.5" height="37"/>

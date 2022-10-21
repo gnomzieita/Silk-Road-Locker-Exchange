@@ -33,4 +33,11 @@ class ProfileCoordinator: BaseCoordenator {
         perentCoordinator?.MainTabBarViews.append(navigationController)
     }
     
+    func profileSettings() {
+        let vc = EditProfileViewController.instantiate()
+        vc.coordinator = self
+        self.navigationController.pushViewController(vc, animated: true)
+    }
+    
+    
 }

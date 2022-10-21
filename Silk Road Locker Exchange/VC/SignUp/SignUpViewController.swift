@@ -19,6 +19,8 @@ class SignUpViewController: RootViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBOutlet weak var phoneField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setBackButton()
@@ -34,7 +36,7 @@ class SignUpViewController: RootViewController {
     }
     
     @IBAction func signUp(_ sender: Any) {
-        let model = SignUpModel(first_name: firstName.getText(), last_name: lastName.getText(), email: emailField.getText(), password: passwordField.getText())
+        let model = SignUpModel(first_name: firstName.getText(), last_name: lastName.getText(), email: emailField.getText(), phone: phoneField.getText(), password: passwordField.getText())
         coordinator?.SignUP(model: model)
     }
     

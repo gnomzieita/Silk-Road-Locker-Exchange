@@ -34,10 +34,9 @@ class API_Request: CombineNetworkService {
         return self.getPublisherForResponse(request: forgetPasswordRequest(email: email).request())
     }
     
-    //verification
-//    func LogIn<T: Decodable>(email:String, passwd:String) -> AnyPublisher<T, NetworkServiceError> {
-//        return self.getPublisherForResponse(request: GetSigInBaseRequest(email: email, passwd: passwd).request())
-//    }
+    func ResetPassword<T: Decodable>(code:String, password:String, confirm_password:String) -> AnyPublisher<T, NetworkServiceError> {
+        return self.getPublisherForResponse(request: ResetPasswordRequest(code: code, password: password, confirm_password: confirm_password).request())
+    }
     
     //Profile
     func GetProfile<T: Decodable>(email:String, passwd:String) -> AnyPublisher<T, NetworkServiceError> {
@@ -57,6 +56,11 @@ class API_Request: CombineNetworkService {
     //RequestCode
     func RequestCode<T: Decodable>(email:String, passwd:String) -> AnyPublisher<T, NetworkServiceError> {
         return self.getPublisherForResponse(request: GetSigInBaseRequest(email: email, passwd: passwd).request())
+    }
+    
+    //email_confirm
+    func EmailConfirm<T: Decodable>(token:String) -> AnyPublisher<T, NetworkServiceError> {
+        return self.getPublisherForResponse(request: EmailConfirmBaseRequest(token).request())
     }
     
 }

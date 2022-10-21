@@ -16,7 +16,6 @@ class ProfileViewController: RootViewController, UserInfoDelegat {
         userName.text = model.name
     }
     
-
     weak var coordinator: ProfileCoordinator?
     
     override func viewDidLoad() {
@@ -26,16 +25,15 @@ class ProfileViewController: RootViewController, UserInfoDelegat {
     }
     
     @IBAction func exitTap(_ sender: Any) {
-        
+        self.coordinator?.perentCoordinator?.logOut()
     }
     
     @IBAction func settingsTap(_ sender: Any) {
-    }
-    
-    @IBAction func emailVerificationTap(_ sender: Any) {
+        
     }
     
     @IBAction func phoneVerificationTap(_ sender: Any) {
+        
     }
     
     

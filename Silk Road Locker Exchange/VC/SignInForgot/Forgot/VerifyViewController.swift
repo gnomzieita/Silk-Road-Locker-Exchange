@@ -26,7 +26,8 @@ class VerifyViewController: RootViewController, UITextFieldDelegate {
     }
     
     @IBAction func Proceed(_ sender: Any) {
-        self.coordinator?.SendCode(code: "\(code1.getText())")
+        let code = code1.getText()+code2.getText()+code3.getText()+code4.getText()+code5.getText()+code6.getText()
+        self.coordinator?.SendCode(code: code)
     }
     
     @IBAction func resendCode(_ sender: Any) {

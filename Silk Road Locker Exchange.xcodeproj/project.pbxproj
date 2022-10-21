@@ -87,6 +87,7 @@
 		E165217A28F4F02500662B36 /* NotificationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165217928F4F02500662B36 /* NotificationsCoordinator.swift */; };
 		E165217D28F4F14B00662B36 /* BaseCoordenator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165217C28F4F14B00662B36 /* BaseCoordenator.swift */; };
 		E17474B1284E6D2400ACF961 /* DGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17474B0284E6D2400ACF961 /* DGView.swift */; };
+		E19DAA1E29020D3000A28EC1 /* EmailVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DAA1D29020D3000A28EC1 /* EmailVerificationViewController.swift */; };
 		E19E87B02864ED500025BFAE /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87AF2864ED500025BFAE /* ChatsViewController.swift */; };
 		E19E87B22866104E0025BFAE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87B12866104E0025BFAE /* ProfileViewController.swift */; };
 		E1A2691928F7758A00635B87 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2691828F7758A00635B87 /* SignUpModel.swift */; };
@@ -202,6 +203,7 @@
 		E165217928F4F02500662B36 /* NotificationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCoordinator.swift; sourceTree = "<group>"; };
 		E165217C28F4F14B00662B36 /* BaseCoordenator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordenator.swift; sourceTree = "<group>"; };
 		E17474B0284E6D2400ACF961 /* DGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGView.swift; sourceTree = "<group>"; };
+		E19DAA1D29020D3000A28EC1 /* EmailVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVerificationViewController.swift; sourceTree = "<group>"; };
 		E19E87AF2864ED500025BFAE /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		E19E87B12866104E0025BFAE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E1A2691828F7758A00635B87 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 				E115310E28704FC800000B09 /* OfferDetailsViewController.swift */,
 				E1E59DE82875FED100B08A03 /* CreateOfferViewController.swift */,
 				E1E1EB25285A687A0087C39E /* ChatTableViewCell.swift */,
+				E19DAA1D29020D3000A28EC1 /* EmailVerificationViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -667,6 +670,7 @@
 				E1E041672878693E0080C5D4 /* SelectLockerViewController.swift in Sources */,
 				E1E1EB26285A687A0087C39E /* ChatTableViewCell.swift in Sources */,
 				E1E73B15284E62E50016FFF2 /* Silk_Road_Locker_Exchange.xcdatamodeld in Sources */,
+				E19DAA1E29020D3000A28EC1 /* EmailVerificationViewController.swift in Sources */,
 				E14EE46D28EB890300582573 /* Coordinator.swift in Sources */,
 				E1AB0EC728634CC800873FEE /* RootViewController.swift in Sources */,
 				E1E04169287869610080C5D4 /* SelectLocationTableViewCell.swift in Sources */,

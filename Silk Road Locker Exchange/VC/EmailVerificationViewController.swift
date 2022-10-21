@@ -1,23 +1,27 @@
 //
-//  EditProfileViewController.swift
+//  EmailVerificationViewController.swift
 //  Silk Road Locker Exchange
 //
-//  Created by Alex Agarkov on 07.07.2022.
+//  Created by Oleksii Aharkov on 21.10.2022.
 //
 
 import UIKit
 
-class EditProfileViewController: RootViewController {
+class EmailVerificationViewController: RootViewController {
 
-    weak var coordinator: ProfileCoordinator?
+    weak var coordinator: RecoveryCoordinator?
+    @IBOutlet weak var codeField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setBackButton()
+
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func confirmTap(_ sender: Any) {
+        coordinator?.enterConfirmCodeView(token: codeField.getText())
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -41,9 +41,33 @@ class RecoveryCoordinator: Coordinator {
             }
             else
             {
-                API_Request.shared.auth_token = signIN.auth_token
+//                API_Request.shared.auth_token = signIN.auth_token
                 DispatchQueue.main.async {
-                    self.perentCoordinator?.LogIn()
+//                    self.perentCoordinator?.LogIn()
+                    
+                    let vc = EmailVerificationViewController.instantiate()
+                    vc.coordinator = self
+                    self.navigationController.pushViewController(vc, animated: true)
+                }
+            }
+        }.store(in: &anyCancellables)
+    }
+    
+    func enterConfirmCodeView(token:String) {
+        API_Request.shared.EmailConfirm(token: token).sink { error in
+                // no-op
+            print(error)
+        
+        } receiveValue: { (signIN: SigInModel) in
+            
+            if let error = signIN.error {
+                self.errorDelegat?.error(error)
+            }
+            else
+            {
+//                API_Request.shared.auth_token = signIN.auth_token
+                DispatchQueue.main.async {
+                    self.navigationController.popToRootViewController(animated: true)
                 }
             }
         }.store(in: &anyCancellables)
