@@ -7,7 +7,31 @@
 
 import UIKit
 
-class EditProfileViewController: RootViewController {
+class EditProfileViewController: RootViewController, UserInfoDelegat {
+    
+    @IBOutlet weak var firstNAmeField: UITextField!
+    
+    @IBOutlet weak var lastNameField: UITextField!
+    
+    @IBOutlet weak var phoneField: UITextField!
+    
+    @IBOutlet weak var emailText: UILabel!
+    
+    @IBOutlet weak var curentPassword: UITextField!
+    
+    @IBOutlet weak var newPassword: UITextField!
+    
+    @IBOutlet weak var confirmNewPassword: UITextField!
+    
+    func setUserInfo(_ model: UserModel) {
+        //FIXME: - ffff
+        
+        firstNAmeField.text = model.first_name
+        lastNameField.text = model.last_name
+        emailText.text = model.email
+        phoneField.text = model.phone
+    }
+    
 
     weak var coordinator: ProfileCoordinator?
     
@@ -17,7 +41,24 @@ class EditProfileViewController: RootViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func changePasswordTap(_ sender: Any) {
+        let passwordInfo = ChangePasswordModel(password: newPassword.getText(), password_confirmation: confirmNewPassword.getText(), current_password: curentPassword.getText())
+        coordinator?.setNewPassword(passwordModel: passwordInfo)
+    }
+    
+    @IBAction func saveChange(_ sender: Any) {
+        let userInfo = UpdateProfileModel(first_name: firstNAmeField.getText(), last_name: lastNameField.getText(),phone: phoneField.getText())
+        coordinator?.UpdateUserProfile(userInfo: userInfo)
+    }
+    
+    @IBAction func emailNotification(_ sender: Any) {
+        
+    }
+    
+    @IBAction func pushNotifications(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 

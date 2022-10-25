@@ -19,8 +19,8 @@ struct GetSigInBaseRequest: BaseRequest {
     var httpBody: [String: Any]?
 
     init(email:String, passwd:String) {
-        self.httpBody = ["user":["email": email,
-                         "password":passwd]]
+        self.httpBody = ["email": email,
+                         "password":passwd]
     }
 }
 
@@ -64,12 +64,12 @@ struct GetProfileRequest: BaseRequest {
     var queryItems: [String : String]?
     var headers: [String : String]?
     
-    typealias ReturnType = UserModel
+    typealias ReturnType = UserProfileModel
     
     var httpBody: [String: Any]?
     
     init(token:String) {
-        self.headers = ["Authorization":"Bearer \(token)"]
+        self.headers = token.Bearer()
     }
 }
 
@@ -84,8 +84,24 @@ struct updateProfileRequest: BaseRequest {
     
     var httpBody: [String: Any]?
     
-    init(_ model:SignUpModel, token:String) {
-        self.headers = ["Authorization":"Bearer \(token)"]
+    init(_ model:UpdateProfileModel, token:String) {
+        self.headers = token.Bearer()
+        self.httpBody = ["user":model.dictionary as Any]
+    }
+}
+
+struct ChangePasswordRequest: BaseRequest {
+    var url: URL = API.server.getURLwithPath(path: "/users/change_password")
+    var httpMethod: HTTPMethod = .PUT
+    var queryItems: [String : String]?
+    var headers: [String : String]?
+    
+    typealias ReturnType = SigInModel
+    
+    var httpBody: [String: Any]?
+    
+    init(_ model:ChangePasswordModel, token:String) {
+        self.headers = token.Bearer()
         self.httpBody = ["user":model.dictionary as Any]
     }
 }
@@ -134,5 +150,23 @@ struct CreateOrderBaseRequest: BaseRequest {
 
     init(_ offer_id:String) {
         self.httpBody = ["offer_id":offer_id]
+    }
+}
+
+//update_password
+struct UpdatePasswordBaseRequest: BaseRequest {
+    var url: URL = API.server.getURLwithPath(path: "/user/update_password")
+    var httpMethod: HTTPMethod = .PUT
+    var queryItems: [String : String]?
+    var headers: [String : String]?
+    
+    //FIXME: ReturnType
+    typealias ReturnType = BaseResponseModel
+    
+    var httpBody: [String: Any]?
+
+    init(_ newPass:ChangePasswordModel, token:String) {
+        self.headers = token.Bearer()
+        self.httpBody = newPass.dictionary
     }
 }

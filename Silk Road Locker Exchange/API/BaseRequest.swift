@@ -61,3 +61,9 @@ extension Encodable {
     return (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)).flatMap { $0 as? [String: Any] }
   }
 }
+
+extension String {
+    func Bearer() -> [String:String] {
+        return ["Authorization":"Bearer \(self)"]
+    }
+}

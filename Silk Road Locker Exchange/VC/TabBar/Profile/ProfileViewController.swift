@@ -29,7 +29,7 @@ class ProfileViewController: RootViewController, UserInfoDelegat {
     }
     
     @IBAction func settingsTap(_ sender: Any) {
-        
+        self.coordinator?.profileSettings()
     }
     
     @IBAction func phoneVerificationTap(_ sender: Any) {

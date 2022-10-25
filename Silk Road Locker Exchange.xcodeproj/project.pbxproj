@@ -87,6 +87,8 @@
 		E165217A28F4F02500662B36 /* NotificationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165217928F4F02500662B36 /* NotificationsCoordinator.swift */; };
 		E165217D28F4F14B00662B36 /* BaseCoordenator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165217C28F4F14B00662B36 /* BaseCoordenator.swift */; };
 		E17474B1284E6D2400ACF961 /* DGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17474B0284E6D2400ACF961 /* DGView.swift */; };
+		E17B848A29075DBA00D9B884 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17B848929075DBA00D9B884 /* BaseResponseModel.swift */; };
+		E17B848C29077F8000D9B884 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17B848B29077F8000D9B884 /* AsyncImageView.swift */; };
 		E19DAA1E29020D3000A28EC1 /* EmailVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DAA1D29020D3000A28EC1 /* EmailVerificationViewController.swift */; };
 		E19E87B02864ED500025BFAE /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87AF2864ED500025BFAE /* ChatsViewController.swift */; };
 		E19E87B22866104E0025BFAE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87B12866104E0025BFAE /* ProfileViewController.swift */; };
@@ -203,6 +205,8 @@
 		E165217928F4F02500662B36 /* NotificationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCoordinator.swift; sourceTree = "<group>"; };
 		E165217C28F4F14B00662B36 /* BaseCoordenator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordenator.swift; sourceTree = "<group>"; };
 		E17474B0284E6D2400ACF961 /* DGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGView.swift; sourceTree = "<group>"; };
+		E17B848929075DBA00D9B884 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
+		E17B848B29077F8000D9B884 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		E19DAA1D29020D3000A28EC1 /* EmailVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVerificationViewController.swift; sourceTree = "<group>"; };
 		E19E87AF2864ED500025BFAE /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		E19E87B12866104E0025BFAE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -444,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				E1D198D328EE1BEB00F8C077 /* UserModel.swift */,
+				E17B848929075DBA00D9B884 /* BaseResponseModel.swift */,
 				E1D198D628EE226400F8C077 /* SigInModel.swift */,
 				E1A2691828F7758A00635B87 /* SignUpModel.swift */,
 			);
@@ -498,6 +503,7 @@
 				E1E73B1B284E62EC0016FFF2 /* Info.plist */,
 				E1166CEC285666790046A442 /* New York */,
 				E1E73B13284E62E50016FFF2 /* Silk_Road_Locker_Exchange.xcdatamodeld */,
+				E17B848B29077F8000D9B884 /* AsyncImageView.swift */,
 			);
 			path = "Silk Road Locker Exchange";
 			sourceTree = "<group>";
@@ -624,6 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17B848C29077F8000D9B884 /* AsyncImageView.swift in Sources */,
 				E134B889287845770011FF26 /* VerifySMSCodeViewController.swift in Sources */,
 				E14EE47128EB8D5900582573 /* MainCoordinator.swift in Sources */,
 				E1AB1AE02864E15D00873FEE /* NotificationTableViewCell.swift in Sources */,
@@ -645,6 +652,7 @@
 				E115310F28704FC800000B09 /* OfferDetailsViewController.swift in Sources */,
 				E134B881287765BB0011FF26 /* PurchaseViewController.swift in Sources */,
 				E1D198DE28EF749500F8C077 /* API_Request.swift in Sources */,
+				E17B848A29075DBA00D9B884 /* BaseResponseModel.swift in Sources */,
 				E1E59DE52875E4DF00B08A03 /* UserListViewController.swift in Sources */,
 				E165217A28F4F02500662B36 /* NotificationsCoordinator.swift in Sources */,
 				E14EE47328EBA15E00582573 /* RecoveryCoordinator.swift in Sources */,

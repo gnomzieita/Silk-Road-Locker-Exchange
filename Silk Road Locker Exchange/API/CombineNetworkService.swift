@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import UIKit
 
 enum NetworkServiceError: Error {
     case invalidURL
@@ -34,7 +35,6 @@ class CombineNetworkService {
     
     func getPublisherForResponse<T: Decodable>(request: URLRequest) -> AnyPublisher<T, NetworkServiceError> {
         return urlSession.dataTaskPublisher(for: request)
-        //return urlSession.dataTaskPublisher(for: url)
             .tryMap { (data, response) -> Data in
                 if let httpResponse = response as? HTTPURLResponse {
                     guard (200..<300) ~= httpResponse.statusCode else {
@@ -52,5 +52,26 @@ class CombineNetworkService {
             }
             .eraseToAnyPublisher()
     }
+    
+    func getImageForResponse(url: URL) -> AnyPublisher<UIImage, NetworkServiceError> {
+        return urlSession.dataTaskPublisher(for: url)
+            .tryMap { (data, response) -> Data in
+                if let httpResponse = response as? HTTPURLResponse {
+                    guard (200..<300) ~= httpResponse.statusCode else {
+                        throw NetworkServiceError.invalidResponseCode(httpResponse.statusCode)
+                    }
+                }
+                return data
+            }
+            .map { UIImage(data: $0) ?? UIImage(named: "tony")! }
+            .mapError { error -> NetworkServiceError in
+                if let decodingError = error as? DecodingError {
+                    return NetworkServiceError.decodingError((decodingError as NSError).debugDescription)
+                }
+                return NetworkServiceError.genericError(error.localizedDescription)
+            }
+            .eraseToAnyPublisher()
+    }
+
 }
 

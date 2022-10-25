@@ -7,11 +7,12 @@
 
 import Foundation
 import Combine
+import UIKit
 
 class API_Request: CombineNetworkService {
     
     static let shared = API_Request()
-    var auth_token: String?
+    var auth_token: String = ""
 
     private override init() {
         
@@ -28,8 +29,6 @@ class API_Request: CombineNetworkService {
     }
     
     //recovery
-    
-    
     func ForgetPassword<T: Decodable>(email:String) -> AnyPublisher<T, NetworkServiceError> {
         return self.getPublisherForResponse(request: forgetPasswordRequest(email: email).request())
     }
@@ -63,4 +62,17 @@ class API_Request: CombineNetworkService {
         return self.getPublisherForResponse(request: EmailConfirmBaseRequest(token).request())
     }
     
+    //update_password
+    func UpdatePassword<T: Decodable>(model:ChangePasswordModel) -> AnyPublisher<T, NetworkServiceError> {
+        return self.getPublisherForResponse(request: UpdatePasswordBaseRequest(model, token:auth_token).request())
+    }
+    
+    //update_profile
+    func UpdateUserProfile<T: Decodable>(model:UpdateProfileModel) -> AnyPublisher<T, NetworkServiceError> {
+        return self.getPublisherForResponse(request: updateProfileRequest(model, token:auth_token).request())
+    }
+    
+    func getImage(imageUrl:URL) -> AnyPublisher<UIImage, NetworkServiceError> {
+        return self.getImageForResponse(url: imageUrl)
+    }
 }

@@ -15,7 +15,7 @@ protocol UserInfoDelegat {
 
 class ProfileCoordinator: BaseCoordenator {
     var errorDelegat: ErrorProtocol?
-    //let profileDelegat:UserInfoDelegat?
+    var profileDelegat:UserInfoDelegat?
     
     var anyCancellables = Set<AnyCancellable>()
     
@@ -29,6 +29,7 @@ class ProfileCoordinator: BaseCoordenator {
     override func start() {
         let vc = ProfileViewController.instantiate()
         vc.coordinator = self
+        self.profileDelegat = vc
         navigationController.pushViewController(vc, animated: true)
         perentCoordinator?.MainTabBarViews.append(navigationController)
     }
@@ -36,8 +37,47 @@ class ProfileCoordinator: BaseCoordenator {
     func profileSettings() {
         let vc = EditProfileViewController.instantiate()
         vc.coordinator = self
+        self.profileDelegat = vc
         self.navigationController.pushViewController(vc, animated: true)
     }
     
-    
 }
+
+extension ProfileCoordinator {
+    
+    func UpdateUserProfile(userInfo model:UpdateProfileModel) {
+        API_Request.shared.UpdateUserProfile(model: model).sink { error in
+                // no-op
+            print(error)
+        
+        } receiveValue: { (signIN: SigInModel) in
+            
+            if let error = signIN.error {
+                self.errorDelegat?.error(error)
+            }
+            else
+            {
+                //FIXME: Update profile message
+            }
+        }.store(in: &anyCancellables)
+
+    }
+    
+    func setNewPassword(passwordModel: ChangePasswordModel){
+        API_Request.shared.UpdatePassword(model: passwordModel).sink { error in
+                // no-op
+            print(error)
+        
+        } receiveValue: { (signIN: SigInModel) in
+            
+            if let error = signIN.error {
+                self.errorDelegat?.error(error)
+            }
+            else
+            {
+                //FIXME: Update Password message
+            }
+        }.store(in: &anyCancellables)
+    }
+}
+

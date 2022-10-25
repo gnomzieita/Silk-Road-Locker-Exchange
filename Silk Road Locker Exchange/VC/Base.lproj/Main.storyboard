@@ -792,7 +792,7 @@ NY 10011</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgE-0l-tdP">
-                                <rect key="frame" x="20" y="190" width="374" height="500"/>
+                                <rect key="frame" x="20" y="190" width="374" height="496"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcy-04-d7E">
                                         <rect key="frame" x="6" y="6" width="90" height="100"/>
@@ -1031,7 +1031,7 @@ NY 10011</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrG-BP-3eb">
-                                        <rect key="frame" x="6" y="320" width="90" height="174"/>
+                                        <rect key="frame" x="6" y="320" width="90" height="170"/>
                                         <color key="backgroundColor" name="Lime Green"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
@@ -1045,7 +1045,7 @@ NY 10011</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iN-fx-fJa">
-                                        <rect key="frame" x="97" y="320" width="89.5" height="174"/>
+                                        <rect key="frame" x="97" y="320" width="89.5" height="170"/>
                                         <color key="backgroundColor" name="Lime Green"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
@@ -1059,7 +1059,7 @@ NY 10011</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9X-Pl-icT">
-                                        <rect key="frame" x="187.5" y="320" width="90" height="174"/>
+                                        <rect key="frame" x="187.5" y="320" width="90" height="170"/>
                                         <color key="backgroundColor" name="Lime Green"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
@@ -1073,7 +1073,7 @@ NY 10011</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75b-5g-1vA">
-                                        <rect key="frame" x="278.5" y="320" width="89.5" height="174"/>
+                                        <rect key="frame" x="278.5" y="320" width="89.5" height="170"/>
                                         <color key="backgroundColor" name="Lime Green"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
@@ -1214,7 +1214,7 @@ NY 10011</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MON-eR-fb0">
-                                <rect key="frame" x="112" y="726" width="90" height="80"/>
+                                <rect key="frame" x="112" y="722" width="90" height="80"/>
                                 <color key="backgroundColor" name="Lime Green"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MON-eR-fb0" secondAttribute="height" multiplier="9:8" id="9z9-tj-IU6"/>
@@ -1233,7 +1233,7 @@ NY 10011</string>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4f-cP-bdf">
-                                <rect key="frame" x="212" y="726" width="90" height="140"/>
+                                <rect key="frame" x="212" y="722" width="90" height="140"/>
                                 <color key="backgroundColor" name="Lime Green"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="U4f-cP-bdf" secondAttribute="height" multiplier="9:14" id="9Y5-g7-7tZ"/>
@@ -1250,7 +1250,7 @@ NY 10011</string>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37o-o0-0oL">
-                                <rect key="frame" x="218.5" y="698" width="77" height="20"/>
+                                <rect key="frame" x="218.5" y="694" width="77" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="8jO-jb-0lP"/>
                                 </constraints>
@@ -1259,7 +1259,7 @@ NY 10011</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RV-d1-uWH">
-                                <rect key="frame" x="124" y="698" width="66" height="20"/>
+                                <rect key="frame" x="124" y="694" width="66" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="FuO-sL-Oys"/>
                                 </constraints>
@@ -2650,40 +2650,13 @@ Transaction complete</string>
                                 <color key="textColor" name="Dark"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxR-CY-syS">
-                                <rect key="frame" x="310.5" y="104" width="87.5" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="zhf-rC-eCU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="17"/>
-                                <color key="textColor" name="Dark"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFr-jq-fGs">
-                                <rect key="frame" x="313" y="150" width="85" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="0Wv-Wi-laF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="17"/>
-                                <color key="textColor" name="Dark"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2l-Fv-LNq">
-                                <rect key="frame" x="352" y="196" width="46" height="22"/>
+                                <rect key="frame" x="108" y="196" width="290" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="Nee-kt-khh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="17"/>
                                 <color key="textColor" name="Grey for elements"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone #" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SP1-SA-1HO">
-                                <rect key="frame" x="332.5" y="242" width="65.5" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="r4G-RN-qIr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="17"/>
-                                <color key="textColor" name="Dark"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idb-Bk-3X7" customClass="DesignableButton" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
@@ -2705,28 +2678,67 @@ Transaction complete</string>
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changePasswordTap:" destination="SL8-gC-5TK" eventType="touchUpInside" id="J6x-3b-M2z"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N2v-gI-JNT">
                                 <rect key="frame" x="353" y="361.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.5450980392" green="0.74509803919999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="emailNotification:" destination="SL8-gC-5TK" eventType="valueChanged" id="NvH-IQ-WXA"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ztG-N4-ght">
                                 <rect key="frame" x="353" y="407.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.5450980392" green="0.74509803919999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="pushNotifications:" destination="SL8-gC-5TK" eventType="valueChanged" id="OPZ-w5-xyb"/>
+                                </connections>
                             </switch>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="click to insert" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkw-Ks-RUX">
-                                <rect key="frame" x="213.5" y="537.5" width="188.5" height="19"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <rect key="frame" x="213.5" y="536.5" width="188.5" height="21"/>
+                                <color key="textColor" name="Dark"/>
+                                <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="click to insert" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32j-3S-F1U">
-                                <rect key="frame" x="213.5" y="583.5" width="188.5" height="19"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <rect key="frame" x="213.5" y="582.5" width="188.5" height="21"/>
+                                <color key="textColor" name="Dark"/>
+                                <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" textContentType="new-password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="click to insert" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Flu-ZQ-1t9">
-                                <rect key="frame" x="213.5" y="629.5" width="188.5" height="19"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="213.5" y="628.5" width="188.5" height="21"/>
+                                <color key="textColor" name="Dark"/>
+                                <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" textContentType="new-password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jQ7-gH-eiD">
+                                <rect key="frame" x="108" y="104" width="290" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="UZ8-Kk-QZl"/>
+                                </constraints>
+                                <color key="textColor" name="Dark"/>
+                                <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ywO-Jq-wtd">
+                                <rect key="frame" x="108" y="150" width="290" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="qKv-ID-sse"/>
+                                </constraints>
+                                <color key="textColor" name="Dark"/>
+                                <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone " textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n94-U0-xFN">
+                                <rect key="frame" x="108" y="242" width="290" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="0vQ-hy-adQ"/>
+                                </constraints>
+                                <color key="textColor" name="Dark"/>
+                                <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -2734,13 +2746,17 @@ Transaction complete</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pe7-eQ-R67" firstAttribute="leading" secondItem="5dM-yC-OVa" secondAttribute="leading" id="00X-yi-99y"/>
+                            <constraint firstItem="n94-U0-xFN" firstAttribute="centerY" secondItem="zVe-fY-0cp" secondAttribute="centerY" id="0fn-5Z-xCf"/>
+                            <constraint firstItem="jQ7-gH-eiD" firstAttribute="leading" secondItem="LWG-rm-qQo" secondAttribute="trailing" constant="8" symbolic="YES" id="1EA-0z-yEf"/>
                             <constraint firstItem="N2v-gI-JNT" firstAttribute="trailing" secondItem="5dM-yC-OVa" secondAttribute="trailing" id="2DC-cE-vPj"/>
+                            <constraint firstItem="E2l-Fv-LNq" firstAttribute="centerY" secondItem="pLt-vU-QTE" secondAttribute="centerY" id="3B1-Dm-BIA"/>
                             <constraint firstItem="LWG-rm-qQo" firstAttribute="leading" secondItem="xzD-11-ozZ" secondAttribute="leading" id="6ne-W5-JQR"/>
                             <constraint firstItem="Flu-ZQ-1t9" firstAttribute="trailing" secondItem="NFQ-9h-A9B" secondAttribute="trailing" id="7N5-Wq-Fdo"/>
                             <constraint firstItem="5VF-x8-mRp" firstAttribute="top" secondItem="5dM-yC-OVa" secondAttribute="bottom" constant="14" id="Am3-Qf-6fp"/>
                             <constraint firstItem="xzD-11-ozZ" firstAttribute="leading" secondItem="9mQ-zA-Uh8" secondAttribute="leading" id="Ccp-Ih-AFS"/>
                             <constraint firstItem="BIO-N0-miB" firstAttribute="leading" secondItem="5dM-yC-OVa" secondAttribute="leading" id="D49-Cv-Pza"/>
                             <constraint firstItem="ztG-N4-ght" firstAttribute="trailing" secondItem="5dM-yC-OVa" secondAttribute="trailing" id="DXU-f5-Myb"/>
+                            <constraint firstItem="ywO-Jq-wtd" firstAttribute="leading" secondItem="jQ7-gH-eiD" secondAttribute="leading" id="HYi-lk-qtW"/>
                             <constraint firstItem="9mQ-zA-Uh8" firstAttribute="top" secondItem="cf8-gU-lFX" secondAttribute="top" id="JJm-no-hAc"/>
                             <constraint firstItem="idb-Bk-3X7" firstAttribute="leading" secondItem="cf8-gU-lFX" secondAttribute="leading" constant="16" id="KAX-DW-otX"/>
                             <constraint firstItem="cf8-gU-lFX" firstAttribute="trailing" secondItem="idb-Bk-3X7" secondAttribute="trailing" constant="16" id="Khr-i1-vih"/>
@@ -2748,44 +2764,41 @@ Transaction complete</string>
                             <constraint firstItem="Flu-ZQ-1t9" firstAttribute="leading" secondItem="bkw-Ks-RUX" secondAttribute="leading" id="Lhe-sb-PgR"/>
                             <constraint firstItem="Flu-ZQ-1t9" firstAttribute="centerY" secondItem="pe7-eQ-R67" secondAttribute="centerY" id="Lzj-sX-GLh"/>
                             <constraint firstItem="bkw-Ks-RUX" firstAttribute="centerY" secondItem="EXV-pB-eW1" secondAttribute="centerY" id="N9g-aU-zAK"/>
+                            <constraint firstItem="ywO-Jq-wtd" firstAttribute="trailing" secondItem="jQ7-gH-eiD" secondAttribute="trailing" id="NzJ-H8-v2N"/>
                             <constraint firstItem="32j-3S-F1U" firstAttribute="trailing" secondItem="NFQ-9h-A9B" secondAttribute="trailing" id="Nzo-x7-RCy"/>
-                            <constraint firstItem="SP1-SA-1HO" firstAttribute="top" secondItem="E2l-Fv-LNq" secondAttribute="bottom" constant="24" id="O4s-eR-J5m"/>
                             <constraint firstItem="fgs-tY-Rh2" firstAttribute="top" secondItem="Ajz-EL-bJ1" secondAttribute="bottom" constant="24" id="Q4J-ws-onS"/>
-                            <constraint firstItem="E2l-Fv-LNq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pLt-vU-QTE" secondAttribute="trailing" constant="10" id="QKC-JA-4OD"/>
                             <constraint firstItem="fgs-tY-Rh2" firstAttribute="leading" secondItem="5VF-x8-mRp" secondAttribute="leading" id="Qms-h4-81u"/>
-                            <constraint firstItem="E2l-Fv-LNq" firstAttribute="trailing" secondItem="nxR-CY-syS" secondAttribute="trailing" id="QsU-sQ-bTa"/>
-                            <constraint firstItem="nxR-CY-syS" firstAttribute="centerY" secondItem="LWG-rm-qQo" secondAttribute="centerY" id="R3I-oB-Ze0"/>
+                            <constraint firstItem="ywO-Jq-wtd" firstAttribute="centerY" secondItem="Hpg-Ah-jtU" secondAttribute="centerY" id="R1R-JG-f86"/>
+                            <constraint firstItem="E2l-Fv-LNq" firstAttribute="leading" secondItem="ywO-Jq-wtd" secondAttribute="leading" id="RAV-9c-Sh1"/>
                             <constraint firstItem="5VF-x8-mRp" firstAttribute="leading" secondItem="xzD-11-ozZ" secondAttribute="leading" id="RbA-lM-KYF"/>
                             <constraint firstItem="Kyu-He-3l3" firstAttribute="leading" secondItem="5dM-yC-OVa" secondAttribute="leading" id="TFn-Qz-mLk"/>
+                            <constraint firstItem="E2l-Fv-LNq" firstAttribute="trailing" secondItem="ywO-Jq-wtd" secondAttribute="trailing" id="TIg-2r-hz7"/>
                             <constraint firstItem="Kyu-He-3l3" firstAttribute="leading" secondItem="BIO-N0-miB" secondAttribute="leading" id="Tjw-OJ-gg0"/>
                             <constraint firstItem="32j-3S-F1U" firstAttribute="leading" secondItem="bkw-Ks-RUX" secondAttribute="leading" id="UAN-Yg-H8E"/>
                             <constraint firstItem="BIO-N0-miB" firstAttribute="top" secondItem="NFQ-9h-A9B" secondAttribute="bottom" constant="14" id="Unn-te-J4A"/>
                             <constraint firstItem="NFQ-9h-A9B" firstAttribute="trailing" secondItem="5dM-yC-OVa" secondAttribute="trailing" id="YKH-YY-5zq"/>
                             <constraint firstItem="Hpg-Ah-jtU" firstAttribute="top" secondItem="LWG-rm-qQo" secondAttribute="bottom" constant="24" id="Z7z-8B-O9S"/>
+                            <constraint firstItem="jQ7-gH-eiD" firstAttribute="bottom" secondItem="LWG-rm-qQo" secondAttribute="bottom" id="ZLF-AV-8TW"/>
                             <constraint firstItem="cf8-gU-lFX" firstAttribute="trailing" secondItem="9mQ-zA-Uh8" secondAttribute="trailing" constant="12" id="bdh-uQ-sAB"/>
                             <constraint firstItem="xzD-11-ozZ" firstAttribute="top" secondItem="9mQ-zA-Uh8" secondAttribute="bottom" constant="14" id="biM-6F-abC"/>
-                            <constraint firstItem="SP1-SA-1HO" firstAttribute="trailing" secondItem="nxR-CY-syS" secondAttribute="trailing" id="bmy-kZ-bCX"/>
                             <constraint firstItem="BIO-N0-miB" firstAttribute="leading" secondItem="NFQ-9h-A9B" secondAttribute="leading" id="buo-JI-r11"/>
-                            <constraint firstItem="cf8-gU-lFX" firstAttribute="trailing" secondItem="nxR-CY-syS" secondAttribute="trailing" constant="16" id="c3r-y4-D7l"/>
                             <constraint firstItem="fgs-tY-Rh2" firstAttribute="leading" secondItem="xzD-11-ozZ" secondAttribute="leading" id="cOm-gD-NyO"/>
                             <constraint firstItem="Ajz-EL-bJ1" firstAttribute="leading" secondItem="xzD-11-ozZ" secondAttribute="leading" id="cue-Kh-2CV"/>
                             <constraint firstItem="LWG-rm-qQo" firstAttribute="top" secondItem="xzD-11-ozZ" secondAttribute="bottom" constant="24" id="eAu-CI-2lF"/>
                             <constraint firstItem="Ajz-EL-bJ1" firstAttribute="top" secondItem="5VF-x8-mRp" secondAttribute="bottom" constant="24" id="eCM-UM-RS1"/>
                             <constraint firstItem="pe7-eQ-R67" firstAttribute="leading" secondItem="BIO-N0-miB" secondAttribute="leading" id="fRZ-5l-vXA"/>
                             <constraint firstItem="ztG-N4-ght" firstAttribute="centerY" secondItem="fgs-tY-Rh2" secondAttribute="centerY" id="fUd-mg-Jmg"/>
-                            <constraint firstItem="mFr-jq-fGs" firstAttribute="top" secondItem="nxR-CY-syS" secondAttribute="bottom" constant="24" id="fWb-IM-Q9P"/>
                             <constraint firstItem="pLt-vU-QTE" firstAttribute="top" secondItem="Hpg-Ah-jtU" secondAttribute="bottom" constant="24" id="feD-xN-4eo"/>
-                            <constraint firstItem="SP1-SA-1HO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zVe-fY-0cp" secondAttribute="trailing" constant="10" id="gc2-1c-K6y"/>
+                            <constraint firstItem="n94-U0-xFN" firstAttribute="leading" secondItem="ywO-Jq-wtd" secondAttribute="leading" id="h3o-C9-77K"/>
                             <constraint firstItem="5dM-yC-OVa" firstAttribute="top" secondItem="zVe-fY-0cp" secondAttribute="bottom" constant="46" id="i8V-ub-Xa5"/>
                             <constraint firstItem="EXV-pB-eW1" firstAttribute="top" secondItem="BIO-N0-miB" secondAttribute="bottom" constant="24" id="iSY-qr-ceJ"/>
                             <constraint firstItem="32j-3S-F1U" firstAttribute="centerY" secondItem="Kyu-He-3l3" secondAttribute="centerY" id="k7R-RY-rUp"/>
                             <constraint firstItem="Kyu-He-3l3" firstAttribute="top" secondItem="EXV-pB-eW1" secondAttribute="bottom" constant="24" id="m7x-RR-gfj"/>
+                            <constraint firstItem="n94-U0-xFN" firstAttribute="trailing" secondItem="ywO-Jq-wtd" secondAttribute="trailing" id="mNa-bF-eff"/>
                             <constraint firstItem="5dM-yC-OVa" firstAttribute="trailing" secondItem="9mQ-zA-Uh8" secondAttribute="trailing" id="mg2-IF-XwC"/>
                             <constraint firstItem="zVe-fY-0cp" firstAttribute="leading" secondItem="xzD-11-ozZ" secondAttribute="leading" id="mjl-gB-r7k"/>
                             <constraint firstItem="pe7-eQ-R67" firstAttribute="top" secondItem="Kyu-He-3l3" secondAttribute="bottom" constant="24" id="ndJ-C3-lMM"/>
-                            <constraint firstItem="mFr-jq-fGs" firstAttribute="trailing" secondItem="nxR-CY-syS" secondAttribute="trailing" id="o6v-7I-lBd"/>
                             <constraint firstItem="EXV-pB-eW1" firstAttribute="leading" secondItem="5dM-yC-OVa" secondAttribute="leading" id="oRF-Qu-t8u"/>
-                            <constraint firstItem="nxR-CY-syS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LWG-rm-qQo" secondAttribute="trailing" constant="10" id="ohY-FL-tlD"/>
                             <constraint firstItem="bkw-Ks-RUX" firstAttribute="trailing" secondItem="NFQ-9h-A9B" secondAttribute="trailing" id="qXX-gL-evd"/>
                             <constraint firstItem="9mQ-zA-Uh8" firstAttribute="leading" secondItem="cf8-gU-lFX" secondAttribute="leading" constant="12" id="qey-Am-sxe"/>
                             <constraint firstItem="Hpg-Ah-jtU" firstAttribute="leading" secondItem="xzD-11-ozZ" secondAttribute="leading" id="sQF-mk-C0g"/>
@@ -2793,10 +2806,9 @@ Transaction complete</string>
                             <constraint firstItem="N2v-gI-JNT" firstAttribute="centerY" secondItem="Ajz-EL-bJ1" secondAttribute="centerY" id="si9-bm-QUM"/>
                             <constraint firstItem="idb-Bk-3X7" firstAttribute="top" secondItem="pe7-eQ-R67" secondAttribute="bottom" constant="32" id="tNL-Ma-Grx"/>
                             <constraint firstItem="zVe-fY-0cp" firstAttribute="top" secondItem="pLt-vU-QTE" secondAttribute="bottom" constant="24" id="tkH-yw-bnn"/>
-                            <constraint firstItem="mFr-jq-fGs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hpg-Ah-jtU" secondAttribute="trailing" constant="10" id="u0a-Gz-DnS"/>
                             <constraint firstItem="Flu-ZQ-1t9" firstAttribute="leading" secondItem="pe7-eQ-R67" secondAttribute="trailing" constant="8" id="udB-hU-EAe"/>
-                            <constraint firstItem="E2l-Fv-LNq" firstAttribute="top" secondItem="mFr-jq-fGs" secondAttribute="bottom" constant="24" id="x0O-Wo-xLw"/>
                             <constraint firstItem="NFQ-9h-A9B" firstAttribute="leading" secondItem="5dM-yC-OVa" secondAttribute="leading" id="xPT-22-9hq"/>
+                            <constraint firstItem="cf8-gU-lFX" firstAttribute="trailing" secondItem="jQ7-gH-eiD" secondAttribute="trailing" constant="16" id="xiZ-gk-QMM"/>
                             <constraint firstItem="EXV-pB-eW1" firstAttribute="leading" secondItem="BIO-N0-miB" secondAttribute="leading" id="y7C-xo-V13"/>
                             <constraint firstItem="5dM-yC-OVa" firstAttribute="leading" secondItem="9mQ-zA-Uh8" secondAttribute="leading" id="yKG-T9-SgT"/>
                             <constraint firstItem="Ajz-EL-bJ1" firstAttribute="leading" secondItem="5VF-x8-mRp" secondAttribute="leading" id="zA1-I2-E59"/>
@@ -2812,13 +2824,25 @@ Transaction complete</string>
                                     <fontDescription key="titleFontDescription" name="NewYork-Regular" family="New York" pointSize="16"/>
                                     <color key="baseForegroundColor" name="Lime Green"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveChange:" destination="SL8-gC-5TK" eventType="touchUpInside" id="Vch-U1-4z7"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="confirmNewPassword" destination="Flu-ZQ-1t9" id="fsV-SW-0v6"/>
+                        <outlet property="curentPassword" destination="bkw-Ks-RUX" id="l2g-Wu-fvg"/>
+                        <outlet property="emailText" destination="E2l-Fv-LNq" id="6tr-JZ-FnH"/>
+                        <outlet property="firstNAmeField" destination="jQ7-gH-eiD" id="wLX-P3-8AA"/>
+                        <outlet property="lastNameField" destination="ywO-Jq-wtd" id="xVR-yg-JRe"/>
+                        <outlet property="newPassword" destination="32j-3S-F1U" id="TZF-s6-MaZ"/>
+                        <outlet property="phoneField" destination="n94-U0-xFN" id="KIP-yu-elM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k0V-vT-3PU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5480" y="2129"/>
+            <point key="canvasLocation" x="5479.7101449275369" y="2740.8482142857142"/>
         </scene>
         <!--Payment methods-->
         <scene sceneID="rE2-J0-biw">
@@ -3344,7 +3368,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P0O-kx-0Wy">
                                         <rect key="frame" x="8" y="1" width="373" height="48"/>
                                         <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -3378,7 +3402,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jue-Ik-EFM">
                                         <rect key="frame" x="8" y="1" width="274" height="48"/>
                                         <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -3495,7 +3519,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HhF-HH-iLQ">
                                         <rect key="frame" x="8" y="1" width="373" height="48"/>
                                         <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -3529,7 +3553,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EkA-Xe-PrL">
                                         <rect key="frame" x="8" y="1" width="373" height="48"/>
                                         <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="family-name"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -3563,7 +3587,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ON3-VT-Wfg">
                                         <rect key="frame" x="8" y="1" width="373" height="48"/>
                                         <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -3597,7 +3621,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MCO-1r-nZM">
                                         <rect key="frame" x="8" y="1" width="373" height="48"/>
                                         <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -3631,7 +3655,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o8v-Ht-Yi1">
                                         <rect key="frame" x="8" y="1" width="274" height="48"/>
                                         <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -3771,7 +3795,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Md6-eV-auP">
                                         <rect key="frame" x="8" y="1" width="373" height="48"/>
                                         <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -3889,7 +3913,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="x" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mPx-N6-h2C">
                                         <rect key="frame" x="8" y="1" width="36.5" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -3926,7 +3950,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="x" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sl6-u5-tKd">
                                         <rect key="frame" x="8" y="1" width="36.5" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -3963,7 +3987,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="x" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kew-tH-uLp">
                                         <rect key="frame" x="8" y="1" width="36.5" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -4000,7 +4024,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="x" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2YQ-rd-ThR">
                                         <rect key="frame" x="8" y="1" width="36.5" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -4037,7 +4061,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="x" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C9a-yQ-34c">
                                         <rect key="frame" x="8" y="1" width="36.5" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -4133,7 +4157,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="x" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hbC-eD-LtR">
                                         <rect key="frame" x="8" y="1" width="36.5" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -4227,7 +4251,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4EX-R7-3qE">
                                         <rect key="frame" x="8" y="1" width="274" height="48"/>
                                         <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="new-password"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -4275,7 +4299,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8p5-Kn-fSI">
                                         <rect key="frame" x="8" y="1" width="274" height="48"/>
                                         <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="new-password"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -4379,7 +4403,7 @@ Transaction complete</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sl-g4-c89">
                                         <rect key="frame" x="8" y="1" width="373" height="48"/>
                                         <fontDescription key="fontDescription" name="NewYorkMedium-Regular" family="New York Medium" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="tel"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -4473,7 +4497,7 @@ Please include country code when inserting the phone number</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="x" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="68E-Ol-AuE">
                                         <rect key="frame" x="8" y="1" width="36.5" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="one-time-code"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -4507,7 +4531,7 @@ Please include country code when inserting the phone number</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="x" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kl6-9o-8t3">
                                         <rect key="frame" x="8" y="1" width="36.5" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="one-time-code"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -4541,7 +4565,7 @@ Please include country code when inserting the phone number</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="x" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBA-nt-m43">
                                         <rect key="frame" x="8" y="1" width="36.5" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="one-time-code"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -4575,7 +4599,7 @@ Please include country code when inserting the phone number</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="x" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OKq-yS-JdU">
                                         <rect key="frame" x="8" y="1" width="36.5" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="one-time-code"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -4609,7 +4633,7 @@ Please include country code when inserting the phone number</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="x" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s19-f4-ARI">
                                         <rect key="frame" x="8" y="1" width="36.5" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="one-time-code"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
@@ -4698,7 +4722,7 @@ Please insert the code below to proceed:</string>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="x" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PMd-pd-qGD">
                                         <rect key="frame" x="8" y="1" width="36.5" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="one-time-code"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" name="Dark"/>
