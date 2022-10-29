@@ -50,7 +50,7 @@ class SignInForgotCoordinator: Coordinator {
             }
             else
             {
-                API_Request.shared.auth_token = signIN.auth_token
+                API_Request.shared.auth_token = signIN.auth_token ?? ""
                 DispatchQueue.main.async {
                     self.perentCoordinator?.LogIn()
                 }
@@ -68,7 +68,7 @@ class SignInForgotCoordinator: Coordinator {
             }
             else
             {
-                API_Request.shared.auth_token = signIN.auth_token
+//                API_Request.shared.auth_token = signIN.auth_token
                 DispatchQueue.main.async {
                     let vc = VerifyViewController.instantiate()
                     vc.coordinator = self

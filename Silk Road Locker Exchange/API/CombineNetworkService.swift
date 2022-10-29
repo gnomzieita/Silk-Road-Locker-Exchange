@@ -41,6 +41,14 @@ class CombineNetworkService {
                         throw NetworkServiceError.invalidResponseCode(httpResponse.statusCode)
                     }
                 }
+                
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
+                    print(json)
+                } catch {
+                    print("errorMsg")
+                }
+                
                 return data
             }
             .decode(type: T.self, decoder: JSONDecoder())

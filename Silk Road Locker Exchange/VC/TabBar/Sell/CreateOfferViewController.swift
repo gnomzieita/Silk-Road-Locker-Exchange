@@ -9,6 +9,8 @@ import UIKit
 
 class CreateOfferViewController: RootViewController {
 
+    weak var coordinator: SellCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setBackButton()

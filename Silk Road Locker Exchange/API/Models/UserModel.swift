@@ -15,6 +15,7 @@ struct UserModel: Codable {
     let email: String?
     let phone: String?
     let name: String?
+    let profile_picture_url: String?
 }
 
 struct UserProfileModel: Codable {

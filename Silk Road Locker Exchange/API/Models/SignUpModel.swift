@@ -13,5 +13,17 @@ struct SignUpModel: Codable {
     let email: String
     let phone: String?
     let password: String
-    //let password_confirmation: String?
+    let password_confirmation: String?
+}
+
+struct responseUserModel: Codable {
+    let user: UserModel?
+}
+
+struct SignUpUserModel: Codable {
+    let success: Int?
+    //let data: responseUserModel?
+    let error: String?
+    let auth_token: String?
+
 }

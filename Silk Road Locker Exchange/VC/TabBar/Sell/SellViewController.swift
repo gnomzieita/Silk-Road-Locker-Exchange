@@ -25,7 +25,10 @@ class SellViewController: RootViewController, UITableViewDelegate, UITableViewDa
         table.reloadData()
     }
     
-
+    @IBAction func NewOffer(_ sender: Any) {
+        
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }

@@ -29,4 +29,17 @@ class SellCoordinator: BaseCoordenator {
         perentCoordinator?.MainTabBarViews.append(navigationController)
     }
     
+    func NewOffer() {
+        let vc = CreateOfferViewController.instantiate()
+        vc.coordinator = self
+        self.navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func getByer() {
+        //UserListViewController
+        let vc = UserListViewController.instantiate()
+        vc.coordinator = self
+        self.navigationController.pushViewController(vc, animated: true)
+    }
+    
 }

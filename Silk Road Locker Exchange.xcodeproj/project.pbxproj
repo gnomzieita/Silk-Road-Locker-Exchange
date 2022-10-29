@@ -89,6 +89,7 @@
 		E17474B1284E6D2400ACF961 /* DGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17474B0284E6D2400ACF961 /* DGView.swift */; };
 		E17B848A29075DBA00D9B884 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17B848929075DBA00D9B884 /* BaseResponseModel.swift */; };
 		E17B848C29077F8000D9B884 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17B848B29077F8000D9B884 /* AsyncImageView.swift */; };
+		E17B848E290A015B00D9B884 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17B848D290A015B00D9B884 /* LocationModel.swift */; };
 		E19DAA1E29020D3000A28EC1 /* EmailVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DAA1D29020D3000A28EC1 /* EmailVerificationViewController.swift */; };
 		E19E87B02864ED500025BFAE /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87AF2864ED500025BFAE /* ChatsViewController.swift */; };
 		E19E87B22866104E0025BFAE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87B12866104E0025BFAE /* ProfileViewController.swift */; };
@@ -207,6 +208,7 @@
 		E17474B0284E6D2400ACF961 /* DGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGView.swift; sourceTree = "<group>"; };
 		E17B848929075DBA00D9B884 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
 		E17B848B29077F8000D9B884 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		E17B848D290A015B00D9B884 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		E19DAA1D29020D3000A28EC1 /* EmailVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVerificationViewController.swift; sourceTree = "<group>"; };
 		E19E87AF2864ED500025BFAE /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		E19E87B12866104E0025BFAE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -334,9 +336,7 @@
 				E134B8702877278C0011FF26 /* PaymenMethodsViewController.swift */,
 				E134B86E287727460011FF26 /* PaymentTableViewCell.swift */,
 				E1E59DE62875E53600B08A03 /* UserListTableViewCell.swift */,
-				E1E59DE42875E4DF00B08A03 /* UserListViewController.swift */,
 				E115310E28704FC800000B09 /* OfferDetailsViewController.swift */,
-				E1E59DE82875FED100B08A03 /* CreateOfferViewController.swift */,
 				E1E1EB25285A687A0087C39E /* ChatTableViewCell.swift */,
 				E19DAA1D29020D3000A28EC1 /* EmailVerificationViewController.swift */,
 			);
@@ -366,6 +366,8 @@
 			children = (
 				E165216F28F4EA7000662B36 /* SellCoordinator.swift */,
 				E1AB0ECC28639EC000873FEE /* SellViewController.swift */,
+				E1E59DE82875FED100B08A03 /* CreateOfferViewController.swift */,
+				E1E59DE42875E4DF00B08A03 /* UserListViewController.swift */,
 			);
 			path = Sell;
 			sourceTree = "<group>";
@@ -451,6 +453,7 @@
 				E17B848929075DBA00D9B884 /* BaseResponseModel.swift */,
 				E1D198D628EE226400F8C077 /* SigInModel.swift */,
 				E1A2691828F7758A00635B87 /* SignUpModel.swift */,
+				E17B848D290A015B00D9B884 /* LocationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -678,6 +681,7 @@
 				E1E041672878693E0080C5D4 /* SelectLockerViewController.swift in Sources */,
 				E1E1EB26285A687A0087C39E /* ChatTableViewCell.swift in Sources */,
 				E1E73B15284E62E50016FFF2 /* Silk_Road_Locker_Exchange.xcdatamodeld in Sources */,
+				E17B848E290A015B00D9B884 /* LocationModel.swift in Sources */,
 				E19DAA1E29020D3000A28EC1 /* EmailVerificationViewController.swift in Sources */,
 				E14EE46D28EB890300582573 /* Coordinator.swift in Sources */,
 				E1AB0EC728634CC800873FEE /* RootViewController.swift in Sources */,

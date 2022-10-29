@@ -36,7 +36,7 @@ class SignUpViewController: RootViewController {
     }
     
     @IBAction func signUp(_ sender: Any) {
-        let model = SignUpModel(first_name: firstName.getText(), last_name: lastName.getText(), email: emailField.getText(), phone: phoneField.getText(), password: passwordField.getText())
+        let model = SignUpModel(first_name: firstName.getText(), last_name: lastName.getText(), email: emailField.getText(), phone: phoneField.getText(), password: passwordField.getText(), password_confirmation: passwordField.getText())
         coordinator?.SignUP(model: model)
     }
     

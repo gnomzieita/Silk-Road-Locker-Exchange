@@ -112,7 +112,7 @@ struct GetSigUpBaseRequest: BaseRequest {
     var queryItems: [String : String]?
     var headers: [String : String]?
     
-    typealias ReturnType = SignUpModel
+    typealias ReturnType = SignUpUserModel
     
     var httpBody: [String: Any]?
 

@@ -9,6 +9,7 @@ import UIKit
 
 class UserListViewController: RootViewController, UITableViewDelegate, UITableViewDataSource {
     
+    weak var coordinator: SellCoordinator?
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var titleLabel: UILabel!

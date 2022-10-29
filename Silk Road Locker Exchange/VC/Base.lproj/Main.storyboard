@@ -301,7 +301,7 @@
                                     <fontDescription key="titleFontDescription" name="NewYork-Regular" family="New York" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="rXf-z3-3cx" kind="show" id="dcX-c0-WLr"/>
+                                    <action selector="NewOffer:" destination="lth-y7-brV" eventType="touchUpInside" id="nKE-w5-1JU"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -423,7 +423,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qpE-n4-IWp" customClass="DesignableImageView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
-                                <rect key="frame" x="57" y="108" width="300" height="300"/>
+                                <rect key="frame" x="57" y="64" width="300" height="300"/>
                                 <color key="backgroundColor" name="fields stroke"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="TMO-6R-3Xl"/>
@@ -442,7 +442,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkJ-aF-o8V">
-                                <rect key="frame" x="177" y="228" width="60" height="60"/>
+                                <rect key="frame" x="177" y="184" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="BaV-Qj-IkZ"/>
                                     <constraint firstAttribute="height" constant="60" id="lQ8-cJ-wjs"/>
@@ -451,7 +451,7 @@
                                 <buttonConfiguration key="configuration" style="plain" image="paperclip"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ix3-kI-fVO" customClass="DesignableView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
-                                <rect key="frame" x="16" y="490" width="382" height="50"/>
+                                <rect key="frame" x="16" y="446" width="382" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WgU-BN-dOL">
                                         <rect key="frame" x="8" y="1" width="373" height="48"/>
@@ -485,7 +485,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poE-en-pMj" customClass="DesignableView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
-                                <rect key="frame" x="16" y="424" width="382" height="50"/>
+                                <rect key="frame" x="16" y="380" width="382" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Uu-a3-woO">
                                         <rect key="frame" x="8" y="1" width="373" height="48"/>
@@ -519,7 +519,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FbT-nI-t0e" customClass="DesignableView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
-                                <rect key="frame" x="16" y="556" width="382" height="50"/>
+                                <rect key="frame" x="16" y="512" width="382" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select buyer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cMX-NR-bhA">
                                         <rect key="frame" x="8" y="1" width="326" height="48"/>
@@ -544,9 +544,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
-                                        <connections>
-                                            <segue destination="38U-Il-Zyl" kind="presentation" identifier="userList" id="3k8-eh-1eN"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -576,7 +573,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLN-1c-Jlv">
-                                <rect key="frame" x="12" y="636" width="390" height="43"/>
+                                <rect key="frame" x="12" y="592" width="390" height="43"/>
                                 <string key="text">Notice: Locker reservation fee will be deducted at the end of transaction based on the size of the locker and the amount of time the locker is reserved.a</string>
                                 <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="12"/>
                                 <color key="textColor" name="Dark"/>
@@ -642,15 +639,15 @@
             <objects>
                 <viewController storyboardIdentifier="SelectLocationViewController" hidesBottomBarWhenPushed="YES" id="0bC-rT-BtN" customClass="SelectLocationViewController" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VZe-3r-rOm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="37k-g2-FwS">
-                                <rect key="frame" x="0.0" y="92" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fH7-bL-h00">
-                                <rect key="frame" x="0.0" y="148" width="414" height="714"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="734"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectLocationTableViewCell" rowHeight="143" id="lZn-Zj-ks5" customClass="SelectLocationTableViewCell" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
@@ -770,11 +767,11 @@ NY 10011</string>
             <objects>
                 <viewController storyboardIdentifier="SelectLockerViewController" hidesBottomBarWhenPushed="YES" id="bbS-Bz-ZEv" customClass="SelectLockerViewController" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="53B-rK-VRu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price for selected locker:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTG-vC-TJ5">
-                                <rect key="frame" x="21" y="102" width="195" height="22"/>
+                                <rect key="frame" x="21" y="58" width="195" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="Xgb-P3-cCX"/>
                                 </constraints>
@@ -783,7 +780,7 @@ NY 10011</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locker 3: $1.49/ hr " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc5-7N-OJV">
-                                <rect key="frame" x="21" y="131" width="161" height="22"/>
+                                <rect key="frame" x="21" y="87" width="161" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="df9-MR-Gk8"/>
                                 </constraints>
@@ -792,7 +789,7 @@ NY 10011</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgE-0l-tdP">
-                                <rect key="frame" x="20" y="190" width="374" height="496"/>
+                                <rect key="frame" x="20" y="146" width="374" height="500"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcy-04-d7E">
                                         <rect key="frame" x="6" y="6" width="90" height="100"/>
@@ -1031,7 +1028,7 @@ NY 10011</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrG-BP-3eb">
-                                        <rect key="frame" x="6" y="320" width="90" height="170"/>
+                                        <rect key="frame" x="6" y="320" width="90" height="174"/>
                                         <color key="backgroundColor" name="Lime Green"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
@@ -1045,7 +1042,7 @@ NY 10011</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iN-fx-fJa">
-                                        <rect key="frame" x="97" y="320" width="89.5" height="170"/>
+                                        <rect key="frame" x="97" y="320" width="89.5" height="174"/>
                                         <color key="backgroundColor" name="Lime Green"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
@@ -1059,7 +1056,7 @@ NY 10011</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9X-Pl-icT">
-                                        <rect key="frame" x="187.5" y="320" width="90" height="170"/>
+                                        <rect key="frame" x="187.5" y="320" width="90" height="174"/>
                                         <color key="backgroundColor" name="Lime Green"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
@@ -1073,7 +1070,7 @@ NY 10011</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75b-5g-1vA">
-                                        <rect key="frame" x="278.5" y="320" width="89.5" height="170"/>
+                                        <rect key="frame" x="278.5" y="320" width="89.5" height="174"/>
                                         <color key="backgroundColor" name="Lime Green"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
@@ -1172,7 +1169,7 @@ NY 10011</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ma0-da-9gf">
-                                <rect key="frame" x="26" y="160" width="20" height="20"/>
+                                <rect key="frame" x="26" y="116" width="20" height="20"/>
                                 <color key="backgroundColor" name="Lime Green"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="2Y9-Ja-mE2"/>
@@ -1180,13 +1177,13 @@ NY 10011</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cl-07-HsP">
-                                <rect key="frame" x="53" y="160" width="68" height="20"/>
+                                <rect key="frame" x="53" y="116" width="68" height="20"/>
                                 <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yV-X2-ZT3">
-                                <rect key="frame" x="139" y="160" width="20" height="20"/>
+                                <rect key="frame" x="139" y="116" width="20" height="20"/>
                                 <color key="backgroundColor" name="Selected"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="U3T-l2-lgg"/>
@@ -1194,13 +1191,13 @@ NY 10011</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ir3-At-o47">
-                                <rect key="frame" x="166" y="160" width="63" height="20"/>
+                                <rect key="frame" x="166" y="116" width="63" height="20"/>
                                 <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWG-1m-yDb">
-                                <rect key="frame" x="247" y="160" width="20" height="20"/>
+                                <rect key="frame" x="247" y="116" width="20" height="20"/>
                                 <color key="backgroundColor" name="Occupied"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="XF2-Iq-MN5"/>
@@ -1208,13 +1205,13 @@ NY 10011</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Occupied" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8s-Gi-maD">
-                                <rect key="frame" x="274" y="160" width="72" height="20"/>
+                                <rect key="frame" x="274" y="116" width="72" height="20"/>
                                 <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MON-eR-fb0">
-                                <rect key="frame" x="112" y="722" width="90" height="80"/>
+                                <rect key="frame" x="112" y="682" width="90" height="80"/>
                                 <color key="backgroundColor" name="Lime Green"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MON-eR-fb0" secondAttribute="height" multiplier="9:8" id="9z9-tj-IU6"/>
@@ -1233,7 +1230,7 @@ NY 10011</string>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4f-cP-bdf">
-                                <rect key="frame" x="212" y="722" width="90" height="140"/>
+                                <rect key="frame" x="212" y="682" width="90" height="140"/>
                                 <color key="backgroundColor" name="Lime Green"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="U4f-cP-bdf" secondAttribute="height" multiplier="9:14" id="9Y5-g7-7tZ"/>
@@ -1250,7 +1247,7 @@ NY 10011</string>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37o-o0-0oL">
-                                <rect key="frame" x="218.5" y="694" width="77" height="20"/>
+                                <rect key="frame" x="218.5" y="654" width="77" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="8jO-jb-0lP"/>
                                 </constraints>
@@ -1259,7 +1256,7 @@ NY 10011</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RV-d1-uWH">
-                                <rect key="frame" x="124" y="694" width="66" height="20"/>
+                                <rect key="frame" x="124" y="654" width="66" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="FuO-sL-Oys"/>
                                 </constraints>
@@ -5276,8 +5273,7 @@ Refund being issued.</string>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="8ct-9a-cd7"/>
-        <segue reference="BgB-L3-SS2"/>
+        <segue reference="YRY-s1-2Fa"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="201215170016890737" width="3080" height="3080"/>
