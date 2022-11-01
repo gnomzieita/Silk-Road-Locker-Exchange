@@ -22,7 +22,7 @@ struct responseUserModel: Codable {
 
 struct SignUpUserModel: Codable {
     let success: Int?
-    //let data: responseUserModel?
+    let data: responseUserModel?
     let error: String?
     let auth_token: String?
 

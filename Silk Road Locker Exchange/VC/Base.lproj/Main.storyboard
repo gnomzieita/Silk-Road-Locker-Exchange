@@ -3867,7 +3867,7 @@ Transaction complete</string>
                     </view>
                     <navigationItem key="navigationItem" title="Recovery" id="uQN-sl-saG"/>
                     <connections>
-                        <outlet property="emailField" destination="Md6-eV-auP" id="2ow-rx-Fm9"/>
+                        <outlet property="emailField" destination="Md6-eV-auP" id="V5h-h8-XfK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Irh-vj-018" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -5144,7 +5144,6 @@ Refund being issued.</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="RequestCode:" destination="2vl-ts-13b" eventType="touchUpInside" id="GCC-vc-jyX"/>
                                     <action selector="confirmTap:" destination="2vl-ts-13b" eventType="touchUpInside" id="igd-N2-ogd"/>
                                 </connections>
                             </button>
@@ -5172,7 +5171,6 @@ Refund being issued.</string>
                     <navigationItem key="navigationItem" title="Confirm" id="b5z-xV-N88"/>
                     <connections>
                         <outlet property="codeField" destination="WcX-di-GPT" id="3Xm-cr-ogh"/>
-                        <outlet property="emailField" destination="WcX-di-GPT" id="8np-ac-4zb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9N-Lg-9bd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

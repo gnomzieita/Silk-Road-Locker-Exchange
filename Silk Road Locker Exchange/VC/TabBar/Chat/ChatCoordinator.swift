@@ -10,7 +10,7 @@ import UIKit
 import Combine
 
 class ChatCoordinator: BaseCoordenator {
-    var errorDelegat: ErrorProtocol?
+    var errorDelegat: LoadProtocol?
     
     var anyCancellables = Set<AnyCancellable>()
     

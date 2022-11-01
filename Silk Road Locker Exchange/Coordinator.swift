@@ -8,8 +8,11 @@
 import Foundation
 import UIKit
 
-protocol ErrorProtocol {
+protocol LoadProtocol {
     func error(_ error:String)
+    func startActyvity()
+    func stopActyvity()
+    
 }
 
 protocol Coordinator:AnyObject {

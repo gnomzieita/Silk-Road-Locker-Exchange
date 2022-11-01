@@ -10,7 +10,7 @@ import UIKit
 import Combine
 
 class SignInForgotCoordinator: Coordinator {
-    var errorDelegat: ErrorProtocol?
+    var errorDelegat: LoadProtocol?
     
     private let baseURLString = "https://jsonplaceholder.typicode.com/"
     var anyCancellables = Set<AnyCancellable>()
@@ -27,29 +27,32 @@ class SignInForgotCoordinator: Coordinator {
     func start() {
         let vc = SignInViewController.instantiate()
         vc.coordinator = self
+        self.errorDelegat = vc
         navigationController.pushViewController(vc, animated: true)
     }
     
     func ForgotPassword() {
         let vc = RecoveryViewController.instantiate()
         vc.coordinator = self
+        self.errorDelegat = vc
         navigationController.pushViewController(vc, animated: false)
     }
     
     func SignIn(email:String, passwd:String) {
         // Downloading a single Decodable type
-        
+        self.errorDelegat?.startActyvity()
         API_Request.shared.LogIn(email: email, passwd: passwd).sink { error in
                 // no-op
-            print(error)
+            print("Error=====================\(error)")
         
         } receiveValue: { (signIN: SigInModel) in
-            
+            self.errorDelegat?.stopActyvity()
             if let error = signIN.error {
                 self.errorDelegat?.error(error)
             }
             else
             {
+                self.errorDelegat?.stopActyvity()
                 API_Request.shared.auth_token = signIN.auth_token ?? ""
                 DispatchQueue.main.async {
                     self.perentCoordinator?.LogIn()
@@ -59,10 +62,11 @@ class SignInForgotCoordinator: Coordinator {
     }
     
     func RequestCode(email:String) {
+        self.errorDelegat?.startActyvity()
         API_Request.shared.ForgetPassword(email: email).sink { _ in
                 // no-op
         } receiveValue: { (signIN: SigInModel) in
-
+            self.errorDelegat?.stopActyvity()
             if let error = signIN.error {
                 self.errorDelegat?.error(error)
             }
@@ -72,6 +76,7 @@ class SignInForgotCoordinator: Coordinator {
                 DispatchQueue.main.async {
                     let vc = VerifyViewController.instantiate()
                     vc.coordinator = self
+                    self.errorDelegat = vc
                     self.navigationController.pushViewController(vc, animated: false)
                 }
             }
@@ -83,14 +88,16 @@ class SignInForgotCoordinator: Coordinator {
         let vc = SetupNewPasswordViewController.instantiate()
         vc.coordinator = self
         vc.coode = code
+        self.errorDelegat = vc
         navigationController.pushViewController(vc, animated: false)
     }
     
     func setupNewPassword(code:String, password:String, confirm_password:String){
+        self.errorDelegat?.startActyvity()
         API_Request.shared.ResetPassword(code: code, password: password, confirm_password: confirm_password).sink { _ in
                 // no-op
         } receiveValue: { (signIN: SigInModel) in
-
+            self.errorDelegat?.stopActyvity()
             if let error = signIN.error {
                 self.errorDelegat?.error(error)
             }
@@ -106,6 +113,7 @@ class SignInForgotCoordinator: Coordinator {
     func LogIn() {
         let vc = RecoveryViewController.instantiate()
         vc.coordinator = self
+        self.errorDelegat = vc
         navigationController.pushViewController(vc, animated: false)
     }
     

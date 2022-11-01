@@ -10,7 +10,7 @@ import UIKit
 import Combine
 
 class SellCoordinator: BaseCoordenator {
-    var errorDelegat: ErrorProtocol?
+    var errorDelegat: LoadProtocol?
     
     var anyCancellables = Set<AnyCancellable>()
     
