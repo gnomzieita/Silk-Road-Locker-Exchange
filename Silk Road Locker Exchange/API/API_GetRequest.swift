@@ -19,8 +19,8 @@ struct GetSigInBaseRequest: BaseRequest {
     var httpBody: [String: Any]?
 
     init(email:String, passwd:String) {
-        self.httpBody = ["email": email,
-                         "password":passwd]
+        self.httpBody = ["user":["email": email,
+                         "password":passwd]]
     }
 }
 
