@@ -7,9 +7,10 @@
 
 import UIKit
 
-class PurchasedViewController: RootViewController, UITableViewDelegate, UITableViewDataSource {
+class PurchasedViewController: RootViewController, UITableViewDelegate, UITableViewDataSource, LoadDataProtocol {
     
     weak var coordinator: PurchasedCoordinator?
+    var orders:[OrderModel] = []
     
     @IBOutlet weak var table: UITableView!
     
@@ -18,17 +19,23 @@ class PurchasedViewController: RootViewController, UITableViewDelegate, UITableV
         table.register(.init(nibName: "ProductTableViewCell", bundle: .main), forCellReuseIdentifier: "ProductTableViewCell")
         // Do any additional setup after loading the view.
         table.reloadData()
+        coordinator?.loadPurchasedOrders()
     }
     
 
+    func update(_ data: [OrderModel]) {
+        
+        table.reloadData()
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return orders.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell", for: indexPath) as! ProductTableViewCell
 
-        cell.titleLabel.text = "Text"
+        let orderInfo:OrderModel = orders[indexPath.row]
+        cell.titleLabel.text = orderInfo.offer_details?.name
         
         return cell
     }

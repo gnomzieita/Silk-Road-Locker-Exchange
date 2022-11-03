@@ -9,9 +9,14 @@ import Foundation
 
 struct SigInModel: Codable {
     let message: String?
-    let user: UserModel?
+    let data: SigInDataModel?
     let auth_token: String?
     
     let error:String?
     
+}
+
+struct SigInDataModel: Codable {
+    let user: UserModel?
+    let auth_token: String?
 }

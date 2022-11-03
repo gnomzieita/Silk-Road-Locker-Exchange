@@ -170,3 +170,20 @@ struct UpdatePasswordBaseRequest: BaseRequest {
         self.httpBody = newPass.dictionary
     }
 }
+
+// orders/purchased_orders
+struct PurchasedOrdersBaseRequest: BaseRequest {
+    var url: URL = API.server.getURLwithPath(path: "/orders/purchased_orders")
+    var httpMethod: HTTPMethod = .GET
+    var queryItems: [String : String]?
+    var headers: [String : String]?
+    
+    //FIXME: ReturnType
+    typealias ReturnType = BaseResponseModel
+    
+    var httpBody: [String: Any]?
+
+    init(token:String) {
+        self.headers = token.Bearer()
+    }
+}

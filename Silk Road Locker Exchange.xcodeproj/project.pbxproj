@@ -123,6 +123,7 @@
 		E1E73B15284E62E50016FFF2 /* Silk_Road_Locker_Exchange.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1E73B13284E62E50016FFF2 /* Silk_Road_Locker_Exchange.xcdatamodeld */; };
 		E1E73B17284E62EC0016FFF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E73B16284E62EC0016FFF2 /* Assets.xcassets */; };
 		E1E73B1A284E62EC0016FFF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E73B18284E62EC0016FFF2 /* LaunchScreen.storyboard */; };
+		E1EABDDF291339F5001FBBD3 /* PurchasedOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EABDDE291339F5001FBBD3 /* PurchasedOrderModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -244,6 +245,7 @@
 		E1E73B16284E62EC0016FFF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1E73B19284E62EC0016FFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1E73B1B284E62EC0016FFF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1EABDDE291339F5001FBBD3 /* PurchasedOrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedOrderModel.swift; sourceTree = "<group>"; };
 		E1FB006E28FE6DC500411EAC /* Silk Road Locker Exchange.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Silk Road Locker Exchange.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -454,6 +456,7 @@
 				E1D198D628EE226400F8C077 /* SigInModel.swift */,
 				E1A2691828F7758A00635B87 /* SignUpModel.swift */,
 				E17B848D290A015B00D9B884 /* LocationModel.swift */,
+				E1EABDDE291339F5001FBBD3 /* PurchasedOrderModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -639,6 +642,7 @@
 				E1AB1AE02864E15D00873FEE /* NotificationTableViewCell.swift in Sources */,
 				E1D198D928EE2BFC00F8C077 /* BaseRequest.swift in Sources */,
 				E1E73B0F284E62E50016FFF2 /* ViewController.swift in Sources */,
+				E1EABDDF291339F5001FBBD3 /* PurchasedOrderModel.swift in Sources */,
 				E1AB0ECB2863505600873FEE /* RootTabBarController.swift in Sources */,
 				E134B885287821D90011FF26 /* PaymentHistoryTableViewCell.swift in Sources */,
 				E1E041652878689B0080C5D4 /* SelectLocationViewController.swift in Sources */,

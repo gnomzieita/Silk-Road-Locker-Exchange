@@ -15,6 +15,10 @@ class MainCoordinator:BaseCoordenator {
         let vc = ViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
+        
+        if API_Request.shared.auth_token.count > 0 {
+            LogIn()
+        }   
     }
     
     func SignUp() {

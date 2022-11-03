@@ -53,7 +53,7 @@ class SignInForgotCoordinator: Coordinator {
             else
             {
                 self.errorDelegat?.stopActyvity()
-                API_Request.shared.auth_token = signIN.auth_token ?? ""
+                API_Request.shared.auth_token = signIN.data?.auth_token ?? ""
                 DispatchQueue.main.async {
                     self.perentCoordinator?.LogIn()
                 }
