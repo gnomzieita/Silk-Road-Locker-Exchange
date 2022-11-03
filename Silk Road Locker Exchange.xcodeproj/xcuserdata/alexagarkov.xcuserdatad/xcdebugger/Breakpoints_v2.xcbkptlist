@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "73D0B965-9D35-4FBC-9EC6-38347633382F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Silk Road Locker Exchange/MainCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "LogIn()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "1603B627-1802-4403-8435-E67C9B67DEE5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -87,86 +71,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3C346523-882D-4D8F-8D73-CF0011DEB32C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Silk Road Locker Exchange/MainCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "start()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3616E348-A757-4D19-B6A8-CC2A5D2B34AA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Silk Road Locker Exchange/API/API_Request.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "auth_token"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9076363D-AE22-4C82-916F-AC4B929F69BF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Silk Road Locker Exchange/API/API_Request.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "init()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9076363D-AE22-4C82-916F-AC4B929F69BF - 1c23b94660e2e5e4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Silk_Road_Locker_Exchange.API_Request.() -&gt; Silk_Road_Locker_Exchange.API_Request.init() -&gt; Silk_Road_Locker_Exchange.API_Request"
-                  moduleName = "Silk Road Locker Exchange"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexagarkov/Desktop/Silk-Road-Locker-Exchange/Silk%20Road%20Locker%20Exchange/API/API_Request.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "104">
-               </Location>
-               <Location
-                  uuid = "9076363D-AE22-4C82-916F-AC4B929F69BF - 1c23b94660e2e5e4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Silk_Road_Locker_Exchange.API_Request.() -&gt; Silk_Road_Locker_Exchange.API_Request.init() -&gt; Silk_Road_Locker_Exchange.API_Request"
-                  moduleName = "Silk Road Locker Exchange"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexagarkov/Desktop/Silk-Road-Locker-Exchange/Silk%20Road%20Locker%20Exchange/API/API_Request.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "548">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "E0BEAEBF-97A8-4F2D-B320-2E9FE1D3EC3B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -177,6 +81,22 @@
             startingLineNumber = "54"
             endingLineNumber = "54"
             landmarkName = "loadPurchasedOrders()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F9B70EA7-3B28-43F3-AA3D-CFC645BE887F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Silk Road Locker Exchange/API/API_Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "PurchasedOrders()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

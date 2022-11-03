@@ -173,7 +173,7 @@ struct UpdatePasswordBaseRequest: BaseRequest {
 
 // orders/purchased_orders
 struct PurchasedOrdersBaseRequest: BaseRequest {
-    var url: URL = API.server.getURLwithPath(path: "/orders/purchased_orders")
+    var url: URL = API.server.getURLwithPath(path: "/orders/purchased")
     var httpMethod: HTTPMethod = .GET
     var queryItems: [String : String]?
     var headers: [String : String]?
