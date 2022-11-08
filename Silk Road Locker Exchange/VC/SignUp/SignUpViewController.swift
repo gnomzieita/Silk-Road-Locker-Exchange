@@ -27,6 +27,10 @@ class SignUpViewController: RootViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        coordinator?.errorDelegat = self
+    }
     
     @IBAction func showHidePass(_ sender: Any) {
         passwordField.isSecureTextEntry = !passwordField.isSecureTextEntry

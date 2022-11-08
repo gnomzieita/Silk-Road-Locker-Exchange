@@ -10,6 +10,8 @@ import UIKit
 
 class BaseCoordenator:NSObject, Coordinator, UINavigationControllerDelegate {
    
+    var errorDelegat: LoadProtocol?
+    
     func start() {
     
     }

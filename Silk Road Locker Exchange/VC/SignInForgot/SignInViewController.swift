@@ -22,6 +22,11 @@ class SignInViewController: RootViewController {
         //TODO: passwordField.passwordRules
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        coordinator?.errorDelegat = self
+    }
+    
     @IBAction func SignInButtonTap(_ sender: Any) {
         coordinator?.SignIn(email: emailField.getText(), passwd: passwordField.getText())
     }

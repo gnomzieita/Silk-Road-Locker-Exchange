@@ -10,7 +10,6 @@ import UIKit
 import Combine
 
 class NotificationsCoordinator: BaseCoordenator {
-    var errorDelegat: LoadProtocol?
     
     var anyCancellables = Set<AnyCancellable>()
     

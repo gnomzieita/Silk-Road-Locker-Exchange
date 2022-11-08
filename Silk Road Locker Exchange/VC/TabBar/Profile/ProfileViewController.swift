@@ -13,7 +13,7 @@ class ProfileViewController: RootViewController, UserInfoDelegat {
     
     
     func setUserInfo(_ model:UserModel) {
-        userName.text = model.name
+        userName.text = model.getName()
     }
     
     weak var coordinator: ProfileCoordinator?
@@ -22,6 +22,13 @@ class ProfileViewController: RootViewController, UserInfoDelegat {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        coordinator?.profileDelegat = self
+        coordinator?.errorDelegat = self
+        coordinator?.getProfileInfo()
     }
     
     @IBAction func exitTap(_ sender: Any) {

@@ -50,8 +50,8 @@ class API_Request: CombineNetworkService {
     }
     
     //Profile
-    func GetProfile<T: Decodable>(email:String, passwd:String) -> AnyPublisher<T, NetworkServiceError> {
-        return self.getPublisherForResponse(request: GetSigInBaseRequest(email: email, passwd: passwd).request())
+    func GetProfile<T: Decodable>() -> AnyPublisher<T, NetworkServiceError> {
+        return self.getPublisherForResponse(request: GetProfileRequest(token: auth_token).request())
     }
     
     //editing

@@ -10,7 +10,6 @@ import UIKit
 import Combine
 
 class SellCoordinator: BaseCoordenator {
-    var errorDelegat: LoadProtocol?
     
     var anyCancellables = Set<AnyCancellable>()
     
@@ -24,7 +23,6 @@ class SellCoordinator: BaseCoordenator {
     override func start() {
         let vc = SellViewController.instantiate()
         vc.coordinator = self
-        errorDelegat = vc
         navigationController.pushViewController(vc, animated: true)
         perentCoordinator?.MainTabBarViews.append(navigationController)
     }

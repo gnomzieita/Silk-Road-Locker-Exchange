@@ -20,6 +20,12 @@ class SetupNewPasswordViewController: RootViewController {
         self.setBackButton()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        coordinator?.errorDelegat = self
+    }
+    
     @IBAction func showNP(_ sender: Any) {
         newPassword.isSecureTextEntry = !newPassword.isSecureTextEntry
     }

@@ -24,7 +24,7 @@ class MainTabBarCoordinator: BaseCoordenator {
         
         addPurchasedCoordinator()
         addSellCoordinator()
-        addChatCoordinator()
+        //addChatCoordinator()
         addProfileCoordinator()
         addNotificationsCoordinator()
         

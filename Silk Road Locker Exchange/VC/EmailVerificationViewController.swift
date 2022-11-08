@@ -18,6 +18,11 @@ class EmailVerificationViewController: RootViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        coordinator?.errorDelegat = self
+    }
+    
     @IBAction func confirmTap(_ sender: Any) {
         coordinator?.enterConfirmCodeView(token: codeField.getText())
     }

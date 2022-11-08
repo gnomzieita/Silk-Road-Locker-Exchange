@@ -15,7 +15,6 @@ protocol LoadDataProtocol {
 }
 
 class PurchasedCoordinator: BaseCoordenator {
-    var errorDelegat: LoadProtocol?
     var loadDataDelegat: LoadDataProtocol?
     
     var anyCancellables = Set<AnyCancellable>()
@@ -30,8 +29,6 @@ class PurchasedCoordinator: BaseCoordenator {
     override func start() {
         let vc = PurchasedViewController.instantiate()
         vc.coordinator = self
-        errorDelegat = vc
-        loadDataDelegat = vc
         navigationController.pushViewController(vc, animated: true)
         perentCoordinator?.MainTabBarViews.append(navigationController)
     }

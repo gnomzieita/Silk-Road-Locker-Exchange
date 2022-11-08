@@ -76,7 +76,7 @@ struct GetProfileRequest: BaseRequest {
 // /users/update_profile
 struct updateProfileRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/users/update_profile")
-    var httpMethod: HTTPMethod = .GET
+    var httpMethod: HTTPMethod = .PUT
     var queryItems: [String : String]?
     var headers: [String : String]?
     
@@ -155,25 +155,25 @@ struct CreateOrderBaseRequest: BaseRequest {
 
 //update_password
 struct UpdatePasswordBaseRequest: BaseRequest {
-    var url: URL = API.server.getURLwithPath(path: "/user/update_password")
-    var httpMethod: HTTPMethod = .PUT
+    var url: URL = API.server.getURLwithPath(path: "/users/update_password")
+    var httpMethod: HTTPMethod = .PATCH
     var queryItems: [String : String]?
     var headers: [String : String]?
     
     //FIXME: ReturnType
-    typealias ReturnType = BaseResponseModel
+    typealias ReturnType = UpdatePasswordResponseModel
     
     var httpBody: [String: Any]?
 
     init(_ newPass:ChangePasswordModel, token:String) {
         self.headers = token.Bearer()
-        self.httpBody = newPass.dictionary
+        self.httpBody = ["user":newPass.dictionary]
     }
 }
 
 // orders/purchased_orders
 struct PurchasedOrdersBaseRequest: BaseRequest {
-    var url: URL = API.server.getURLwithPath(path: "/orders/purchased")
+    var url: URL = API.server.getURLwithPath(path: "/orders/purchased_orders")
     var httpMethod: HTTPMethod = .GET
     var queryItems: [String : String]?
     var headers: [String : String]?

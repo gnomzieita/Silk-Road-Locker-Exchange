@@ -14,6 +14,10 @@ struct SigInModel: Codable {
     
     let error:String?
     
+    func getMessage() -> String {
+        return message ?? ""
+    }
+    
 }
 
 struct SigInDataModel: Codable {

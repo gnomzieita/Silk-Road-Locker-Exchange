@@ -25,7 +25,6 @@ class RecoveryCoordinator: Coordinator {
     func start() {
         let vc = SignUpViewController.instantiate()
         vc.coordinator = self
-        self.errorDelegat = vc
         navigationController.pushViewController(vc, animated: true)
     }
     
@@ -49,7 +48,6 @@ class RecoveryCoordinator: Coordinator {
                     
                     let vc = EmailVerificationViewController.instantiate()
                     vc.coordinator = self
-                    self.errorDelegat = vc
                     self.navigationController.pushViewController(vc, animated: true)
                 }
             }

@@ -25,6 +25,11 @@ class VerifyViewController: RootViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        coordinator?.errorDelegat = self
+    }
+    
     @IBAction func Proceed(_ sender: Any) {
         let code = code1.getText()+code2.getText()+code3.getText()+code4.getText()+code5.getText()+code6.getText()
         self.coordinator?.SendCode(code: code)

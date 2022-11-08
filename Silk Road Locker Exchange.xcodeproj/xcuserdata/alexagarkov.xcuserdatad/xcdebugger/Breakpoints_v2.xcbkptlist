@@ -23,54 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "718A3BAD-EA1F-498B-B1ED-AADDE3DFE81A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Silk Road Locker Exchange/VC/SignInForgot/SignInForgotCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "SignIn(email:passwd:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C36D9E3D-C2FF-47AB-985F-616E99E3E38D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Silk Road Locker Exchange/VC/SignInForgot/SignInForgotCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "SignIn(email:passwd:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B72A952A-2AC0-40A4-BD03-8E5779B95EFE"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Silk Road Locker Exchange/VC/SignInForgot/SignInForgotCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "SignIn(email:passwd:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "E0BEAEBF-97A8-4F2D-B320-2E9FE1D3EC3B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -78,8 +30,8 @@
             filePath = "Silk Road Locker Exchange/VC/TabBar/Purchased/PurchasedCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "loadPurchasedOrders()"
             landmarkType = "7">
          </BreakpointContent>
@@ -87,16 +39,112 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F9B70EA7-3B28-43F3-AA3D-CFC645BE887F"
+            uuid = "3C2B573B-987E-47F7-BC4A-793D6972F43E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Silk Road Locker Exchange/API/API_Request.swift"
+            filePath = "Silk Road Locker Exchange/VC/TabBar/Profile/ProfileCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "PurchasedOrders()"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "UpdateUserProfile(userInfo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E896FB3-F55E-4A8A-BC2E-F32B5F73979F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Silk Road Locker Exchange/VC/TabBar/Profile/ProfileCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "UpdateUserProfile(userInfo:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3E896FB3-F55E-4A8A-BC2E-F32B5F73979F - a4d9b60940128016"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Silk_Road_Locker_Exchange.SigInModel) -&gt; () in Silk_Road_Locker_Exchange.ProfileCoordinator.UpdateUserProfile(userInfo: Silk_Road_Locker_Exchange.UpdateProfileModel) -&gt; ()"
+                  moduleName = "Silk Road Locker Exchange"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexagarkov/Desktop/Silk-Road-Locker-Exchange/Silk%20Road%20Locker%20Exchange/VC/TabBar/Profile/ProfileCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "3E896FB3-F55E-4A8A-BC2E-F32B5F73979F - a4d9b60940128016"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Silk_Road_Locker_Exchange.SigInModel) -&gt; () in Silk_Road_Locker_Exchange.ProfileCoordinator.UpdateUserProfile(userInfo: Silk_Road_Locker_Exchange.UpdateProfileModel) -&gt; ()"
+                  moduleName = "Silk Road Locker Exchange"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexagarkov/Desktop/Silk-Road-Locker-Exchange/Silk%20Road%20Locker%20Exchange/VC/TabBar/Profile/ProfileCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "348">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF9B483D-15BD-448B-96E8-8864A5137B99"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Silk Road Locker Exchange/VC/TabBar/Profile/ProfileCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "setNewPassword(passwordModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "212BD4C5-48AC-4A75-B2F4-6269A79EA1CA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Silk Road Locker Exchange/VC/TabBar/Profile/ProfileCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "setNewPassword(passwordModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "986A8710-17B3-4D8A-81C8-957E9D67D271"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Silk Road Locker Exchange/API/API_GetRequest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "init(_:token:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

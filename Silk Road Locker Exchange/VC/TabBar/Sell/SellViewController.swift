@@ -25,6 +25,11 @@ class SellViewController: RootViewController, UITableViewDelegate, UITableViewDa
         table.reloadData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        coordinator?.errorDelegat = self
+    }
+    
     @IBAction func NewOffer(_ sender: Any) {
         
     }

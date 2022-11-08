@@ -2499,10 +2499,10 @@ Transaction complete</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="setting-2" title=""/>
+                                <connections>
+                                    <action selector="settingsTap:" destination="clw-hc-sAu" eventType="touchUpInside" id="an2-pl-yse"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <action selector="settingsTap:" destination="clw-hc-sAu" id="3Rf-dy-VQX"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -2627,8 +2627,8 @@ Transaction complete</string>
                                 <color key="textColor" name="Dark"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm new passwordx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pe7-eQ-R67">
-                                <rect key="frame" x="12" y="628" width="193.5" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm new password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pe7-eQ-R67">
+                                <rect key="frame" x="12" y="628" width="184.5" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="8" id="89B-dg-jEy"/>
                                     <constraint firstAttribute="height" constant="22" id="IQY-dM-muZ"/>
@@ -2694,19 +2694,19 @@ Transaction complete</string>
                                 </connections>
                             </switch>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="click to insert" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkw-Ks-RUX">
-                                <rect key="frame" x="213.5" y="536.5" width="188.5" height="21"/>
+                                <rect key="frame" x="204.5" y="536.5" width="197.5" height="21"/>
                                 <color key="textColor" name="Dark"/>
                                 <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="click to insert" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32j-3S-F1U">
-                                <rect key="frame" x="213.5" y="582.5" width="188.5" height="21"/>
+                                <rect key="frame" x="204.5" y="582.5" width="197.5" height="21"/>
                                 <color key="textColor" name="Dark"/>
                                 <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" textContentType="new-password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="click to insert" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Flu-ZQ-1t9">
-                                <rect key="frame" x="213.5" y="628.5" width="188.5" height="21"/>
+                                <rect key="frame" x="204.5" y="628.5" width="197.5" height="21"/>
                                 <color key="textColor" name="Dark"/>
                                 <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" textContentType="new-password"/>

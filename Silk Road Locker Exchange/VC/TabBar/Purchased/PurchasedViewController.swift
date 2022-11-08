@@ -22,6 +22,11 @@ class PurchasedViewController: RootViewController, UITableViewDelegate, UITableV
         coordinator?.loadPurchasedOrders()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        coordinator?.errorDelegat = self
+        coordinator?.loadDataDelegat = self
+    }
 
     func update(_ data: [OrderModel]) {
         

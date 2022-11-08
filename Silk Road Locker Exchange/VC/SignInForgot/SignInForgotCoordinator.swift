@@ -27,14 +27,12 @@ class SignInForgotCoordinator: Coordinator {
     func start() {
         let vc = SignInViewController.instantiate()
         vc.coordinator = self
-        self.errorDelegat = vc
         navigationController.pushViewController(vc, animated: true)
     }
     
     func ForgotPassword() {
         let vc = RecoveryViewController.instantiate()
         vc.coordinator = self
-        self.errorDelegat = vc
         navigationController.pushViewController(vc, animated: false)
     }
     
@@ -76,7 +74,6 @@ class SignInForgotCoordinator: Coordinator {
                 DispatchQueue.main.async {
                     let vc = VerifyViewController.instantiate()
                     vc.coordinator = self
-                    self.errorDelegat = vc
                     self.navigationController.pushViewController(vc, animated: false)
                 }
             }
@@ -88,7 +85,6 @@ class SignInForgotCoordinator: Coordinator {
         let vc = SetupNewPasswordViewController.instantiate()
         vc.coordinator = self
         vc.coode = code
-        self.errorDelegat = vc
         navigationController.pushViewController(vc, animated: false)
     }
     
@@ -113,7 +109,6 @@ class SignInForgotCoordinator: Coordinator {
     func LogIn() {
         let vc = RecoveryViewController.instantiate()
         vc.coordinator = self
-        self.errorDelegat = vc
         navigationController.pushViewController(vc, animated: false)
     }
     

@@ -12,6 +12,7 @@ protocol LoadProtocol {
     func error(_ error:String)
     func startActyvity()
     func stopActyvity()
+    func alertOK(_ message: String, handler: ((UIAlertAction) -> Void)?)
     
 }
 

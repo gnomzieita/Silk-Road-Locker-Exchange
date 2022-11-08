@@ -9,18 +9,26 @@
 import Foundation
 
 struct UserModel: Codable {
-    let id: Int?
-    let first_name: String?
-    let last_name: String?
-    let email: String?
+    let id: Int
+    let first_name: String
+    let last_name: String
+    let email: String
     let phone: String?
     let name: String?
     let profile_picture_url: String?
+    
+    func getName() -> String {
+        return "\(first_name) \(last_name)"
+    }
+}
+
+struct GetUserModel: Codable {
+    let user: UserModel?
 }
 
 struct UserProfileModel: Codable {
     let success: Bool
-    let data: UserModel?
+    let data: GetUserModel?
     let error: String?
 
 }

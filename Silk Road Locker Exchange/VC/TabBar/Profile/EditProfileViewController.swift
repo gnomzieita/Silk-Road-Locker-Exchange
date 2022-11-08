@@ -32,6 +32,12 @@ class EditProfileViewController: RootViewController, UserInfoDelegat {
         phoneField.text = model.phone
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        coordinator?.profileDelegat = self
+        coordinator?.errorDelegat = self
+        coordinator?.getProfileInfo()
+    }
 
     weak var coordinator: ProfileCoordinator?
     

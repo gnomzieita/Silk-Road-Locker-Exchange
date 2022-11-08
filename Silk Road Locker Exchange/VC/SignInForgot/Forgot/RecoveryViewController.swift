@@ -19,6 +19,11 @@ class RecoveryViewController: RootViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        coordinator?.errorDelegat = self
+    }
+    
     @IBAction func RequestCode(_ sender: Any) {
         coordinator?.RequestCode(email: emailField.getText())
     }
