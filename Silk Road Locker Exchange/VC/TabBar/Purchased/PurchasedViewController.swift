@@ -7,10 +7,13 @@
 
 import UIKit
 
-class PurchasedViewController: RootViewController, UITableViewDelegate, UITableViewDataSource, LoadDataProtocol {
+class PurchasedViewController: RootViewController, UITableViewDelegate, UITableViewDataSource, LoadDataProtocol, LoadOffersProtocol {
     
     weak var coordinator: PurchasedCoordinator?
-    var orders:[OrderModel] = []
+    @IBOutlet weak var segmentControl: UISegmentedControl!
+    
+    
+    var offers:[OfferDetails] = []
     
     @IBOutlet weak var table: UITableView!
     
@@ -19,28 +22,40 @@ class PurchasedViewController: RootViewController, UITableViewDelegate, UITableV
         table.register(.init(nibName: "ProductTableViewCell", bundle: .main), forCellReuseIdentifier: "ProductTableViewCell")
         // Do any additional setup after loading the view.
         table.reloadData()
-        coordinator?.loadPurchasedOrders()
+        loadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         coordinator?.errorDelegat = self
         coordinator?.loadDataDelegat = self
+        coordinator?.loadOffersDelegat = self
+    }
+    
+    func update(_ data: [OfferDetails]) {
+        self.offers = data
+        table.reloadData()
     }
 
     func update(_ data: [OrderModel]) {
-        
+        self.offers.removeAll()
+        for order in data {
+            if let offer = order.offer_details {
+                self.offers.append(offer)
+            }
+        }
         table.reloadData()
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return orders.count
+        return offers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell", for: indexPath) as! ProductTableViewCell
 
-        let orderInfo:OrderModel = orders[indexPath.row]
-        cell.titleLabel.text = orderInfo.offer_details?.name
+        let offerInfo:OfferDetails = offers[indexPath.row]
+        cell.titleLabel.text = offerInfo.name
         
         return cell
     }
@@ -50,19 +65,32 @@ class PurchasedViewController: RootViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "detal", sender: nil)
-    }
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        let vc = segue.destination as! PurchaseViewController
-        vc.hidesBottomBarWhenPushed = true
+//        self.performSegue(withIdentifier: "detal", sender: nil)
+        let offerInfo:OfferDetails = offers[indexPath.row]
+        //PurchaseOffer
+        switch segmentControl.selectedSegmentIndex {
+        case 0:
+            print("")
+        case 1:
+            coordinator?.PurchaseOfferDeteil(offerDetails: offerInfo)
+        default:
+            print("HZ")
+        }
         
     }
     
-
+    @IBAction func segmentChange(_ sender: Any) {
+        loadData()
+    }
+    
+    func loadData() {
+        switch segmentControl.selectedSegmentIndex {
+        case 0:
+            coordinator?.loadPurchasedOrders()
+        case 1:
+            coordinator?.loadReceivedOrders()
+        default:
+            print("HZ")
+        }
+    }
 }

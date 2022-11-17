@@ -18,15 +18,27 @@ struct AddressModel: Codable {
     let state: String?
     let street: String?
     let zip_code: String?
+    
+    func getAddress() -> String {
+        return (street ?? "") + ", " + (city ?? "") + ", " + (state ?? "") + ", " + (zip_code ?? "")
+    }
 }
 
 struct LocationInfoModel: Codable {
-    let address: AddressModel
+    let address: AddressModel?
     let available_lockers: Int?
-    let digital_lockers: [DigitalLockersModel]
+    let digital_lockers: [DigitalLockersModel]?
 
 }
 
 struct LocationModel: Codable {
-    let location: [LocationInfoModel]
+    let location: [LocationInfoModel]?
+}
+
+struct BaseLocationResponseModel: Codable {
+    let success: Bool
+    let data: LocationModel?
+    let error: String?
+    let message: String?
+
 }

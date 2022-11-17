@@ -91,4 +91,34 @@ class API_Request: CombineNetworkService {
     func PurchasedOrders<T: Decodable>() -> AnyPublisher<T, NetworkServiceError> {
         return self.getPublisherForResponse(request: PurchasedOrdersBaseRequest(token: auth_token).request())
     }
+    
+    //ReceivedOffers
+    func ReceivedOffers<T: Decodable>() -> AnyPublisher<T, NetworkServiceError> {
+        return self.getPublisherForResponse(request: ReceivedOffersBaseRequest(token: auth_token).request())
+    }
+    
+    //buyers
+    func ReceivedBuyer<T: Decodable>() -> AnyPublisher<T, NetworkServiceError> {
+        return self.getPublisherForResponse(request: ReceivedBuyerBaseRequest(token: auth_token).request())
+    }
+    
+    //sold_orders
+    func SoldOrders<T: Decodable>() -> AnyPublisher<T, NetworkServiceError> {
+        return self.getPublisherForResponse(request: SoldOrdersBaseRequest(token: auth_token).request())
+    }
+    
+    //LocationBaseRequest
+    func Location<T: Decodable>(zip_code:String) -> AnyPublisher<T, NetworkServiceError> {
+        return self.getPublisherForResponse(request: LocationBaseRequest(zip_code:zip_code,token: auth_token).request())
+    }
+    
+    // CreateOffer
+    func CreateOffer<T: Decodable>(offer_model: CreateOfferModel) -> AnyPublisher<T, NetworkServiceError> {
+        return self.getPublisherForResponse(request: OffersBaseRequest(offer_model: offer_model, token: auth_token).request())
+    }
+        
+    // CreateOffer
+    func SentOffers<T: Decodable>() -> AnyPublisher<T, NetworkServiceError> {
+        return self.getPublisherForResponse(request: SentOffersBaseRequest(token: auth_token).request())
+    }
 }

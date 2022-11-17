@@ -15,7 +15,11 @@ protocol LoadDataProtocol {
 }
 
 class PurchasedCoordinator: BaseCoordenator {
+    
+    var selectOfferID: Int?
+    
     var loadDataDelegat: LoadDataProtocol?
+    var loadOffersDelegat: LoadOffersProtocol?
     
     var anyCancellables = Set<AnyCancellable>()
     
@@ -54,4 +58,59 @@ class PurchasedCoordinator: BaseCoordenator {
             }
         }.store(in: &anyCancellables)
     }
+    
+    func loadReceivedOrders() {
+        self.errorDelegat?.startActyvity()
+        API_Request.shared.ReceivedOffers().sink { error in
+                // no-op
+            print("Error=====================\(error)")
+        
+        } receiveValue: { (purchasedOrder: OffersOrderModel) in
+            self.errorDelegat?.stopActyvity()
+            if let error = purchasedOrder.error {
+                self.errorDelegat?.error(error)
+            }
+            else
+            {
+                DispatchQueue.main.async {
+                    if let orders = purchasedOrder.data?.offers, orders.count > 0 {
+                        self.loadOffersDelegat?.update(orders)
+                    }
+                }
+            }
+        }.store(in: &anyCancellables)
+    }
+    
+    //PurchaseViewController
+    func PurchaseOfferDeteil(offerDetails:OfferDetails) {
+        
+        self.selectOfferID = offerDetails.id
+        
+        let vc = PurchaseViewController.instantiate()
+        vc.coordinator = self
+        vc.offerInfo = offerDetails
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+//    func loadReceivedOrders() {
+//        self.errorDelegat?.startActyvity()
+//        API_Request.shared.ReceivedOffers().sink { error in
+//                // no-op
+//            print("Error=====================\(error)")
+//        
+//        } receiveValue: { (purchasedOrder: OffersOrderModel) in
+//            self.errorDelegat?.stopActyvity()
+//            if let error = purchasedOrder.error {
+//                self.errorDelegat?.error(error)
+//            }
+//            else
+//            {
+//                DispatchQueue.main.async {
+//                    if let orders = purchasedOrder.data?.offers, orders.count > 0 {
+//                        self.loadOffersDelegat?.update(orders)
+//                    }
+//                }
+//            }
+//        }.store(in: &anyCancellables)
+//    }
 }

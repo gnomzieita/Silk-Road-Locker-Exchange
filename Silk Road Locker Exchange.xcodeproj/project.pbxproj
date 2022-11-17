@@ -58,6 +58,9 @@
 		E1166D4E285666790046A442 /* NewYorkLarge-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D1C285666790046A442 /* NewYorkLarge-BoldItalic.otf */; };
 		E1166D4F285666790046A442 /* NewYorkSmall-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D1D285666790046A442 /* NewYorkSmall-Regular.otf */; };
 		E1166D50285666790046A442 /* NewYorkSmall-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1166D1E285666790046A442 /* NewYorkSmall-MediumItalic.otf */; };
+		E128B5E3292429EC00B95FF5 /* CreateOfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E128B5E2292429EC00B95FF5 /* CreateOfferModel.swift */; };
+		E128B5E52924FD3900B95FF5 /* OffersOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E128B5E42924FD3900B95FF5 /* OffersOrderModel.swift */; };
+		E128E70A291B109800A1D46B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E128E709291B109800A1D46B /* ImagePicker.swift */; };
 		E134B86F287727460011FF26 /* PaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B86E287727460011FF26 /* PaymentTableViewCell.swift */; };
 		E134B8712877278C0011FF26 /* PaymenMethodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B8702877278C0011FF26 /* PaymenMethodsViewController.swift */; };
 		E134B87328775E800011FF26 /* AddNewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134B87228775E800011FF26 /* AddNewCardViewController.swift */; };
@@ -90,6 +93,7 @@
 		E17B848A29075DBA00D9B884 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17B848929075DBA00D9B884 /* BaseResponseModel.swift */; };
 		E17B848C29077F8000D9B884 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17B848B29077F8000D9B884 /* AsyncImageView.swift */; };
 		E17B848E290A015B00D9B884 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17B848D290A015B00D9B884 /* LocationModel.swift */; };
+		E1856ADB291DF7B5009B319A /* BuyerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1856ADA291DF7B5009B319A /* BuyerModel.swift */; };
 		E19DAA1E29020D3000A28EC1 /* EmailVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DAA1D29020D3000A28EC1 /* EmailVerificationViewController.swift */; };
 		E19E87B02864ED500025BFAE /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87AF2864ED500025BFAE /* ChatsViewController.swift */; };
 		E19E87B22866104E0025BFAE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87B12866104E0025BFAE /* ProfileViewController.swift */; };
@@ -124,6 +128,7 @@
 		E1E73B17284E62EC0016FFF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E73B16284E62EC0016FFF2 /* Assets.xcassets */; };
 		E1E73B1A284E62EC0016FFF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E73B18284E62EC0016FFF2 /* LaunchScreen.storyboard */; };
 		E1EABDDF291339F5001FBBD3 /* PurchasedOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EABDDE291339F5001FBBD3 /* PurchasedOrderModel.swift */; };
+		E1EABDE1291A0853001FBBD3 /* ReceivedOfersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EABDE0291A0853001FBBD3 /* ReceivedOfersModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +183,9 @@
 		E1166D1C285666790046A442 /* NewYorkLarge-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkLarge-BoldItalic.otf"; sourceTree = "<group>"; };
 		E1166D1D285666790046A442 /* NewYorkSmall-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Regular.otf"; sourceTree = "<group>"; };
 		E1166D1E285666790046A442 /* NewYorkSmall-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-MediumItalic.otf"; sourceTree = "<group>"; };
+		E128B5E2292429EC00B95FF5 /* CreateOfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOfferModel.swift; sourceTree = "<group>"; };
+		E128B5E42924FD3900B95FF5 /* OffersOrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersOrderModel.swift; sourceTree = "<group>"; };
+		E128E709291B109800A1D46B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E134B86E287727460011FF26 /* PaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewCell.swift; sourceTree = "<group>"; };
 		E134B8702877278C0011FF26 /* PaymenMethodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymenMethodsViewController.swift; sourceTree = "<group>"; };
 		E134B87228775E800011FF26 /* AddNewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCardViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +218,7 @@
 		E17B848929075DBA00D9B884 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
 		E17B848B29077F8000D9B884 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		E17B848D290A015B00D9B884 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		E1856ADA291DF7B5009B319A /* BuyerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerModel.swift; sourceTree = "<group>"; };
 		E19DAA1D29020D3000A28EC1 /* EmailVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVerificationViewController.swift; sourceTree = "<group>"; };
 		E19E87AF2864ED500025BFAE /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		E19E87B12866104E0025BFAE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -246,6 +255,7 @@
 		E1E73B19284E62EC0016FFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1E73B1B284E62EC0016FFF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1EABDDE291339F5001FBBD3 /* PurchasedOrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedOrderModel.swift; sourceTree = "<group>"; };
+		E1EABDE0291A0853001FBBD3 /* ReceivedOfersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedOfersModel.swift; sourceTree = "<group>"; };
 		E1FB006E28FE6DC500411EAC /* Silk Road Locker Exchange.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Silk Road Locker Exchange.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -321,12 +331,10 @@
 			isa = PBXGroup;
 			children = (
 				E1AB0EC628634CC800873FEE /* RootViewController.swift */,
+				E128E709291B109800A1D46B /* ImagePicker.swift */,
 				E1E73B10284E62E50016FFF2 /* Main.storyboard */,
 				E1AA7A89285263AF000EC649 /* ProductCell */,
 				E165217228F4EB5F00662B36 /* TabBar */,
-				E1E04168287869610080C5D4 /* SelectLocationTableViewCell.swift */,
-				E1E041662878693E0080C5D4 /* SelectLockerViewController.swift */,
-				E1E041642878689B0080C5D4 /* SelectLocationViewController.swift */,
 				E134B888287845770011FF26 /* VerifySMSCodeViewController.swift */,
 				E134B886287845350011FF26 /* VerifyPhoneViewController.swift */,
 				E134B884287821D90011FF26 /* PaymentHistoryTableViewCell.swift */,
@@ -369,6 +377,7 @@
 				E165216F28F4EA7000662B36 /* SellCoordinator.swift */,
 				E1AB0ECC28639EC000873FEE /* SellViewController.swift */,
 				E1E59DE82875FED100B08A03 /* CreateOfferViewController.swift */,
+				E1A2F24B2923012600E85946 /* Select */,
 				E1E59DE42875E4DF00B08A03 /* UserListViewController.swift */,
 			);
 			path = Sell;
@@ -419,6 +428,16 @@
 			path = Notifications;
 			sourceTree = "<group>";
 		};
+		E1A2F24B2923012600E85946 /* Select */ = {
+			isa = PBXGroup;
+			children = (
+				E1E04168287869610080C5D4 /* SelectLocationTableViewCell.swift */,
+				E1E041662878693E0080C5D4 /* SelectLockerViewController.swift */,
+				E1E041642878689B0080C5D4 /* SelectLocationViewController.swift */,
+			);
+			path = Select;
+			sourceTree = "<group>";
+		};
 		E1AA7A89285263AF000EC649 /* ProductCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,10 +472,14 @@
 			children = (
 				E1D198D328EE1BEB00F8C077 /* UserModel.swift */,
 				E17B848929075DBA00D9B884 /* BaseResponseModel.swift */,
+				E1EABDE0291A0853001FBBD3 /* ReceivedOfersModel.swift */,
 				E1D198D628EE226400F8C077 /* SigInModel.swift */,
 				E1A2691828F7758A00635B87 /* SignUpModel.swift */,
 				E17B848D290A015B00D9B884 /* LocationModel.swift */,
 				E1EABDDE291339F5001FBBD3 /* PurchasedOrderModel.swift */,
+				E128B5E42924FD3900B95FF5 /* OffersOrderModel.swift */,
+				E128B5E2292429EC00B95FF5 /* CreateOfferModel.swift */,
+				E1856ADA291DF7B5009B319A /* BuyerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -646,6 +669,7 @@
 				E1AB0ECB2863505600873FEE /* RootTabBarController.swift in Sources */,
 				E134B885287821D90011FF26 /* PaymentHistoryTableViewCell.swift in Sources */,
 				E1E041652878689B0080C5D4 /* SelectLocationViewController.swift in Sources */,
+				E1EABDE1291A0853001FBBD3 /* ReceivedOfersModel.swift in Sources */,
 				E14EE46A28EB852400582573 /* CombineNetworkService.swift in Sources */,
 				E134B8712877278C0011FF26 /* PaymenMethodsViewController.swift in Sources */,
 				E1D198B028ED267D00F8C077 /* SignInForgotCoordinator.swift in Sources */,
@@ -669,6 +693,7 @@
 				E1E73B0B284E62E50016FFF2 /* AppDelegate.swift in Sources */,
 				E165217028F4EA7000662B36 /* SellCoordinator.swift in Sources */,
 				E1A2691B28F7BA8900635B87 /* API_GetRequest.swift in Sources */,
+				E128B5E3292429EC00B95FF5 /* CreateOfferModel.swift in Sources */,
 				E165216D28F3DA9F00662B36 /* PurchasedCoordinator.swift in Sources */,
 				E1592EB02876F9C300CB8FA9 /* ChatMessageTableViewCell.swift in Sources */,
 				E134B87B2877612E0011FF26 /* RecoveryViewController.swift in Sources */,
@@ -685,8 +710,10 @@
 				E1E041672878693E0080C5D4 /* SelectLockerViewController.swift in Sources */,
 				E1E1EB26285A687A0087C39E /* ChatTableViewCell.swift in Sources */,
 				E1E73B15284E62E50016FFF2 /* Silk_Road_Locker_Exchange.xcdatamodeld in Sources */,
+				E128B5E52924FD3900B95FF5 /* OffersOrderModel.swift in Sources */,
 				E17B848E290A015B00D9B884 /* LocationModel.swift in Sources */,
 				E19DAA1E29020D3000A28EC1 /* EmailVerificationViewController.swift in Sources */,
+				E128E70A291B109800A1D46B /* ImagePicker.swift in Sources */,
 				E14EE46D28EB890300582573 /* Coordinator.swift in Sources */,
 				E1AB0EC728634CC800873FEE /* RootViewController.swift in Sources */,
 				E1E04169287869610080C5D4 /* SelectLocationTableViewCell.swift in Sources */,
@@ -699,6 +726,7 @@
 				E1D198D728EE226400F8C077 /* SigInModel.swift in Sources */,
 				E1D198DC28EE2F0900F8C077 /* API.swift in Sources */,
 				E1AB0EC928634CFF00873FEE /* PurchasedViewController.swift in Sources */,
+				E1856ADB291DF7B5009B319A /* BuyerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,6 +877,8 @@
 				DEVELOPMENT_TEAM = LVF92Q9KF6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Silk Road Locker Exchange/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app wants to take pictures.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app wants to use your photos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -879,6 +909,8 @@
 				DEVELOPMENT_TEAM = LVF92Q9KF6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Silk Road Locker Exchange/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app wants to take pictures.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app wants to use your photos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

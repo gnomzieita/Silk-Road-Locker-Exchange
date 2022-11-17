@@ -7,15 +7,34 @@
 
 import UIKit
 
-class SellViewController: RootViewController, UITableViewDelegate, UITableViewDataSource  {
+class SellViewController: RootViewController, UITableViewDelegate, UITableViewDataSource, LoadOffersProtocol, LoadDataProtocol  {
+
+    var offers:[OfferDetails] = []
+    
+    func update(_ data: [OfferDetails]) {
+        self.offers = data
+        table.reloadData()
+    }
+
+    func update(_ data: [OrderModel]) {
+        self.offers.removeAll()
+        for order in data {
+            if let offer = order.offer_details {
+                self.offers.append(offer)
+            }
+        }
+        table.reloadData()
+    }
+    
     
     weak var coordinator: SellCoordinator?
     
     @IBOutlet weak var segment: UISegmentedControl!
+    
     @IBOutlet weak var table: UITableView!
     
     @IBAction func segmentChanged(_ sender: Any) {
-        table.reloadData()
+        loadData()
     }
     
     override func viewDidLoad() {
@@ -23,31 +42,42 @@ class SellViewController: RootViewController, UITableViewDelegate, UITableViewDa
         table.register(.init(nibName: "ProductTableViewCell", bundle: .main), forCellReuseIdentifier: "ProductTableViewCell")
         // Do any additional setup after loading the view.
         table.reloadData()
+        loadData()
+    }
+    
+    func loadData() {
+        switch segment.selectedSegmentIndex {
+        case 0:
+            coordinator?.loadSellOrders()
+        case 1:
+            coordinator?.loadSoldOrders()
+        default:
+            print("HZ")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         coordinator?.errorDelegat = self
+        coordinator?.LoadOffersDelegat = self
+        coordinator?.loadDataDelegat = self
     }
     
     @IBAction func NewOffer(_ sender: Any) {
-        
+        coordinator?.NewOffer()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return offers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell", for: indexPath) as! ProductTableViewCell
 
-        cell.titleLabel.text = "Text"
-        if segment.selectedSegmentIndex == 0 {
-            cell.setStatus(status: .PendingResponse)
-        }
-        else {
-            cell.setStatus(status: .PendingPickup)
-        }
+        let offerInfo:OfferDetails = offers[indexPath.row]
+        cell.titleLabel.text = offerInfo.name
+        
+        cell.setStatus(status: offerInfo.status ?? "")
         
         return cell
     }
@@ -58,7 +88,8 @@ class SellViewController: RootViewController, UITableViewDelegate, UITableViewDa
     
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "OfferDetails", sender: nil)
+//        self.performSegue(withIdentifier: "OfferDetails", sender: nil)
+        let offerInfo:OfferDetails = offers[indexPath.row]
     }
     /*
     // MARK: - Navigation

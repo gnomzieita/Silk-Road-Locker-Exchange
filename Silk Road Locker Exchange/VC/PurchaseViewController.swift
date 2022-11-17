@@ -9,21 +9,35 @@ import UIKit
 
 class PurchaseViewController: RootViewController {
 
+    weak var coordinator: PurchasedCoordinator?
+     var offerInfo:OfferDetails?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setBackButton()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.hidesBottomBarWhenPushed = true
     }
-    */
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.hidesBottomBarWhenPushed = false
+    }
 
+    deinit {
+        coordinator?.selectOfferID = nil
+    }
+    
+    @IBAction func PurchaseButtonTap(_ sender: Any) {
+        
+    }
+    
+    @IBAction func RejectButtonTap(_ sender: Any) {
+        
+    }
+    
 }

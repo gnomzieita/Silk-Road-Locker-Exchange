@@ -10,7 +10,7 @@ import UIKit
 class UserListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var avatarImage: DesignableImageView!
+    @IBOutlet weak var avatarImage: AsyncImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

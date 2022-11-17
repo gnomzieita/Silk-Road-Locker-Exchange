@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserListViewController: RootViewController, UITableViewDelegate, UITableViewDataSource {
+class UserListViewController: RootViewController, LoadBuyersProtocol, UITableViewDelegate, UITableViewDataSource {
     
     weak var coordinator: SellCoordinator?
 
@@ -15,6 +15,7 @@ class UserListViewController: RootViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var table: UITableView!
+    var buyers:[BuyerModel] = []
     
     var isChatUsereList:Bool = true
     
@@ -23,11 +24,22 @@ class UserListViewController: RootViewController, UITableViewDelegate, UITableVi
 
         // Do any additional setup after loading the view.
         self.titleLabel.text = isChatUsereList ? "Select user to start the chat" : "Find your buyer"
+        coordinator?.getBuyers()
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        coordinator?.loadBuyerDelegat = self
     }
     
     @IBAction func closeButtonTap(_ sender: Any) {
         dismiss(animated: true)
+    }
+    
+    func update(_ data: [BuyerModel]) {
+        self.buyers = data
+        self.table.reloadData()
     }
     
     /*
@@ -43,12 +55,16 @@ class UserListViewController: RootViewController, UITableViewDelegate, UITableVi
     // MARK: - UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return buyers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserListTableViewCell", for: indexPath) as! UserListTableViewCell
-        
+        let info = buyers[indexPath.row]
+        cell.userNameLabel.text = info.first_name + " " + info.last_name
+        if let url = info.getProfileUrl() {
+            cell.avatarImage.setImage(url: url)
+        }
         return cell
     }
     
@@ -60,6 +76,7 @@ class UserListViewController: RootViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // TODO: return user
-        dismiss(animated: true)
+        let info = buyers[indexPath.row]
+        coordinator?.selectBuyer(buyer: info)
     }
 }

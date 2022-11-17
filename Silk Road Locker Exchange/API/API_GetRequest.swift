@@ -137,22 +137,6 @@ struct EmailConfirmBaseRequest: BaseRequest {
     }
 }
 
-//TODO: /orders
-struct CreateOrderBaseRequest: BaseRequest {
-    var url: URL = API.server.getURLwithPath(path: "/order")
-    var httpMethod: HTTPMethod = .POST
-    var queryItems: [String : String]?
-    var headers: [String : String]?
-    
-    typealias ReturnType = SignUpModel
-    
-    var httpBody: [String: Any]?
-
-    init(_ offer_id:String) {
-        self.httpBody = ["offer_id":offer_id]
-    }
-}
-
 //update_password
 struct UpdatePasswordBaseRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/users/update_password")
@@ -160,14 +144,13 @@ struct UpdatePasswordBaseRequest: BaseRequest {
     var queryItems: [String : String]?
     var headers: [String : String]?
     
-    //FIXME: ReturnType
     typealias ReturnType = UpdatePasswordResponseModel
     
     var httpBody: [String: Any]?
 
     init(_ newPass:ChangePasswordModel, token:String) {
         self.headers = token.Bearer()
-        self.httpBody = ["user":newPass.dictionary]
+        self.httpBody = ["user":newPass.dictionary as Any]
     }
 }
 
@@ -178,8 +161,121 @@ struct PurchasedOrdersBaseRequest: BaseRequest {
     var queryItems: [String : String]?
     var headers: [String : String]?
     
-    //FIXME: ReturnType
     typealias ReturnType = BaseResponseModel
+    
+    var httpBody: [String: Any]?
+
+    init(token:String) {
+        self.headers = token.Bearer()
+    }
+}
+
+// /offers/received_offers
+struct ReceivedOffersBaseRequest: BaseRequest {
+    var url: URL = API.server.getURLwithPath(path: "/offers/received_offers")
+    var httpMethod: HTTPMethod = .GET
+    var queryItems: [String : String]?
+    var headers: [String : String]?
+    
+    typealias ReturnType = OffersOrderModel
+    
+    var httpBody: [String: Any]?
+
+    init(token:String) {
+        self.headers = token.Bearer()
+    }
+}
+
+// /users/buyers
+struct ReceivedBuyerBaseRequest: BaseRequest {
+    var url: URL = API.server.getURLwithPath(path: "/users/buyers")
+    var httpMethod: HTTPMethod = .GET
+    var queryItems: [String : String]?
+    var headers: [String : String]?
+    
+    typealias ReturnType = ReceivedBuyerModel
+    
+    var httpBody: [String: Any]?
+
+    init(token:String) {
+        self.headers = token.Bearer()
+    }
+}
+
+// /orders/sold_orders
+struct SoldOrdersBaseRequest: BaseRequest {
+    var url: URL = API.server.getURLwithPath(path: "/orders/sold_orders")
+    var httpMethod: HTTPMethod = .GET
+    var queryItems: [String : String]?
+    var headers: [String : String]?
+    
+    typealias ReturnType = ReceivedOfersModel
+    
+    var httpBody: [String: Any]?
+
+    init(token:String) {
+        self.headers = token.Bearer()
+    }
+}
+
+// /locations
+struct LocationBaseRequest: BaseRequest {
+    var url: URL = API.server.getURLwithPath(path: "/locations")
+    var httpMethod: HTTPMethod = .GET
+    var queryItems: [String : String]?
+    var headers: [String : String]?
+    
+    typealias ReturnType = BaseLocationResponseModel
+    
+    var httpBody: [String: Any]?
+
+    init(zip_code:String,token:String) {
+        self.headers = token.Bearer()
+        self.httpBody = ["location":["zip_code":zip_code]]
+    }
+}
+
+struct OffersBaseRequest: BaseRequest {
+    var url: URL = API.server.getURLwithPath(path: "/offers")
+    var httpMethod: HTTPMethod = .POST
+    var queryItems: [String : String]?
+    var headers: [String : String]?
+    
+    typealias ReturnType = OfferResponseModel
+    
+    var httpBody: [String: Any]?
+
+    init(offer_model:CreateOfferModel, token:String) {
+        self.headers = token.Bearer()
+        self.httpBody = ["location":[offer_model.dictionary as Any]]
+    }
+}
+
+// /offers/sent_offers
+struct SentOffersBaseRequest: BaseRequest {
+    var url: URL = API.server.getURLwithPath(path: "/offers/sent_offers")
+    var httpMethod: HTTPMethod = .GET
+    var queryItems: [String : String]?
+    var headers: [String : String]?
+    
+    typealias ReturnType = OffersOrderModel
+    
+    var httpBody: [String: Any]?
+
+    init(token:String) {
+        self.headers = token.Bearer()
+    }
+}
+
+// /orders
+struct CreateOrderBaseRequest: BaseRequest {
+    var url: URL = API.server.getURLwithPath(path: "/orders")
+    var httpMethod: HTTPMethod = .POST
+    var queryItems: [String : String]?
+    var headers: [String : String]?
+    
+    // FIXME: ReturnType
+    typealias ReturnType = OffersOrderModel
     
     var httpBody: [String: Any]?
 

@@ -7,9 +7,9 @@
 
 import UIKit
 
-enum StatusType : Int {
-    case Canceled, PendingPickup, PendingDelivery, Complete, PendingResponse
-}
+//enum StatusType : Int {
+//    case Canceled, PendingPickup, PendingDelivery, Complete, PendingResponse
+//}
 
 class ProductTableViewCell: UITableViewCell {
 
@@ -35,23 +35,27 @@ class ProductTableViewCell: UITableViewCell {
         self.dateLabel.text = "Date"
     }
     
-    func setStatus(status: StatusType) {
+    func setStatus(status: String) {
         switch status {
-        case .Canceled:
+        case "Canceled":
             self.dateLabel.text = "Canceled"
             self.dateLabel.textColor = #colorLiteral(red: 1, green: 0.3921568627, blue: 0.3921568627, alpha: 1)
-        case .Complete:
+        case "Complete":
             self.dateLabel.text = "Complete"
             self.dateLabel.textColor = #colorLiteral(red: 0.787740171, green: 0.787740171, blue: 0.787740171, alpha: 1)
-        case .PendingPickup:
+        case "PendingPickup":
             self.dateLabel.text = "Pending pickup"
             self.dateLabel.textColor = #colorLiteral(red: 1, green: 0.8130037189, blue: 0, alpha: 1)
-        case .PendingDelivery:
+        case "PendingDelivery":
             self.dateLabel.text = "Pending delivery"
             self.dateLabel.textColor = #colorLiteral(red: 1, green: 0.8130037189, blue: 0, alpha: 1)
-        case .PendingResponse:
+        case "PendingResponse":
             self.dateLabel.text = "Pending response"
             self.dateLabel.textColor = #colorLiteral(red: 1, green: 0.8130037189, blue: 0, alpha: 1)
+        default:
+            self.dateLabel.text = status
+            self.dateLabel.textColor = #colorLiteral(red: 1, green: 0.8130037189, blue: 0, alpha: 1)
+
         }
     }
 }

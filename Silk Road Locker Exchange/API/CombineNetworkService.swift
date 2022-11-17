@@ -69,6 +69,12 @@ class CombineNetworkService {
                         throw NetworkServiceError.invalidResponseCode(httpResponse.statusCode)
                     }
                 }
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
+                    print(json)
+                } catch {
+                    print("errorMsg")
+                }
                 return data
             }
             .map { UIImage(data: $0) ?? UIImage(named: "tony")! }

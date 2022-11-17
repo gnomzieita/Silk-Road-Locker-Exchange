@@ -7,8 +7,20 @@
 
 import UIKit
 
-class SelectLocationViewController: RootViewController, UITableViewDelegate, UITableViewDataSource {
+class SelectLocationViewController: RootViewController, UITableViewDelegate, UITableViewDataSource, LoadLocationsProtocol {
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    
+    func update(_ data: [LocationInfoModel]) {
+        LocationArray = data
+        table.reloadData()
+    }
+    
+    var LocationArray:[LocationInfoModel] = []
 
+    weak var coordinator: SellCoordinator?
+    
     @IBOutlet weak var table: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +29,11 @@ class SelectLocationViewController: RootViewController, UITableViewDelegate, UIT
     }
     
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        coordinator?.loadLocationsDelegat = self
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -30,12 +47,21 @@ class SelectLocationViewController: RootViewController, UITableViewDelegate, UIT
     // MARK: - UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return LocationArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SelectLocationTableViewCell", for: indexPath) as! SelectLocationTableViewCell
         
+        let cellInfo = LocationArray[indexPath.row]
+        
+        cell.loadData(model: cellInfo)
         return cell
+    }
+}
+
+extension SelectLocationViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        coordinator?.getAdrresses(zip_code: searchBar.text ?? "")
     }
 }
