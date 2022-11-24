@@ -31,30 +31,37 @@ class ProductTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setDate(date: NSInteger) {
-        self.dateLabel.text = "Date"
+    func setInfo(offerInfo: OfferDetails) {
+        self.titleLabel.text = offerInfo.name
+        self.descriptionLibel.text = ""
+        self.priceLabel.text = offerInfo.price_usd
+        self.dateLabel.text = ""
+        self.setStatus(status: offerInfo.status)
     }
     
-    func setStatus(status: String) {
+    func setStatus(status: OfferStatus) {
         switch status {
-        case "Canceled":
-            self.dateLabel.text = "Canceled"
-            self.dateLabel.textColor = #colorLiteral(red: 1, green: 0.3921568627, blue: 0.3921568627, alpha: 1)
-        case "Complete":
-            self.dateLabel.text = "Complete"
-            self.dateLabel.textColor = #colorLiteral(red: 0.787740171, green: 0.787740171, blue: 0.787740171, alpha: 1)
-        case "PendingPickup":
-            self.dateLabel.text = "Pending pickup"
-            self.dateLabel.textColor = #colorLiteral(red: 1, green: 0.8130037189, blue: 0, alpha: 1)
-        case "PendingDelivery":
-            self.dateLabel.text = "Pending delivery"
-            self.dateLabel.textColor = #colorLiteral(red: 1, green: 0.8130037189, blue: 0, alpha: 1)
-        case "PendingResponse":
-            self.dateLabel.text = "Pending response"
-            self.dateLabel.textColor = #colorLiteral(red: 1, green: 0.8130037189, blue: 0, alpha: 1)
+        case .Canceled:
+            self.descriptionLibel.text = "Canceled"
+            self.descriptionLibel.textColor = #colorLiteral(red: 1, green: 0.3921568627, blue: 0.3921568627, alpha: 1)
+        case .rejected:
+            self.descriptionLibel.text = "Rejected"
+            self.descriptionLibel.textColor = #colorLiteral(red: 1, green: 0.3921568627, blue: 0.3921568627, alpha: 1)
+        case .Complete:
+            self.descriptionLibel.text = "Complete"
+            self.descriptionLibel.textColor = #colorLiteral(red: 0.787740171, green: 0.787740171, blue: 0.787740171, alpha: 1)
+        case .PendingPickup:
+            self.descriptionLibel.text = "Pending pickup"
+            self.descriptionLibel.textColor = #colorLiteral(red: 1, green: 0.8130037189, blue: 0, alpha: 1)
+        case .PendingDelivery:
+            self.descriptionLibel.text = "Pending delivery"
+            self.descriptionLibel.textColor = #colorLiteral(red: 1, green: 0.8130037189, blue: 0, alpha: 1)
+        case .PendingResponse:
+            self.descriptionLibel.text = "Pending response"
+            self.descriptionLibel.textColor = #colorLiteral(red: 1, green: 0.8130037189, blue: 0, alpha: 1)
         default:
-            self.dateLabel.text = status
-            self.dateLabel.textColor = #colorLiteral(red: 1, green: 0.8130037189, blue: 0, alpha: 1)
+            self.descriptionLibel.text = status.rawValue
+            self.descriptionLibel.textColor = #colorLiteral(red: 1, green: 0.8130037189, blue: 0, alpha: 1)
 
         }
     }

@@ -9,23 +9,32 @@ import UIKit
 
 class OfferDetailsViewController: RootViewController {
 
+    weak var coordinator: SellCoordinator?
+    @IBOutlet weak var offerImage: AsyncImageView!
+    
+    @IBOutlet weak var offerFromName: UILabel!
+    
+    @IBOutlet weak var offerItemName: UILabel!
+    
+    @IBOutlet weak var offerPrice: UILabel!
+    
+    var offerInfo:OfferDetails?
+    
     @IBOutlet weak var oferImage: DesignableImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setBackButton()
 
-        // Do any additional setup after loading the view.
+        if let info = offerInfo {
+            //offerImage.setImage(url: info.)
+            offerFromName.text = info.seller_details?.getName()
+            offerPrice.text = info.price_usd
+            offerItemName.text = ""
+            
+        }
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func cancelOffer(_ sender: Any) {
+        coordinator?.RejectOfer()
     }
-    */
-
 }

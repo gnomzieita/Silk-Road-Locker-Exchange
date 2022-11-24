@@ -11,8 +11,10 @@ import Foundation
 struct GetSigInBaseRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/users/login")
     var httpMethod: HTTPMethod = .POST
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = SigInModel
     
@@ -27,8 +29,10 @@ struct GetSigInBaseRequest: BaseRequest {
 struct ResetPasswordRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/users/reset_password")
     var httpMethod: HTTPMethod = .POST
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = SigInModel
     
@@ -45,8 +49,10 @@ struct ResetPasswordRequest: BaseRequest {
 struct forgetPasswordRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/users/forget_password")
     var httpMethod: HTTPMethod = .POST
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = SigInModel
     
@@ -61,8 +67,10 @@ struct forgetPasswordRequest: BaseRequest {
 struct GetProfileRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/users/profile")
     var httpMethod: HTTPMethod = .GET
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = UserProfileModel
     
@@ -77,8 +85,10 @@ struct GetProfileRequest: BaseRequest {
 struct updateProfileRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/users/update_profile")
     var httpMethod: HTTPMethod = .PUT
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = SigInModel
     
@@ -93,8 +103,10 @@ struct updateProfileRequest: BaseRequest {
 struct ChangePasswordRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/users/change_password")
     var httpMethod: HTTPMethod = .PUT
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = SigInModel
     
@@ -109,8 +121,10 @@ struct ChangePasswordRequest: BaseRequest {
 struct GetSigUpBaseRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/users/signup")
     var httpMethod: HTTPMethod = .POST
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = SignUpUserModel
     
@@ -125,8 +139,10 @@ struct GetSigUpBaseRequest: BaseRequest {
 struct EmailConfirmBaseRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/users/email_confirm")
     var httpMethod: HTTPMethod = .POST
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = SignUpModel
     
@@ -141,8 +157,10 @@ struct EmailConfirmBaseRequest: BaseRequest {
 struct UpdatePasswordBaseRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/users/update_password")
     var httpMethod: HTTPMethod = .PATCH
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = UpdatePasswordResponseModel
     
@@ -158,8 +176,10 @@ struct UpdatePasswordBaseRequest: BaseRequest {
 struct PurchasedOrdersBaseRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/orders/purchased_orders")
     var httpMethod: HTTPMethod = .GET
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = BaseResponseModel
     
@@ -174,8 +194,10 @@ struct PurchasedOrdersBaseRequest: BaseRequest {
 struct ReceivedOffersBaseRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/offers/received_offers")
     var httpMethod: HTTPMethod = .GET
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = OffersOrderModel
     
@@ -190,8 +212,10 @@ struct ReceivedOffersBaseRequest: BaseRequest {
 struct ReceivedBuyerBaseRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/users/buyers")
     var httpMethod: HTTPMethod = .GET
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = ReceivedBuyerModel
     
@@ -206,8 +230,10 @@ struct ReceivedBuyerBaseRequest: BaseRequest {
 struct SoldOrdersBaseRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/orders/sold_orders")
     var httpMethod: HTTPMethod = .GET
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = ReceivedOfersModel
     
@@ -221,9 +247,11 @@ struct SoldOrdersBaseRequest: BaseRequest {
 // /locations
 struct LocationBaseRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/locations")
-    var httpMethod: HTTPMethod = .GET
+    var httpMethod: HTTPMethod = .POST
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = BaseLocationResponseModel
     
@@ -238,8 +266,10 @@ struct LocationBaseRequest: BaseRequest {
 struct OffersBaseRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/offers")
     var httpMethod: HTTPMethod = .POST
+    var contentType: ContentType = .multipart_form_data
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = OfferResponseModel
     
@@ -247,7 +277,8 @@ struct OffersBaseRequest: BaseRequest {
 
     init(offer_model:CreateOfferModel, token:String) {
         self.headers = token.Bearer()
-        self.httpBody = ["location":[offer_model.dictionary as Any]]
+        
+        self.httpBody = offer_model.getHttpBody()
     }
 }
 
@@ -255,8 +286,10 @@ struct OffersBaseRequest: BaseRequest {
 struct SentOffersBaseRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/offers/sent_offers")
     var httpMethod: HTTPMethod = .GET
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     typealias ReturnType = OffersOrderModel
     
@@ -271,15 +304,59 @@ struct SentOffersBaseRequest: BaseRequest {
 struct CreateOrderBaseRequest: BaseRequest {
     var url: URL = API.server.getURLwithPath(path: "/orders")
     var httpMethod: HTTPMethod = .POST
+    var contentType: ContentType = .application_json
     var queryItems: [String : String]?
     var headers: [String : String]?
+    var path: String?
     
     // FIXME: ReturnType
     typealias ReturnType = OffersOrderModel
     
     var httpBody: [String: Any]?
 
-    init(token:String) {
+    init(offer_id: Int, locker_id: Int,token:String) {
         self.headers = token.Bearer()
+        self.httpBody = ["order":["offer_id":offer_id,"locker_id":locker_id]]
+    }
+}
+
+///offers/1/reject_buy_offer
+///
+
+struct RejectBuyOfferBaseRequest: BaseRequest {
+    var url: URL = API.server.getURLwithPath(path: "/offers")
+    var httpMethod: HTTPMethod = .PATCH
+    var contentType: ContentType = .application_json
+    var queryItems: [String : String]?
+    var headers: [String : String]?
+    var path: String?
+    
+    // FIXME: ReturnType
+    typealias ReturnType = OffersOrderModel
+    
+    var httpBody: [String: Any]?
+
+    init(offer_id: Int,token:String) {
+        self.headers = token.Bearer()
+        self.path = "/\(offer_id)/reject_buy_offer"
+    }
+}
+
+struct CancelSellOfferBaseRequest: BaseRequest {
+    var url: URL = API.server.getURLwithPath(path: "/offers")
+    var httpMethod: HTTPMethod = .PATCH
+    var contentType: ContentType = .application_json
+    var queryItems: [String : String]?
+    var headers: [String : String]?
+    var path: String?
+    
+    // FIXME: ReturnType
+    typealias ReturnType = OffersOrderModel
+    
+    var httpBody: [String: Any]?
+
+    init(offer_id: Int,token:String) {
+        self.headers = token.Bearer()
+        self.path = "/\(offer_id)/cancel_sell_offer"
     }
 }

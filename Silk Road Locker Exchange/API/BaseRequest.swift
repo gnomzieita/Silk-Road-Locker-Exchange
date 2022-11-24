@@ -11,6 +11,11 @@ public enum HTTPMethod: String {
     case GET, POST, PUT, PATCH, DELETE
 }
 
+public enum ContentType: String {
+    case application_json = "application/json",
+         multipart_form_data = "multipart/form-data"
+}
+
 public protocol BaseRequest {
 
     var url: URL { get }
@@ -18,7 +23,8 @@ public protocol BaseRequest {
     var headers: [String: String]? { get }
     var httpMethod: HTTPMethod { get }
     var httpBody: [String: Any]? { get }
-    
+    var contentType: ContentType { get }
+    var path: String? { get }
     associatedtype ReturnType: Decodable
 }
 
@@ -36,9 +42,12 @@ extension BaseRequest {
             }
         }
         urlComponents.queryItems = qItems
+        if let qPath = path {
+            urlComponents.path = urlComponents.path + qPath
+        }
         
         var request = URLRequest(url: (urlComponents.url)!)
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
         if let tHeaders = headers {
             for header in tHeaders {
                 request.addValue(header.value, forHTTPHeaderField: header.key)
@@ -46,9 +55,44 @@ extension BaseRequest {
         }
 
         request.httpMethod = httpMethod.rawValue
-        if let httpBody = httpBody {
-            let jsonData = try! JSONSerialization.data(withJSONObject: httpBody, options: [])
-            request.httpBody = jsonData
+        
+        let boundary = "Boundary-\(UUID().uuidString)"
+        
+        switch contentType {
+            case .application_json:
+                request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+                if let httpBody = httpBody {
+                    let jsonData = try! JSONSerialization.data(withJSONObject: httpBody, options: [])
+                    request.httpBody = jsonData
+                }
+            case .multipart_form_data:
+                request.addValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+                if let httpBody = httpBody {
+                    var body = ""
+                    
+                    body += "--\(boundary)\r\n"
+                    body += "Content-Disposition:form-data; name=\"offer[name]\""
+                    body += "\r\n\r\n\(httpBody["name"] ?? "")\r\n"
+                        
+                    body += "--\(boundary)\r\n"
+                    body += "Content-Disposition:form-data; name=\"offer[price]\""
+                    body += "\r\n\r\n\(httpBody["price"] ?? "")\r\n"
+                    
+                    body += "--\(boundary)\r\n"
+                    body += "Content-Disposition:form-data; name=\"offer[buyer_id]\""
+                    body += "\r\n\r\n\(httpBody["buyer_id"] ?? "")\r\n"
+                    
+                    body += "--\(boundary)\r\n"
+                    body += "Content-Disposition:form-data; name=\"offer[image]\""
+                    if let imageData = httpBody["image"] as? Data {
+                        body += "; filename=\"image.jpg\"\r\n"
+                          + "Content-Type: \"content-type header\"\r\n\r\n\(imageData)\r\n"
+                    }
+                    
+                    body += "--\(boundary)--\r\n";
+                    let postData = body.data(using: .utf8)
+                    request.httpBody = postData
+                }
         }
         return request
     }

@@ -22,7 +22,6 @@ class PurchasedViewController: RootViewController, UITableViewDelegate, UITableV
         table.register(.init(nibName: "ProductTableViewCell", bundle: .main), forCellReuseIdentifier: "ProductTableViewCell")
         // Do any additional setup after loading the view.
         table.reloadData()
-        loadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,6 +29,8 @@ class PurchasedViewController: RootViewController, UITableViewDelegate, UITableV
         coordinator?.errorDelegat = self
         coordinator?.loadDataDelegat = self
         coordinator?.loadOffersDelegat = self
+        
+        loadData()
     }
     
     func update(_ data: [OfferDetails]) {
@@ -53,10 +54,7 @@ class PurchasedViewController: RootViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell", for: indexPath) as! ProductTableViewCell
-
-        let offerInfo:OfferDetails = offers[indexPath.row]
-        cell.titleLabel.text = offerInfo.name
-        
+        cell.setInfo(offerInfo: offers[indexPath.row])
         return cell
     }
     
@@ -65,14 +63,15 @@ class PurchasedViewController: RootViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        self.performSegue(withIdentifier: "detal", sender: nil)
         let offerInfo:OfferDetails = offers[indexPath.row]
         //PurchaseOffer
         switch segmentControl.selectedSegmentIndex {
         case 0:
             print("")
         case 1:
-            coordinator?.PurchaseOfferDeteil(offerDetails: offerInfo)
+            if offerInfo.status == .sent {
+                coordinator?.PurchaseOfferDeteil(offerDetails: offerInfo)
+            }
         default:
             print("HZ")
         }

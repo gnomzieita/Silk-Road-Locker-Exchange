@@ -26,9 +26,11 @@ protocol LoadOffersProtocol {
 
 class SellCoordinator: BaseCoordenator {
     
+    var selectOfferID: Int?
+    
     var loadDataDelegat: LoadDataProtocol?
     var loadBuyerDelegat: LoadBuyersProtocol?
-    var loadLocationsDelegat: LoadLocationsProtocol?
+//    var loadLocationsDelegat: LoadLocationsProtocol?
     var LoadOffersDelegat: LoadOffersProtocol?
     
     var selectedBuyer:BuyerModel?
@@ -61,15 +63,16 @@ class SellCoordinator: BaseCoordenator {
         self.navigationController.pushViewController(vc, animated: true)
     }
     
+    func cancelOffer() {
+        //UserListViewController
+        let vc = UserListViewController.instantiate()
+        vc.coordinator = self
+        self.navigationController.pushViewController(vc, animated: true)
+    }
+    
     func selectBuyer(buyer:BuyerModel) {
         self.selectedBuyer = buyer
         navigationController.popViewController(animated: true)
-    }
-    
-    func selectAdrress() {
-        let vc = SelectLocationViewController.instantiate()
-        vc.coordinator = self
-        self.navigationController.pushViewController(vc, animated: true)
     }
     
     func loadSellOrders() {
@@ -140,29 +143,6 @@ class SellCoordinator: BaseCoordenator {
         }.store(in: &anyCancellables)
     }
     
-    //
-    func  getAdrresses(zip_code: String) {
-        self.errorDelegat?.startActyvity()
-        API_Request.shared.Location(zip_code: zip_code).sink { error in
-                // no-op
-            print("Error=====================\(error)")
-            self.errorDelegat?.stopActyvity()
-        } receiveValue: { (receivedBuyer: BaseLocationResponseModel) in
-            self.errorDelegat?.stopActyvity()
-            if let error = receivedBuyer.error {
-                self.errorDelegat?.error(error)
-            }
-            else
-            {
-                DispatchQueue.main.async {
-//                    if let location = receivedBuyer.data?.location, !location.isEmpty {
-//                        self.loadLocationsDelegat?.update(location)
-//                    }
-                }
-            }
-        }.store(in: &anyCancellables)
-    }
-    
     func  CreateOffer(offer_model: CreateOfferModel) {
         self.errorDelegat?.startActyvity()
         API_Request.shared.CreateOffer(offer_model: offer_model).sink { error in
@@ -176,11 +156,9 @@ class SellCoordinator: BaseCoordenator {
             }
             else
             {
+                self.selectOfferID = nil
                 DispatchQueue.main.async {
                     self.navigationController.popViewController(animated: true)
-//                    if let location = receivedBuyer.data?.location, !location.isEmpty {
-//                        self.loadLocationsDelegat?.update(location)
-//                    }
                 }
             }
         }.store(in: &anyCancellables)
@@ -207,5 +185,36 @@ class SellCoordinator: BaseCoordenator {
                 }
             }
         }.store(in: &anyCancellables)
+    }
+    
+    //CancelSellOffer
+    func RejectOfer() {
+        self.errorDelegat?.startActyvity()
+        API_Request.shared.CancelSellOffer(offer_id: selectOfferID ?? 0).sink { error in
+                // no-op
+            print("Error=====================\(error)")
+        
+        } receiveValue: { (purchasedOrder: RejectOffersOrderModel) in
+            self.errorDelegat?.stopActyvity()
+            if let error = purchasedOrder.error {
+                self.errorDelegat?.error(error)
+            }
+            else
+            {
+                DispatchQueue.main.async {
+                    self.navigationController.popToRootViewController(animated: true)
+                }
+            }
+        }.store(in: &anyCancellables)
+    }
+    
+    func PurchaseOfferDeteil(offerDetails:OfferDetails) {
+        
+        self.selectOfferID = offerDetails.id
+        
+        let vc = OfferDetailsViewController.instantiate()
+        vc.coordinator = self
+        vc.offerInfo = offerDetails
+        navigationController.pushViewController(vc, animated: true)
     }
 }

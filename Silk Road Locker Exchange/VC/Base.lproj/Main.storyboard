@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21223" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S6a-bO-ea5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21223" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -29,27 +29,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="r0G-QT-Ucv">
-            <objects>
-                <navigationController toolbarHidden="NO" id="S6a-bO-ea5" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="back" backIndicatorTransitionMaskImage="back" id="hTz-Ni-B2G">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" name="Lime Green"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="NewYorkMedium-Bold" family="New York Medium" pointSize="29"/>
-                            <color key="textColor" name="Dark"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                        </textAttributes>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oIL-bd-wRZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-648" y="104"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -309,7 +288,6 @@
                     <connections>
                         <outlet property="segment" destination="ItY-G1-cqh" id="v9f-Pi-nk4"/>
                         <outlet property="table" destination="MWQ-qb-o0o" id="Pyi-Lt-y43"/>
-                        <segue destination="VxV-az-W5y" kind="show" identifier="OfferDetails" id="ch9-pf-keJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D2c-Bv-Yyh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -324,8 +302,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="201215170016890737" translatesAutoresizingMaskIntoConstraints="NO" id="kGd-om-dq2" customClass="DesignableImageView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
-                                <rect key="frame" x="57" y="100" width="300" height="300"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="201215170016890737" translatesAutoresizingMaskIntoConstraints="NO" id="kGd-om-dq2" customClass="AsyncImageView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
+                                <rect key="frame" x="57" y="56" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="735-ft-GJO"/>
                                     <constraint firstAttribute="height" constant="300" id="vlB-WP-NzZ"/>
@@ -343,25 +321,25 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peter Evans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SA7-Ug-pBG">
-                                <rect key="frame" x="158.5" y="421" width="97" height="19"/>
+                                <rect key="frame" x="158.5" y="377" width="97" height="19"/>
                                 <fontDescription key="fontDescription" name="NewYork-Bold" family="New York" pointSize="16"/>
                                 <color key="textColor" name="Dark"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flash drive with cool music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYZ-qN-aO0">
-                                <rect key="frame" x="104.5" y="448" width="205" height="19"/>
+                                <rect key="frame" x="104.5" y="404" width="205" height="19"/>
                                 <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="16"/>
                                 <color key="textColor" name="Dark"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$13.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7Z-n3-uvF">
-                                <rect key="frame" x="184" y="475" width="46.5" height="19"/>
+                                <rect key="frame" x="184" y="431" width="46.5" height="19"/>
                                 <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="16"/>
                                 <color key="textColor" name="Lime Green"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending response" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kje-pT-ReK">
-                                <rect key="frame" x="140" y="502" width="134" height="19"/>
+                                <rect key="frame" x="140" y="458" width="134" height="19"/>
                                 <fontDescription key="fontDescription" name="NewYork-Regular" family="New York" pointSize="16"/>
                                 <color key="textColor" name="Lemon"/>
                                 <nil key="highlightedColor"/>
@@ -386,6 +364,9 @@
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancelOffer:" destination="VxV-az-W5y" eventType="touchUpInside" id="Wh7-bj-TLc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VJP-FV-4zO"/>
@@ -408,6 +389,10 @@
                     <navigationItem key="navigationItem" title="Offer Details" id="nZE-7Q-g5g"/>
                     <connections>
                         <outlet property="oferImage" destination="kGd-om-dq2" id="1Ld-oq-lNS"/>
+                        <outlet property="offerFromName" destination="SA7-Ug-pBG" id="RLW-6J-GDV"/>
+                        <outlet property="offerImage" destination="kGd-om-dq2" id="Tpn-Le-gXh"/>
+                        <outlet property="offerItemName" destination="rYZ-qN-aO0" id="W5G-OR-597"/>
+                        <outlet property="offerPrice" destination="f7Z-n3-uvF" id="H3Z-QJ-BWf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HkQ-ZD-Gf1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -830,6 +815,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="gQO-Uo-i27"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X58-Cl-ih3">
                                         <rect key="frame" x="97" y="6" width="89.5" height="100"/>
@@ -844,6 +832,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="yuB-lL-NJr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmq-Dd-yrM">
                                         <rect key="frame" x="187.5" y="6" width="90" height="100"/>
@@ -858,6 +849,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="zuf-Aj-8uh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S90-M2-jXS">
                                         <rect key="frame" x="278.5" y="6" width="89.5" height="100"/>
@@ -872,6 +866,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="T48-zm-frJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqb-sC-CWt">
                                         <rect key="frame" x="6" y="107" width="90" height="70"/>
@@ -889,6 +886,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="qM2-om-fsi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9C-HD-U1H">
                                         <rect key="frame" x="97" y="107" width="89.5" height="70"/>
@@ -903,6 +903,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="ln5-vi-6tq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHl-na-TaP">
                                         <rect key="frame" x="187.5" y="107" width="90" height="70"/>
@@ -917,6 +920,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="ezd-we-jpt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVg-Bz-nV9">
                                         <rect key="frame" x="278.5" y="107" width="89.5" height="70"/>
@@ -931,6 +937,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="lR2-lA-ebu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ob-nX-9fs">
                                         <rect key="frame" x="6" y="178" width="90" height="70"/>
@@ -948,6 +957,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="vDa-4E-2Gy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wln-cF-ZtN">
                                         <rect key="frame" x="97" y="178" width="89.5" height="70"/>
@@ -962,6 +974,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="ADR-lS-NRN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixw-IE-eso">
                                         <rect key="frame" x="187.5" y="178" width="90" height="70"/>
@@ -976,6 +991,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="VIX-qf-awg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5E-cT-Otx">
                                         <rect key="frame" x="278.5" y="178" width="89.5" height="70"/>
@@ -990,6 +1008,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="zI3-A7-0kS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA9-92-LeY">
                                         <rect key="frame" x="6" y="249" width="90" height="70"/>
@@ -1007,6 +1028,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="TTf-dH-S0A"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhy-9h-NwL">
                                         <rect key="frame" x="97" y="249" width="89.5" height="70"/>
@@ -1021,6 +1045,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="ljy-Ol-uto"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9S-Uc-NzG">
                                         <rect key="frame" x="187.5" y="249" width="90" height="70"/>
@@ -1035,6 +1062,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="T81-VA-e8N"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fx-sU-fBS">
                                         <rect key="frame" x="278.5" y="249" width="89.5" height="70"/>
@@ -1049,6 +1079,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="HIa-L1-ifl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrG-BP-3eb">
                                         <rect key="frame" x="6" y="320" width="90" height="174"/>
@@ -1063,6 +1096,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="ZTU-T7-JlN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iN-fx-fJa">
                                         <rect key="frame" x="97" y="320" width="89.5" height="174"/>
@@ -1077,6 +1113,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="v2J-mA-GBr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9X-Pl-icT">
                                         <rect key="frame" x="187.5" y="320" width="90" height="174"/>
@@ -1091,6 +1130,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="MmA-zY-Hgi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75b-5g-1vA">
                                         <rect key="frame" x="278.5" y="320" width="89.5" height="174"/>
@@ -1105,6 +1147,9 @@ NY 10011</string>
                                                 <color key="value" name="fields stroke"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="fnS-vT-Ir9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1251,6 +1296,9 @@ NY 10011</string>
                                         <color key="value" name="fields stroke"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="dRh-y2-FLW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4f-cP-bdf">
                                 <rect key="frame" x="212" y="682" width="90" height="140"/>
@@ -1268,6 +1316,9 @@ NY 10011</string>
                                         <color key="value" name="fields stroke"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="lockerTap:" destination="bbS-Bz-ZEv" eventType="touchUpInside" id="akI-6E-OWZ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right Side" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37o-o0-0oL">
                                 <rect key="frame" x="218.5" y="654" width="77" height="20"/>
@@ -1336,6 +1387,30 @@ NY 10011</string>
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="b1" destination="Zcy-04-d7E" id="0h7-rD-BpN"/>
+                        <outlet property="b10" destination="Wln-cF-ZtN" id="pxO-Mo-qWX"/>
+                        <outlet property="b11" destination="Ixw-IE-eso" id="cUy-Jo-sC3"/>
+                        <outlet property="b12" destination="N5E-cT-Otx" id="kRq-jI-QkQ"/>
+                        <outlet property="b13" destination="fA9-92-LeY" id="QFg-7M-Pjc"/>
+                        <outlet property="b14" destination="Dhy-9h-NwL" id="LDq-Q8-xXD"/>
+                        <outlet property="b15" destination="G9S-Uc-NzG" id="aw8-Al-EGS"/>
+                        <outlet property="b16" destination="1fx-sU-fBS" id="qZI-Fn-N5t"/>
+                        <outlet property="b17" destination="IrG-BP-3eb" id="jjl-jf-Wu1"/>
+                        <outlet property="b18" destination="2iN-fx-fJa" id="7Ol-wU-JmR"/>
+                        <outlet property="b19" destination="v9X-Pl-icT" id="Qbl-Ez-t8D"/>
+                        <outlet property="b2" destination="X58-Cl-ih3" id="b1E-H0-sOm"/>
+                        <outlet property="b20" destination="75b-5g-1vA" id="VEL-jz-HIg"/>
+                        <outlet property="b3" destination="Kmq-Dd-yrM" id="cII-oM-0je"/>
+                        <outlet property="b4" destination="S90-M2-jXS" id="phE-ks-Q7X"/>
+                        <outlet property="b5" destination="rqb-sC-CWt" id="ahE-UB-gSn"/>
+                        <outlet property="b6" destination="N9C-HD-U1H" id="2Mr-gv-CU9"/>
+                        <outlet property="b7" destination="EHl-na-TaP" id="hCU-Fm-f5E"/>
+                        <outlet property="b8" destination="YVg-Bz-nV9" id="rx6-gA-JgJ"/>
+                        <outlet property="b9" destination="3ob-nX-9fs" id="urR-em-COI"/>
+                        <outlet property="leftSide" destination="MON-eR-fb0" id="NHy-WT-syh"/>
+                        <outlet property="rightSide" destination="U4f-cP-bdf" id="18u-sW-pDd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ZW-oL-c0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1349,7 +1424,7 @@ NY 10011</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="201215170016890737" translatesAutoresizingMaskIntoConstraints="NO" id="1e6-Dl-4Gc" customClass="DesignableImageView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="201215170016890737" translatesAutoresizingMaskIntoConstraints="NO" id="1e6-Dl-4Gc" customClass="AsyncImageView" customModule="Silk_Road_Locker_Exchange" customModuleProvider="target">
                                 <rect key="frame" x="57" y="64" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="0y5-XC-VKd"/>
@@ -1547,6 +1622,12 @@ NY 10011</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Purchase" id="9bm-ds-EA7"/>
+                    <connections>
+                        <outlet property="offerFromName" destination="qRf-i4-v6r" id="23d-gl-wb5"/>
+                        <outlet property="offerImage" destination="1e6-Dl-4Gc" id="CgS-eM-Mpp"/>
+                        <outlet property="offerItemName" destination="Wtq-Hi-hcd" id="2nJ-jm-syW"/>
+                        <outlet property="offerPrice" destination="gIf-cX-nuj" id="npp-ii-Ste"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tbu-4F-ghv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

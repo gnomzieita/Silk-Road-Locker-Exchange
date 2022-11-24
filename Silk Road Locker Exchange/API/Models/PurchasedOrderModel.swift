@@ -29,11 +29,23 @@ struct OrderModel: Codable {
     
 }
 
+enum OfferStatus: String, Codable {
+    case rejected
+    case sent
+    case accepted
+    
+    case Canceled
+    case Complete
+    case PendingPickup
+    case PendingDelivery
+    case PendingResponse
+}
+
 struct OfferDetails: Codable {
     let id: Int
     let name: String? //"one offer - 2k22",
 //    let price: []
-    let status: String? //"accepted",
+    let status: OfferStatus //"accepted",
     let buyer_id: Int //3,
     let seller_id: Int //2,
     let weight: Float //3.4,
@@ -61,6 +73,10 @@ struct SellerDetails: Codable {
     let email: String? //"admin1@gmail.com",
     let phone: String? //"0410002223",
     let name: String? //" "
+    
+    func getName() -> String {
+        return (first_name ?? "") + " " + (last_name ?? "")
+    }
 }
 /*
  {

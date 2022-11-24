@@ -21,6 +21,8 @@ class PurchasedCoordinator: BaseCoordenator {
     var loadDataDelegat: LoadDataProtocol?
     var loadOffersDelegat: LoadOffersProtocol?
     
+    var loadLocationsDelegat: LoadLocationsProtocol?
+    
     var anyCancellables = Set<AnyCancellable>()
     
     var perentCoordinator:MainTabBarCoordinator?
@@ -51,7 +53,7 @@ class PurchasedCoordinator: BaseCoordenator {
             else
             {
                 DispatchQueue.main.async {
-                    if let orders = purchasedOrder.data?.orders, orders.count > 0 {
+                    if let orders = purchasedOrder.data?.orders {
                         self.loadDataDelegat?.update(orders)
                     }
                 }
@@ -73,7 +75,7 @@ class PurchasedCoordinator: BaseCoordenator {
             else
             {
                 DispatchQueue.main.async {
-                    if let orders = purchasedOrder.data?.offers, orders.count > 0 {
+                    if let orders = purchasedOrder.data?.offers {
                         self.loadOffersDelegat?.update(orders)
                     }
                 }
@@ -92,25 +94,81 @@ class PurchasedCoordinator: BaseCoordenator {
         navigationController.pushViewController(vc, animated: true)
     }
     
-//    func loadReceivedOrders() {
-//        self.errorDelegat?.startActyvity()
-//        API_Request.shared.ReceivedOffers().sink { error in
-//                // no-op
-//            print("Error=====================\(error)")
-//        
-//        } receiveValue: { (purchasedOrder: OffersOrderModel) in
-//            self.errorDelegat?.stopActyvity()
-//            if let error = purchasedOrder.error {
-//                self.errorDelegat?.error(error)
-//            }
-//            else
-//            {
-//                DispatchQueue.main.async {
-//                    if let orders = purchasedOrder.data?.offers, orders.count > 0 {
-//                        self.loadOffersDelegat?.update(orders)
-//                    }
-//                }
-//            }
-//        }.store(in: &anyCancellables)
-//    }
+    //SelectLocationViewController
+    func SelectLocation() {
+        
+        let vc = SelectLocationViewController.instantiate()
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func SelectLocker(digital_lockers: [DigitalLockersModel]) {
+        
+        let vc = SelectLockerViewController.instantiate()
+        vc.coordinator = self
+        vc.digital_lockers = digital_lockers
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func PurchasOfer(locker_id: Int) {
+        self.errorDelegat?.startActyvity()
+        API_Request.shared.PurchasOfer(offer_id: selectOfferID ?? 0, locker_id: locker_id).sink { error in
+                // no-op
+            print("Error=====================\(error)")
+        
+        } receiveValue: { (purchasedOrder: OffersOrderModel) in
+            self.errorDelegat?.stopActyvity()
+            if let error = purchasedOrder.error {
+                self.errorDelegat?.error(error)
+            }
+            else
+            {
+                DispatchQueue.main.async {
+                    self.navigationController.popToRootViewController(animated: true)
+                }
+            }
+        }.store(in: &anyCancellables)
+    }
+    
+    func RejectOfer() {
+        self.errorDelegat?.startActyvity()
+        API_Request.shared.RejectBuyOffer(offer_id: selectOfferID ?? 0).sink { error in
+                // no-op
+            print("Error=====================\(error)")
+        
+        } receiveValue: { (purchasedOrder: RejectOffersOrderModel) in
+            self.errorDelegat?.stopActyvity()
+            if let error = purchasedOrder.error {
+                self.errorDelegat?.error(error)
+            }
+            else
+            {
+                DispatchQueue.main.async {
+                    self.navigationController.popToRootViewController(animated: true)
+                }
+            }
+        }.store(in: &anyCancellables)
+    }
+    
+    func  getAdrresses(zip_code: String) {
+        self.errorDelegat?.startActyvity()
+        API_Request.shared.Location(zip_code: zip_code).sink { error in
+                // no-op
+            print("Error=====================\(error)")
+            self.errorDelegat?.stopActyvity()
+        } receiveValue: { (receivedBuyer: BaseLocationResponseModel) in
+            self.errorDelegat?.stopActyvity()
+            if let error = receivedBuyer.error {
+                self.errorDelegat?.error(error)
+            }
+            else
+            {
+                DispatchQueue.main.async {
+                    if let location = receivedBuyer.data?.location {
+                        self.loadLocationsDelegat?.update(location)
+                    }
+                }
+            }
+        }.store(in: &anyCancellables)
+    }
 }

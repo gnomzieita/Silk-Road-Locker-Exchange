@@ -12,6 +12,13 @@ struct CreateOfferModel: Codable {
     let name: String
     let price: Float
     let buyer_id: Int
+    
+    func getHttpBody() -> [String:Any] {
+        return ["image":image,
+                "name":name,
+                "price":price,
+                "buyer_id":buyer_id]
+    }
 }
 
 struct OfferResponseModel: Codable {

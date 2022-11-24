@@ -75,9 +75,9 @@ class SellViewController: RootViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell", for: indexPath) as! ProductTableViewCell
 
         let offerInfo:OfferDetails = offers[indexPath.row]
-        cell.titleLabel.text = offerInfo.name
+        cell.setInfo(offerInfo: offerInfo)
         
-        cell.setStatus(status: offerInfo.status ?? "")
+        cell.setStatus(status: offerInfo.status)
         
         return cell
     }
@@ -88,8 +88,19 @@ class SellViewController: RootViewController, UITableViewDelegate, UITableViewDa
     
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        self.performSegue(withIdentifier: "OfferDetails", sender: nil)
         let offerInfo:OfferDetails = offers[indexPath.row]
+        //PurchaseOffer
+        switch segment.selectedSegmentIndex {
+        case 0:
+            if offerInfo.status == .sent {
+                coordinator?.PurchaseOfferDeteil(offerDetails: offerInfo)
+            }
+        case 1:
+            print("")
+        default:
+            print("HZ")
+        }
+        
     }
     /*
     // MARK: - Navigation

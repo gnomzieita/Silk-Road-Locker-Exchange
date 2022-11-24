@@ -121,4 +121,16 @@ class API_Request: CombineNetworkService {
     func SentOffers<T: Decodable>() -> AnyPublisher<T, NetworkServiceError> {
         return self.getPublisherForResponse(request: SentOffersBaseRequest(token: auth_token).request())
     }
+    
+    func PurchasOfer<T: Decodable>(offer_id:Int, locker_id:Int) -> AnyPublisher<T, NetworkServiceError> {
+        return self.getPublisherForResponse(request: CreateOrderBaseRequest(offer_id: offer_id, locker_id: locker_id, token: auth_token).request())
+    }
+    
+    func RejectBuyOffer<T: Decodable>(offer_id:Int) -> AnyPublisher<T, NetworkServiceError> {
+        return self.getPublisherForResponse(request: RejectBuyOfferBaseRequest(offer_id: offer_id,token: auth_token).request())
+    }
+    
+    func CancelSellOffer<T: Decodable>(offer_id:Int) -> AnyPublisher<T, NetworkServiceError> {
+        return self.getPublisherForResponse(request: CancelSellOfferBaseRequest(offer_id: offer_id,token: auth_token).request())
+    }
 }

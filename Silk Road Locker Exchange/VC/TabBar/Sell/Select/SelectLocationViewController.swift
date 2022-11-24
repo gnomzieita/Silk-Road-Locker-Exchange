@@ -9,6 +9,8 @@ import UIKit
 
 class SelectLocationViewController: RootViewController, UITableViewDelegate, UITableViewDataSource, LoadLocationsProtocol {
     
+    weak var coordinator: PurchasedCoordinator?
+    
     @IBOutlet weak var searchBar: UISearchBar!
     
     
@@ -18,8 +20,6 @@ class SelectLocationViewController: RootViewController, UITableViewDelegate, UIT
     }
     
     var LocationArray:[LocationInfoModel] = []
-
-    weak var coordinator: SellCoordinator?
     
     @IBOutlet weak var table: UITableView!
     override func viewDidLoad() {
@@ -33,16 +33,6 @@ class SelectLocationViewController: RootViewController, UITableViewDelegate, UIT
         super.viewWillAppear(animated)
         coordinator?.loadLocationsDelegat = self
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     // MARK: - UITableViewDataSource
     
@@ -57,6 +47,14 @@ class SelectLocationViewController: RootViewController, UITableViewDelegate, UIT
         
         cell.loadData(model: cellInfo)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cellInfo = LocationArray[indexPath.row]
+        print(cellInfo.digital_lockers)
+        if let digital_lockers = cellInfo.digital_lockers, !digital_lockers.isEmpty {
+            coordinator?.SelectLocker(digital_lockers: digital_lockers)
+        }
     }
 }
 

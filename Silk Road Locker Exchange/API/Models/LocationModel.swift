@@ -7,10 +7,18 @@
 
 import Foundation
 
+enum DigitalLockerStatusModel: String, Codable {
+    case available
+    case selected
+    case occupied
+    case none
+}
+
 struct DigitalLockersModel:Codable {
+    let id: Int
     let name: String?
     let price_usd: String?
-    let status: String?
+    let status: DigitalLockerStatusModel?
 }
 
 struct AddressModel: Codable {

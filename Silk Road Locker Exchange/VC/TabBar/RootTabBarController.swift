@@ -22,6 +22,11 @@ class RootTabBarController: UITabBarController, Storyboarded {
         self.navigationController?.isNavigationBarHidden = true
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
+
     /*
     // MARK: - Navigation
 

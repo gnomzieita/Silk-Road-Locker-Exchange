@@ -67,6 +67,7 @@ class MainTabBarCoordinator: BaseCoordenator {
     }
     
     func logOut() {
+        UserDefaults.standard.removeObject(forKey: "auth_token")
         perentCoordinator?.navigationController.popToRootViewController(animated: true)
     }
     

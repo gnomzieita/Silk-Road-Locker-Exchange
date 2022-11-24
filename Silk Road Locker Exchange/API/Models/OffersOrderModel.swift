@@ -25,3 +25,16 @@ struct CreateOffersModel: Codable {
     let offer_id: Int
     let locker_id: Int
 }
+
+struct RejectOffersOrderModel: Codable {
+    let message: String?
+    let data: OffersModel?
+    let auth_token: String?
+    
+    let error:String?
+    
+}
+
+struct RejectOffersModel: Codable {
+    let offers: OfferDetails?
+}
