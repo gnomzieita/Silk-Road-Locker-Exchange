@@ -8,7 +8,7 @@
 import UIKit
 
 //enum StatusType : Int {
-//    case Canceled, PendingPickup, PendingDelivery, Complete, PendingResponse
+//    case canceled, PendingPickup, PendingDelivery, Complete, PendingResponse
 //}
 
 class ProductTableViewCell: UITableViewCell {
@@ -41,7 +41,7 @@ class ProductTableViewCell: UITableViewCell {
     
     func setStatus(status: OfferStatus) {
         switch status {
-        case .Canceled:
+        case .canceled:
             self.descriptionLibel.text = "Canceled"
             self.descriptionLibel.textColor = #colorLiteral(red: 1, green: 0.3921568627, blue: 0.3921568627, alpha: 1)
         case .rejected:

@@ -34,8 +34,8 @@ enum OfferStatus: String, Codable {
     case sent
     case accepted
     
-    case Canceled
-    case Complete
+    case canceled
+    case complete
     case PendingPickup
     case PendingDelivery
     case PendingResponse
