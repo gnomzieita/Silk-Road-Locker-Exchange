@@ -47,7 +47,7 @@ class ProductTableViewCell: UITableViewCell {
         case .rejected:
             self.descriptionLibel.text = "Rejected"
             self.descriptionLibel.textColor = #colorLiteral(red: 1, green: 0.3921568627, blue: 0.3921568627, alpha: 1)
-        case .Complete:
+        case .complete:
             self.descriptionLibel.text = "Complete"
             self.descriptionLibel.textColor = #colorLiteral(red: 0.787740171, green: 0.787740171, blue: 0.787740171, alpha: 1)
         case .PendingPickup:
